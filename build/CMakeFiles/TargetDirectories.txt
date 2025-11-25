@@ -1,0 +1,3 @@
+/home/sooraj/stencil_compiler/build/CMakeFiles/stencilc.dir
+/home/sooraj/stencil_compiler/build/CMakeFiles/edit_cache.dir
+/home/sooraj/stencil_compiler/build/CMakeFiles/rebuild_cache.dir

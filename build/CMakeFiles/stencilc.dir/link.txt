@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/stencilc.dir/src/codebuffer.cpp.o CMakeFiles/stencilc.dir/src/codegen_simple.cpp.o CMakeFiles/stencilc.dir/src/irgen.cpp.o CMakeFiles/stencilc.dir/src/irinterp.cpp.o CMakeFiles/stencilc.dir/src/lexer.cpp.o CMakeFiles/stencilc.dir/src/main.cpp.o CMakeFiles/stencilc.dir/src/parser.cpp.o CMakeFiles/stencilc.dir/src/stencil.cpp.o -o stencilc 
