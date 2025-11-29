@@ -1,9 +1,17 @@
+#ifdef _WIN32
+#include <windows.h>
+#else
+#include <sys/mman.h>
+#include <unistd.h>
+#endif
+
+
 // src/codegen_simple.cpp
 #include "ir.hpp"
 #include "codebuffer.hpp"
 #include "stencil.hpp"
-#include <sys/mman.h>
-#include <unistd.h>
+// #include <sys/mman.h>
+// #include <unistd.h>
 #include <cstring>
 #include <iostream>
 #include <unordered_map>
@@ -100,12 +108,7 @@ void generate_and_run_with_stencils(const IRProgram &ir, StencilLibrary &lib) {
                 } else {
                     slot = it->second;
                     // mov rax, [rbp - slot]; push rax
-                    
-                    // slot is a positive byte offset (8,16,..). Instructions use [rbp - slot],
-                    // so pass (int8_t)(-slot) to encode the signed disp8 correctly.
-
-                    emit_mov_rax_from_rbp_disp8(cb, (int8_t)(-slot));   // When reading a slot, pass a negative disp8.  ## BB-edit
-                    // emit_mov_rax_from_rbp_disp8(cb, (int8_t)slot);
+                    emit_mov_rax_from_rbp_disp8(cb, (int8_t)slot);
                     emit_push_rax(cb);
                 }
                 break;
@@ -123,12 +126,7 @@ void generate_and_run_with_stencils(const IRProgram &ir, StencilLibrary &lib) {
                 } else {
                     slot = it->second;
                 }
-                
-                // slot is a positive byte offset (8,16,..). Instructions use [rbp - slot],
-                // so pass (int8_t)(-slot) to encode the signed disp8 correctly.
-                
-                emit_mov_rbp_disp8_from_rax(cb, (int8_t)(-slot));   // When writing a slot, pass a negative disp8.  ## BB-edit
-                // emit_mov_rbp_disp8_from_rax(cb, (int8_t)slot);
+                emit_mov_rbp_disp8_from_rax(cb, (int8_t)slot);
                 break;
             }
 
@@ -170,22 +168,40 @@ void generate_and_run_with_stencils(const IRProgram &ir, StencilLibrary &lib) {
 
     // ---- allocate executable memory and run ----
     size_t codesz = cb.size();
+
     // round up to page size
+    #ifdef _WIN32
+    SYSTEM_INFO si;
+    GetSystemInfo(&si);
+    size_t pagesz = si.dwPageSize;
+    #else
     size_t pagesz = sysconf(_SC_PAGESIZE);
+    #endif
+
     size_t allocsz = ((codesz + pagesz - 1) / pagesz) * pagesz;
 
+    #ifdef _WIN32
+    // Allocate executable memory on Windows
+    void* mem = VirtualAlloc(nullptr, allocsz,
+                            MEM_COMMIT | MEM_RESERVE,
+                            PAGE_EXECUTE_READWRITE);
+    if (!mem) {
+        throw std::runtime_error("VirtualAlloc failed");
+    }
+    #else
     void *mem = mmap(nullptr, allocsz,
-                     PROT_READ | PROT_WRITE | PROT_EXEC,
-                     MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+                    PROT_READ | PROT_WRITE | PROT_EXEC,
+                    MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
     if (mem == MAP_FAILED) {
         perror("mmap");
-        throw runtime_error("mmap failed");
+        throw std::runtime_error("mmap failed");
     }
+    #endif
 
     // copy code into mem
     memcpy(mem, cb.data(), codesz);
 
-    // flush instruction cache if required (generally not necessary on x86)
+    // flush instruction cache if required (x86 generally not needed)
     typedef int64_t (*fn_t)();
     fn_t fn = (fn_t)mem;
 
@@ -193,7 +209,39 @@ void generate_and_run_with_stencils(const IRProgram &ir, StencilLibrary &lib) {
     int64_t ret = fn();
     std::cout << ">>> generated program returned: " << ret << std::endl;
 
-    // cleanup
+    #ifdef _WIN32
+    VirtualFree(mem, 0, MEM_RELEASE);
+    #else
     munmap(mem, allocsz);
+    #endif
+
+    // Earlier Linux-version
+    // // ---- allocate executable memory and run ----
+    // size_t codesz = cb.size();
+    // // round up to page size
+    // size_t pagesz = sysconf(_SC_PAGESIZE);
+    // size_t allocsz = ((codesz + pagesz - 1) / pagesz) * pagesz;
+
+    // void *mem = mmap(nullptr, allocsz,
+    //                  PROT_READ | PROT_WRITE | PROT_EXEC,
+    //                  MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+    // if (mem == MAP_FAILED) {
+    //     perror("mmap");
+    //     throw runtime_error("mmap failed");
+    // }
+
+    // // copy code into mem
+    // memcpy(mem, cb.data(), codesz);
+
+    // // flush instruction cache if required (generally not necessary on x86)
+    // typedef int64_t (*fn_t)();
+    // fn_t fn = (fn_t)mem;
+
+    // // call generated function and capture return value (RAX)
+    // int64_t ret = fn();
+    // std::cout << ">>> generated program returned: " << ret << std::endl;
+
+    // // cleanup
+    // munmap(mem, allocsz);
 
 }

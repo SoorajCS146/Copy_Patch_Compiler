@@ -15,12 +15,19 @@ void StencilLibrary::load_all() {
     }
 
     for (auto& entry : fs::directory_iterator(directory)) {
-        if (entry.path().extension() == ".o") {
+        auto ext = entry.path().extension().string();
+
+        // Accepting .bin first priority, fallback to .o else.
+        
+        if (ext == ".bin") {
+        // if (ext == ".bin" || ext == ".o") {
+        // if (entry.path().extension() == ".o") {
             string fname = entry.path().stem().string();
             string fullpath = entry.path().string();
+            
             Stencil st = load_object_file(fullpath);
-
             st.name = fname;
+            
             stencils[fname] = st;
 
             cout << "Loaded stencil: " << fname 

@@ -1,0 +1,28 @@
+cmake_minimum_required(VERSION 3.10)
+project(stencil_compiler C CXX)
+
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
+
+include_directories(include)
+
+# List of common source files
+set(SRC_FILES
+    src/codebuffer.cpp
+    src/irgen.cpp
+    src/irinterp.cpp
+    src/lexer.cpp
+    src/main.cpp
+    src/parser.cpp
+    src/stencil.cpp
+)
+
+# Platform-specific source
+if(WIN32)
+    list(APPEND SRC_FILES src/codegen_simple_windows.cpp)
+else()
+    list(APPEND SRC_FILES src/codegen_simple.cpp)
+endif()
+
+# Create executable
+add_executable(stencilc ${SRC_FILES})

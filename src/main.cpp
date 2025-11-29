@@ -1,6 +1,9 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+
+#include <filesystem>	// For dynamic path detection.
+
 #include "lexer.hpp"
 #include "parser.hpp"
 #include "ast.hpp"
@@ -12,6 +15,8 @@
 
 #include "exec_stencil.hpp"
 using namespace std;
+
+namespace fs = std::filesystem;  // For dynamic path detection.
 
 string read_file_to_string(const string& path) {
     ifstream ifs(path);
@@ -59,7 +64,28 @@ int main(int argc, char** argv) {
     print_ast(program);
     IRProgram ir = generate_ir(program);
 
-    StencilLibrary lib("../stencils");
+    fs::path stencil_path;
+
+    if(fs::exists("stencils")) {
+	    stencil_path = "stencils";
+    }
+    else if(fs::exists("../stencils")) {
+	    stencil_path = "../stencils";
+    }
+    else {
+	    cerr << "Stencil directory not found\n";
+	    return 1;
+    }
+
+    // StencilLibrary lib("../stencils");
+    // OLDER Platform-based version (redundant now).
+    // ifdef _WIN32
+    //	StencilLibrary lib("stencils");
+    // else
+    //  StencilLibrary lib("stencils");
+    // endif
+
+    StencilLibrary lib(stencil_path.string() );		// For dynamic path detection.
     lib.load_all();
 
     cout << "=== Running generated machine code (simple mode) ===\n";
@@ -82,8 +108,10 @@ int main(int argc, char** argv) {
     run_ir(ir);
     // TEMP: test stencil loading
     try {
-        StencilLibrary lib("../stencils");
-        lib.load_all();
+	    // Commenting +3 upon BB's suggestion.
+//        StencilLibrary lib("stencils");
+//        // StencilLibrary lib("../stencils"); => changing as per BB.
+//        lib.load_all();
 
         // copy 'add' stencil into a buffer
         const Stencil& add = lib.get("add");

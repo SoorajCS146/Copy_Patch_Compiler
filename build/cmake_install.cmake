@@ -1,4 +1,4 @@
-# Install script for directory: /home/sooraj/stencil_compiler
+# Install script for directory: /home/suvan77blr/cd-project/Copy_Patch_Compiler
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sooraj/stencil_compiler/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/suvan77blr/cd-project/Copy_Patch_Compiler/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
