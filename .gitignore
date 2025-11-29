@@ -1,0 +1,63 @@
+# --- Build directories ---
+/build/
+/build*/       # Any other build variants like build-debug, build-release
+
+# --- CMake files ---
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CMakeScripts/
+CTestTestfile.cmake
+Makefile
+*.cmake
+*.ninja
+*.ninja_deps
+*.ninja_log
+
+# --- Compiled object files & binaries ---
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.a
+*.lib
+
+# --- Generated stencil binaries ---
+stencils/*.bin
+stencils/*.o
+
+# Keep original stencil sources
+!stencils/*.s
+
+# --- Temporary / editor files ---
+*.swp
+*.swo
+*~
+*.tmp
+*.log
+
+# --- OS specific junk ---
+.DS_Store
+Thumbs.db
+
+# --- Visual Studio Code ---
+.vscode/
+.vscode/*
+*.code-workspace
+
+# --- CLion / JetBrains ---
+.idea/
+cmake-build-*/
+
+# --- Windows specific ---
+/Debug/
+/Release/
+*.pdb
+*.ilk
+
+# --- Python virtual envs (if used later for testing) ---
+venv/
+
