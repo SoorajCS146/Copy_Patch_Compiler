@@ -116,6 +116,45 @@ int main(int argc, char** argv) {
 
     memcpy(print_fn_mem, pst.bytes.data(), pst.bytes.size() );
 
+    // Patch RIP-relative LEA for `newline` inside the copied stencil so
+    // the RIP-relative displacement points to the newline in the JIT buffer.
+    // Instruction encoding: `lea rsi, [rip + disp32]` -> bytes: 48 8d 35 <disp32>
+    uint8_t *memb = (uint8_t*)print_fn_mem;
+    size_t msz = pst.bytes.size();
+    // Find the LEA opcode sequence and the newline byte in the buffer.
+    ssize_t lea_off = -1;
+    for (size_t i = 0; i + 7 <= msz; ++i) {
+        if (memb[i] == 0x48 && memb[i+1] == 0x8d && memb[i+2] == 0x35) {
+            lea_off = (ssize_t)i;
+            break;
+        }
+    }
+    ssize_t nl_off = -1;
+    for (size_t i = msz; i-- > 0;) {
+        if (memb[i] == (uint8_t)'\n') { nl_off = (ssize_t)i; break; }
+    }
+    if (lea_off >= 0 && nl_off >= 0) {
+        // rel32 is relative to the next instruction (instr + 7)
+        uint64_t instr_addr = (uint64_t)(memb + lea_off);
+        uint64_t next = instr_addr + 7;
+        uint64_t target = (uint64_t)(memb + nl_off);
+        int32_t new_rel = (int32_t)(target - next);
+        // write new rel32 little-endian into bytes [lea_off+3 .. lea_off+6]
+        memcpy(memb + lea_off + 3, &new_rel, sizeof(new_rel));
+    }
+
+    // Also patch any `movabs $imm64, %rsi` placeholder we inserted in the stencil.
+    // Encoding: 48 BE <imm64>
+    ssize_t movabs_off = -1;
+    for (size_t i = 0; i + 10 <= msz; ++i) {
+        if (memb[i] == 0x48 && memb[i+1] == 0xBE) { movabs_off = (ssize_t)i; break; }
+    }
+    if (movabs_off >= 0 && nl_off >= 0) {
+        uint64_t target_addr = (uint64_t)(memb + nl_off);
+        // write imm64 little-endian into bytes [movabs_off+2 .. movabs_off+9]
+        memcpy(memb + movabs_off + 2, &target_addr, sizeof(target_addr));
+    }
+
     g_print_int_fn = print_fn_mem;
     std::cerr << "[DEBUG] g_print_int_fn = " << g_print_int_fn << "\n";
 

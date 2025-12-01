@@ -27,6 +27,8 @@ convert_loop:
     jne convert_loop
 
     # reverse string
+    # save length (rcx == digit count) into r11, then prepare for reverse
+    mov %rcx, %r11
     mov $0, %rdx
     dec %rcx
 rev_loop:
@@ -44,14 +46,15 @@ done_rev:
     # write syscall
     mov $1, %rax        # SYS_write
     mov $1, %rdi        # stdout
-    mov %rsi, %rsi      # buffer
-    mov %rcx, %rdx      # length
+    mov %rsi, %rsi      # buffer (no-op)
+    mov %r11, %rdx      # length (use saved digit count)
     syscall
 
     # print newline
     mov $1, %rax
     mov $1, %rdi
-    lea newline(%rip), %rsi
+    # use movabs with a placeholder immediate; loader will patch this imm64
+    movabs $0, %rsi
     mov $1, %rdx
     syscall
 

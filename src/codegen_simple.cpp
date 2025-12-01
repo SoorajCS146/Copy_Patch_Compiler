@@ -39,7 +39,7 @@ static void emit_movabs_rax_imm64(CodeBuffer &cb, int64_t imm) {
 
 // movabs rbx, imm64    => 48 bc <imm64>
 static void emit_movabs_rbx_imm64(CodeBuffer &cb, int64_t imm) {
-    cb.append((const uint8_t*)"\x48\xBC", 2);
+    cb.append((const uint8_t*)"\x48\xBB", 2);
     cb.write64_le(imm);
 }
 
