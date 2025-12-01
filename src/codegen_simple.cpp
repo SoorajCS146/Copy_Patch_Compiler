@@ -9,8 +9,11 @@
 #include <unordered_map>
 #include <vector>
 #include <stdexcept>
+#include <fstream>
 
 using namespace std;
+
+extern "C" void* g_print_int_fn;
 
 // Small helper: emit little-known instruction bytes for common ops.
 static void emit_prologue(CodeBuffer &cb) {
@@ -31,6 +34,12 @@ static void emit_epilogue(CodeBuffer &cb) {
 // movabs rax, imm64    => 48 b8 <imm64>
 static void emit_movabs_rax_imm64(CodeBuffer &cb, int64_t imm) {
     cb.append((const uint8_t*)"\x48\xb8", 2);
+    cb.write64_le(imm);
+}
+
+// movabs rbx, imm64    => 48 bc <imm64>
+static void emit_movabs_rbx_imm64(CodeBuffer &cb, int64_t imm) {
+    cb.append((const uint8_t*)"\x48\xBC", 2);
     cb.write64_le(imm);
 }
 
@@ -84,11 +93,12 @@ void generate_and_run_with_stencils(const IRProgram &ir, StencilLibrary &lib) {
     for (size_t ip = 0; ip < ir.size(); ++ip) {
         const IRInstr &ins = ir[ip];
         switch (ins.op) {
-            case IRInstr::PUSH_CONST:
+            case IRInstr::PUSH_CONST: {
                 // movabs rax, imm64; push rax
                 emit_movabs_rax_imm64(cb, ins.imm);
                 emit_push_rax(cb);
                 break;
+            }
 
             case IRInstr::LOAD_VAR: {
                 auto it = var_slot.find(ins.name);
@@ -151,8 +161,35 @@ void generate_and_run_with_stencils(const IRProgram &ir, StencilLibrary &lib) {
             }
 
             case IRInstr::PRINT: {
-                // pop value into rax, then append print_int stencil (which does its own prologue/epilogue)
-                emit_pop_rax(cb);
+                // pop value into rax (the stencil expects value in RAX)
+                emit_pop_rax(cb);   // value in RAX.
+
+                // load print stencil address into RBX (preserve RAX)
+                emit_movabs_rbx_imm64(cb, (int64_t)g_print_int_fn);
+
+                // call rbx -> opcode: FF D3
+                cb.append( (const uint8_t*)"\xFF\xD3", 2);
+
+                // v3.
+                // // move RDI, RAX  (argument 1 = RDI)
+                // // opcode: 48 89 C7
+                // cb.append((const uint8_t*)"\x48\x89\xC7", 3);
+
+                // // load print fn address into RAX (movabs rax, imm64)
+                // emit_movabs_rax_imm64(cb, (int64_t)g_print_int_fn);
+
+                // // call rax -> opcode: FF D0
+                // cb.append( (const uint8_t*)"\xFF\xD0", 2);
+
+                // v2.
+                // cb.push(0xE8);
+
+                // uint64_t next_instr = cb.current_ip() + 4;
+                // uint64_t target = (uint64_t)g_print_int_fn;
+
+                // int32_t rel = (int32_t)(target - next_instr);
+                // cb.write32_le(rel);
+
 
                 // // append the print_int stencil bytes (assumes it consumes RAX)
                 // const Stencil &pst = lib.get("print_int");
@@ -173,6 +210,11 @@ void generate_and_run_with_stencils(const IRProgram &ir, StencilLibrary &lib) {
     // round up to page size
     size_t pagesz = sysconf(_SC_PAGESIZE);
     size_t allocsz = ((codesz + pagesz - 1) / pagesz) * pagesz;
+
+    std::ofstream dbg("/tmp/jit.bin", std::ios::binary);
+    dbg.write((char*)cb.data(), cb.size());
+    dbg.close();
+    // hexdump -C /tmp/jit.bin | sed -n '0,40p'
 
     void *mem = mmap(nullptr, allocsz,
                      PROT_READ | PROT_WRITE | PROT_EXEC,

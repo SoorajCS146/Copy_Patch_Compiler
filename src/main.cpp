@@ -1,4 +1,9 @@
 #include <iostream>
+
+#include <unistd.h>     // sysconf, _SC_PAGESIZE
+#include <sys/mman.h>     // mmap, PROT_*, MAP_*
+#include <cstring>     // memcpy
+
 #include <fstream>
 #include <sstream>
 
@@ -17,6 +22,8 @@
 using namespace std;
 
 namespace fs = std::filesystem;  // For dynamic path detection.
+
+void* g_print_int_fn = nullptr;   // global used by codegen_simple.cpp
 
 string read_file_to_string(const string& path) {
     ifstream ifs(path);
@@ -89,7 +96,35 @@ int main(int argc, char** argv) {
     lib.load_all();
 
     cout << "=== Running generated machine code (simple mode) ===\n";
+
+    // *** Loading print-stencil.
+    const Stencil& pst = lib.get("print_int");  
+        
+    // allocating exec memory for print stencil.
+    size_t sz = pst.bytes.size();
+    size_t pagesz = sysconf(_SC_PAGESIZE);
+    size_t allocsz = ( (sz + pagesz - 1) / pagesz) * pagesz;
+
+    void *print_fn_mem = mmap(nullptr, allocsz,
+                        PROT_READ | PROT_WRITE | PROT_EXEC,
+                        MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+
+    if (print_fn_mem == MAP_FAILED) {
+        perror("mmap print");
+        exit(1);
+    }
+
+    memcpy(print_fn_mem, pst.bytes.data(), pst.bytes.size() );
+
+    g_print_int_fn = print_fn_mem;
+    std::cerr << "[DEBUG] g_print_int_fn = " << g_print_int_fn << "\n";
+
+
     generate_and_run_with_stencils(ir, lib);
+
+    // cleanup print stencil
+    munmap(print_fn_mem, allocsz);
+    g_print_int_fn = nullptr;
 
     cout << "=== IR (instr count = " << ir.size() << ") ===\n";
     for (size_t i = 0; i < ir.size(); ++i) {
@@ -113,7 +148,9 @@ int main(int argc, char** argv) {
 //        // StencilLibrary lib("../stencils"); => changing as per BB.
 //        lib.load_all();
 
-        // copy 'add' stencil into a buffer
+        // Reusing the already loaded library.
+
+        // add-stencil.
         const Stencil& add = lib.get("add");
         CodeBuffer buf;
         buf.append(add.bytes.data(), add.bytes.size());
