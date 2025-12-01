@@ -1,0 +1,234 @@
+Parsed AST:
+  LetStmt: x = <expr>
+  LetStmt: y = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== Running generated machine code (simple mode) ===
+47
+>>> generated program returned: 1
+=== IR (instr count = 8) ===
+0: PUSH_CONST 42
+1: STORE_VAR x
+2: LOAD_VAR x
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR y
+6: LOAD_VAR y
+7: PRINT
+=== Running IR interpreter ===
+47
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+=== Running IR interpreter ===
+8
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+=== Running IR interpreter ===
+8
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+=== Running IR interpreter ===
+8
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+=== Running IR interpreter ===
+8
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+=== Running IR interpreter ===
+8
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+=== Running IR interpreter ===
+8
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+=== Running IR interpreter ===
+8
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+=== Running IR interpreter ===
+8
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+=== Running IR interpreter ===
+8
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+=== Running IR interpreter ===
+8
+Copied add stencil, buffer size = 7 bytes

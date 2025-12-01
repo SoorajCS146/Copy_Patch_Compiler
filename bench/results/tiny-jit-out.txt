@@ -1,0 +1,280 @@
+Parsed AST:
+  LetStmt: x = <expr>
+  LetStmt: y = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== Running generated machine code (simple mode) ===
+47
+>>> generated program returned: 1
+=== IR (instr count = 8) ===
+0: PUSH_CONST 42
+1: STORE_VAR x
+2: LOAD_VAR x
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR y
+6: LOAD_VAR y
+7: PRINT
+=== Running IR interpreter ===
+47
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== Running generated machine code (simple mode) ===
+8
+>>> generated program returned: 1
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== Running generated machine code (simple mode) ===
+GEN_START:1764572010641099
+GEN_END:1764572010641323
+RUN_START:1764572010641361
+8
+RUN_END:1764572010641380
+>>> generated program returned: 1
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== Running generated machine code (simple mode) ===
+GEN_START:1764572116270637
+GEN_END:1764572116272264
+RUN_START:1764572116272333
+8
+RUN_END:1764572116272358
+>>> generated program returned: 1
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== Running generated machine code (simple mode) ===
+GEN_START:1764572667764670
+GEN_END:1764572667766213
+RUN_START:1764572667766266
+8
+RUN_END:1764572667766284
+>>> generated program returned: 1
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== Running generated machine code (simple mode) ===
+GEN_START:1764573936571813
+GEN_END:1764573936571976
+RUN_START:1764573936572003
+8
+RUN_END:1764573936572014
+>>> generated program returned: 1
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== Running generated machine code (simple mode) ===
+GEN_START:1764574187850144
+GEN_END:1764574187850501
+RUN_START:1764574187850536
+8
+RUN_END:1764574187850551
+>>> generated program returned: 1
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== Running generated machine code (simple mode) ===
+GEN_START:1764574582646237
+GEN_END:1764574582647123
+RUN_START:1764574582647170
+8
+RUN_END:1764574582647188
+>>> generated program returned: 1
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== Running generated machine code (simple mode) ===
+GEN_START:1764575198916525
+GEN_END:1764575198916965
+RUN_START:1764575198917017
+8
+RUN_END:1764575198917036
+>>> generated program returned: 1
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== Running generated machine code (simple mode) ===
+GEN_START:1764575354671398
+GEN_END:1764575354671585
+RUN_START:1764575354671610
+8
+RUN_END:1764575354671621
+>>> generated program returned: 1
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: b = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== Running generated machine code (simple mode) ===
+GEN_START:1764575785362443
+GEN_END:1764575785362786
+RUN_START:1764575785362827
+8
+RUN_END:1764575785362845
+>>> generated program returned: 1
+=== IR (instr count = 8) ===
+0: PUSH_CONST 3
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR b
+6: LOAD_VAR b
+7: PRINT
+Copied add stencil, buffer size = 7 bytes

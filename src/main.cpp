@@ -51,9 +51,20 @@ void print_ast(const Program& p) {
 
 int main(int argc, char** argv) {
     string source;
-    if (argc >= 2) {
-        source = read_file_to_string(argv[1]);
+    // CLI: first non-flag argument is source file. Recognized flag: --mode=jit|interp|both
+    string mode = "both";
+    string src_arg;
+    for (int i = 1; i < argc; ++i) {
+        string a = argv[i];
+        if (a.rfind("--mode=", 0) == 0) {
+            mode = a.substr(7);
+        } else if (a[0] == '-') {
+            // ignore unknown flags for now
+        } else if (src_arg.empty()) {
+            src_arg = a;
+        }
     }
+    if (!src_arg.empty()) source = read_file_to_string(src_arg);
     if (source.empty()) {
         source = R"(
             let x = 42;
@@ -95,13 +106,14 @@ int main(int argc, char** argv) {
     StencilLibrary lib(stencil_path.string() );		// For dynamic path detection.
     lib.load_all();
 
-    cout << "=== Running generated machine code (simple mode) ===\n";
+    if (mode == "jit" || mode == "both") {
+        cout << "=== Running generated machine code (simple mode) ===\n";
 
-    // *** Loading print-stencil.
-    const Stencil& pst = lib.get("print_int");  
+        // *** Loading print-stencil.
+        const Stencil& pst = lib.get("print_int");  
         
-    // allocating exec memory for print stencil.
-    size_t sz = pst.bytes.size();
+        // allocating exec memory for print stencil.
+        size_t sz = pst.bytes.size();
     size_t pagesz = sysconf(_SC_PAGESIZE);
     size_t allocsz = ( (sz + pagesz - 1) / pagesz) * pagesz;
 
@@ -155,15 +167,17 @@ int main(int argc, char** argv) {
         memcpy(memb + movabs_off + 2, &target_addr, sizeof(target_addr));
     }
 
-    g_print_int_fn = print_fn_mem;
-    std::cerr << "[DEBUG] g_print_int_fn = " << g_print_int_fn << "\n";
+        g_print_int_fn = print_fn_mem;
+        std::cerr << "[DEBUG] g_print_int_fn = " << g_print_int_fn << "\n";
 
+        if (mode == "jit" || mode == "both") {
+            generate_and_run_with_stencils(ir, lib);
+        }
 
-    generate_and_run_with_stencils(ir, lib);
-
-    // cleanup print stencil
-    munmap(print_fn_mem, allocsz);
-    g_print_int_fn = nullptr;
+        // cleanup print stencil
+        munmap(print_fn_mem, allocsz);
+        g_print_int_fn = nullptr;
+    } // end jit block
 
     cout << "=== IR (instr count = " << ir.size() << ") ===\n";
     for (size_t i = 0; i < ir.size(); ++i) {
@@ -178,8 +192,10 @@ int main(int argc, char** argv) {
         }
     }
 
-    cout << "=== Running IR interpreter ===\n";
-    run_ir(ir);
+    if (mode == "interp" || mode == "both") {
+        cout << "=== Running IR interpreter ===\n";
+        run_ir(ir);
+    }
     // TEMP: test stencil loading
     try {
 	    // Commenting +3 upon BB's suggestion.

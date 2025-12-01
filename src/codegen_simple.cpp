@@ -10,6 +10,7 @@
 #include <vector>
 #include <stdexcept>
 #include <fstream>
+#include <chrono>
 
 using namespace std;
 
@@ -81,6 +82,14 @@ static void append_stencil_bytes(CodeBuffer &cb, const Stencil &s) {
 // The main function: generate code for IR program and execute it
 void generate_and_run_with_stencils(const IRProgram &ir, StencilLibrary &lib) {
     CodeBuffer cb;
+
+    // If benchmarking phases are enabled, print GEN_START timestamp (microseconds)
+    const char* bench = getenv("BENCH_PHASES");
+    if (bench && strcmp(bench, "1") == 0) {
+        using namespace std::chrono;
+        auto now = duration_cast<microseconds>(high_resolution_clock::now().time_since_epoch()).count();
+        std::cout << "GEN_START:" << now << std::endl;
+    }
 
     // simple variable layout: assign offsets (8,16,24...) for variables seen in STORE_VAR
     unordered_map<string, int> var_slot; // maps var -> offset (positive)
@@ -227,12 +236,34 @@ void generate_and_run_with_stencils(const IRProgram &ir, StencilLibrary &lib) {
     // copy code into mem
     memcpy(mem, cb.data(), codesz);
 
+    // Optional benchmarking markers: if BENCH_PHASES env var is set,
+    // print timestamps so harness can separate generation vs execution.
+    if (bench && strcmp(bench, "1") == 0) {
+        using namespace std::chrono;
+        auto now = duration_cast<microseconds>(high_resolution_clock::now().time_since_epoch()).count();
+        std::cout << "GEN_END:" << now << std::endl;
+    }
+
     // flush instruction cache if required (generally not necessary on x86)
     typedef int64_t (*fn_t)();
     fn_t fn = (fn_t)mem;
 
     // call generated function and capture return value (RAX)
+    // print run timestamps if BENCH_PHASES set
+    if (bench && strcmp(bench, "1") == 0) {
+        using namespace std::chrono;
+        auto now = duration_cast<microseconds>(high_resolution_clock::now().time_since_epoch()).count();
+        std::cout << "RUN_START:" << now << std::endl;
+    }
+
     int64_t ret = fn();
+
+    if (bench && strcmp(bench, "1") == 0) {
+        using namespace std::chrono;
+        auto now = duration_cast<microseconds>(high_resolution_clock::now().time_since_epoch()).count();
+        std::cout << "RUN_END:" << now << std::endl;
+    }
+
     std::cout << ">>> generated program returned: " << ret << std::endl;
 
     // cleanup

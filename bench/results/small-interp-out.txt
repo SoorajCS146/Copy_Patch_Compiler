@@ -1,0 +1,8120 @@
+Parsed AST:
+  LetStmt: x = <expr>
+  LetStmt: y = <expr>
+  PrintStmt(<expr>)
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== Running generated machine code (simple mode) ===
+47
+>>> generated program returned: 1
+=== IR (instr count = 8) ===
+0: PUSH_CONST 42
+1: STORE_VAR x
+2: LOAD_VAR x
+3: PUSH_CONST 5
+4: ADD
+5: STORE_VAR y
+6: LOAD_VAR y
+7: PRINT
+=== Running IR interpreter ===
+47
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== IR (instr count = 802) ===
+0: PUSH_CONST 0
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 1
+4: ADD
+5: STORE_VAR a
+6: LOAD_VAR a
+7: PUSH_CONST 1
+8: ADD
+9: STORE_VAR a
+10: LOAD_VAR a
+11: PUSH_CONST 1
+12: ADD
+13: STORE_VAR a
+14: LOAD_VAR a
+15: PUSH_CONST 1
+16: ADD
+17: STORE_VAR a
+18: LOAD_VAR a
+19: PUSH_CONST 1
+20: ADD
+21: STORE_VAR a
+22: LOAD_VAR a
+23: PUSH_CONST 1
+24: ADD
+25: STORE_VAR a
+26: LOAD_VAR a
+27: PUSH_CONST 1
+28: ADD
+29: STORE_VAR a
+30: LOAD_VAR a
+31: PUSH_CONST 1
+32: ADD
+33: STORE_VAR a
+34: LOAD_VAR a
+35: PUSH_CONST 1
+36: ADD
+37: STORE_VAR a
+38: LOAD_VAR a
+39: PUSH_CONST 1
+40: ADD
+41: STORE_VAR a
+42: LOAD_VAR a
+43: PUSH_CONST 1
+44: ADD
+45: STORE_VAR a
+46: LOAD_VAR a
+47: PUSH_CONST 1
+48: ADD
+49: STORE_VAR a
+50: LOAD_VAR a
+51: PUSH_CONST 1
+52: ADD
+53: STORE_VAR a
+54: LOAD_VAR a
+55: PUSH_CONST 1
+56: ADD
+57: STORE_VAR a
+58: LOAD_VAR a
+59: PUSH_CONST 1
+60: ADD
+61: STORE_VAR a
+62: LOAD_VAR a
+63: PUSH_CONST 1
+64: ADD
+65: STORE_VAR a
+66: LOAD_VAR a
+67: PUSH_CONST 1
+68: ADD
+69: STORE_VAR a
+70: LOAD_VAR a
+71: PUSH_CONST 1
+72: ADD
+73: STORE_VAR a
+74: LOAD_VAR a
+75: PUSH_CONST 1
+76: ADD
+77: STORE_VAR a
+78: LOAD_VAR a
+79: PUSH_CONST 1
+80: ADD
+81: STORE_VAR a
+82: LOAD_VAR a
+83: PUSH_CONST 1
+84: ADD
+85: STORE_VAR a
+86: LOAD_VAR a
+87: PUSH_CONST 1
+88: ADD
+89: STORE_VAR a
+90: LOAD_VAR a
+91: PUSH_CONST 1
+92: ADD
+93: STORE_VAR a
+94: LOAD_VAR a
+95: PUSH_CONST 1
+96: ADD
+97: STORE_VAR a
+98: LOAD_VAR a
+99: PUSH_CONST 1
+100: ADD
+101: STORE_VAR a
+102: LOAD_VAR a
+103: PUSH_CONST 1
+104: ADD
+105: STORE_VAR a
+106: LOAD_VAR a
+107: PUSH_CONST 1
+108: ADD
+109: STORE_VAR a
+110: LOAD_VAR a
+111: PUSH_CONST 1
+112: ADD
+113: STORE_VAR a
+114: LOAD_VAR a
+115: PUSH_CONST 1
+116: ADD
+117: STORE_VAR a
+118: LOAD_VAR a
+119: PUSH_CONST 1
+120: ADD
+121: STORE_VAR a
+122: LOAD_VAR a
+123: PUSH_CONST 1
+124: ADD
+125: STORE_VAR a
+126: LOAD_VAR a
+127: PUSH_CONST 1
+128: ADD
+129: STORE_VAR a
+130: LOAD_VAR a
+131: PUSH_CONST 1
+132: ADD
+133: STORE_VAR a
+134: LOAD_VAR a
+135: PUSH_CONST 1
+136: ADD
+137: STORE_VAR a
+138: LOAD_VAR a
+139: PUSH_CONST 1
+140: ADD
+141: STORE_VAR a
+142: LOAD_VAR a
+143: PUSH_CONST 1
+144: ADD
+145: STORE_VAR a
+146: LOAD_VAR a
+147: PUSH_CONST 1
+148: ADD
+149: STORE_VAR a
+150: LOAD_VAR a
+151: PUSH_CONST 1
+152: ADD
+153: STORE_VAR a
+154: LOAD_VAR a
+155: PUSH_CONST 1
+156: ADD
+157: STORE_VAR a
+158: LOAD_VAR a
+159: PUSH_CONST 1
+160: ADD
+161: STORE_VAR a
+162: LOAD_VAR a
+163: PUSH_CONST 1
+164: ADD
+165: STORE_VAR a
+166: LOAD_VAR a
+167: PUSH_CONST 1
+168: ADD
+169: STORE_VAR a
+170: LOAD_VAR a
+171: PUSH_CONST 1
+172: ADD
+173: STORE_VAR a
+174: LOAD_VAR a
+175: PUSH_CONST 1
+176: ADD
+177: STORE_VAR a
+178: LOAD_VAR a
+179: PUSH_CONST 1
+180: ADD
+181: STORE_VAR a
+182: LOAD_VAR a
+183: PUSH_CONST 1
+184: ADD
+185: STORE_VAR a
+186: LOAD_VAR a
+187: PUSH_CONST 1
+188: ADD
+189: STORE_VAR a
+190: LOAD_VAR a
+191: PUSH_CONST 1
+192: ADD
+193: STORE_VAR a
+194: LOAD_VAR a
+195: PUSH_CONST 1
+196: ADD
+197: STORE_VAR a
+198: LOAD_VAR a
+199: PUSH_CONST 1
+200: ADD
+201: STORE_VAR a
+202: LOAD_VAR a
+203: PUSH_CONST 1
+204: ADD
+205: STORE_VAR a
+206: LOAD_VAR a
+207: PUSH_CONST 1
+208: ADD
+209: STORE_VAR a
+210: LOAD_VAR a
+211: PUSH_CONST 1
+212: ADD
+213: STORE_VAR a
+214: LOAD_VAR a
+215: PUSH_CONST 1
+216: ADD
+217: STORE_VAR a
+218: LOAD_VAR a
+219: PUSH_CONST 1
+220: ADD
+221: STORE_VAR a
+222: LOAD_VAR a
+223: PUSH_CONST 1
+224: ADD
+225: STORE_VAR a
+226: LOAD_VAR a
+227: PUSH_CONST 1
+228: ADD
+229: STORE_VAR a
+230: LOAD_VAR a
+231: PUSH_CONST 1
+232: ADD
+233: STORE_VAR a
+234: LOAD_VAR a
+235: PUSH_CONST 1
+236: ADD
+237: STORE_VAR a
+238: LOAD_VAR a
+239: PUSH_CONST 1
+240: ADD
+241: STORE_VAR a
+242: LOAD_VAR a
+243: PUSH_CONST 1
+244: ADD
+245: STORE_VAR a
+246: LOAD_VAR a
+247: PUSH_CONST 1
+248: ADD
+249: STORE_VAR a
+250: LOAD_VAR a
+251: PUSH_CONST 1
+252: ADD
+253: STORE_VAR a
+254: LOAD_VAR a
+255: PUSH_CONST 1
+256: ADD
+257: STORE_VAR a
+258: LOAD_VAR a
+259: PUSH_CONST 1
+260: ADD
+261: STORE_VAR a
+262: LOAD_VAR a
+263: PUSH_CONST 1
+264: ADD
+265: STORE_VAR a
+266: LOAD_VAR a
+267: PUSH_CONST 1
+268: ADD
+269: STORE_VAR a
+270: LOAD_VAR a
+271: PUSH_CONST 1
+272: ADD
+273: STORE_VAR a
+274: LOAD_VAR a
+275: PUSH_CONST 1
+276: ADD
+277: STORE_VAR a
+278: LOAD_VAR a
+279: PUSH_CONST 1
+280: ADD
+281: STORE_VAR a
+282: LOAD_VAR a
+283: PUSH_CONST 1
+284: ADD
+285: STORE_VAR a
+286: LOAD_VAR a
+287: PUSH_CONST 1
+288: ADD
+289: STORE_VAR a
+290: LOAD_VAR a
+291: PUSH_CONST 1
+292: ADD
+293: STORE_VAR a
+294: LOAD_VAR a
+295: PUSH_CONST 1
+296: ADD
+297: STORE_VAR a
+298: LOAD_VAR a
+299: PUSH_CONST 1
+300: ADD
+301: STORE_VAR a
+302: LOAD_VAR a
+303: PUSH_CONST 1
+304: ADD
+305: STORE_VAR a
+306: LOAD_VAR a
+307: PUSH_CONST 1
+308: ADD
+309: STORE_VAR a
+310: LOAD_VAR a
+311: PUSH_CONST 1
+312: ADD
+313: STORE_VAR a
+314: LOAD_VAR a
+315: PUSH_CONST 1
+316: ADD
+317: STORE_VAR a
+318: LOAD_VAR a
+319: PUSH_CONST 1
+320: ADD
+321: STORE_VAR a
+322: LOAD_VAR a
+323: PUSH_CONST 1
+324: ADD
+325: STORE_VAR a
+326: LOAD_VAR a
+327: PUSH_CONST 1
+328: ADD
+329: STORE_VAR a
+330: LOAD_VAR a
+331: PUSH_CONST 1
+332: ADD
+333: STORE_VAR a
+334: LOAD_VAR a
+335: PUSH_CONST 1
+336: ADD
+337: STORE_VAR a
+338: LOAD_VAR a
+339: PUSH_CONST 1
+340: ADD
+341: STORE_VAR a
+342: LOAD_VAR a
+343: PUSH_CONST 1
+344: ADD
+345: STORE_VAR a
+346: LOAD_VAR a
+347: PUSH_CONST 1
+348: ADD
+349: STORE_VAR a
+350: LOAD_VAR a
+351: PUSH_CONST 1
+352: ADD
+353: STORE_VAR a
+354: LOAD_VAR a
+355: PUSH_CONST 1
+356: ADD
+357: STORE_VAR a
+358: LOAD_VAR a
+359: PUSH_CONST 1
+360: ADD
+361: STORE_VAR a
+362: LOAD_VAR a
+363: PUSH_CONST 1
+364: ADD
+365: STORE_VAR a
+366: LOAD_VAR a
+367: PUSH_CONST 1
+368: ADD
+369: STORE_VAR a
+370: LOAD_VAR a
+371: PUSH_CONST 1
+372: ADD
+373: STORE_VAR a
+374: LOAD_VAR a
+375: PUSH_CONST 1
+376: ADD
+377: STORE_VAR a
+378: LOAD_VAR a
+379: PUSH_CONST 1
+380: ADD
+381: STORE_VAR a
+382: LOAD_VAR a
+383: PUSH_CONST 1
+384: ADD
+385: STORE_VAR a
+386: LOAD_VAR a
+387: PUSH_CONST 1
+388: ADD
+389: STORE_VAR a
+390: LOAD_VAR a
+391: PUSH_CONST 1
+392: ADD
+393: STORE_VAR a
+394: LOAD_VAR a
+395: PUSH_CONST 1
+396: ADD
+397: STORE_VAR a
+398: LOAD_VAR a
+399: PUSH_CONST 1
+400: ADD
+401: STORE_VAR a
+402: LOAD_VAR a
+403: PUSH_CONST 1
+404: ADD
+405: STORE_VAR a
+406: LOAD_VAR a
+407: PUSH_CONST 1
+408: ADD
+409: STORE_VAR a
+410: LOAD_VAR a
+411: PUSH_CONST 1
+412: ADD
+413: STORE_VAR a
+414: LOAD_VAR a
+415: PUSH_CONST 1
+416: ADD
+417: STORE_VAR a
+418: LOAD_VAR a
+419: PUSH_CONST 1
+420: ADD
+421: STORE_VAR a
+422: LOAD_VAR a
+423: PUSH_CONST 1
+424: ADD
+425: STORE_VAR a
+426: LOAD_VAR a
+427: PUSH_CONST 1
+428: ADD
+429: STORE_VAR a
+430: LOAD_VAR a
+431: PUSH_CONST 1
+432: ADD
+433: STORE_VAR a
+434: LOAD_VAR a
+435: PUSH_CONST 1
+436: ADD
+437: STORE_VAR a
+438: LOAD_VAR a
+439: PUSH_CONST 1
+440: ADD
+441: STORE_VAR a
+442: LOAD_VAR a
+443: PUSH_CONST 1
+444: ADD
+445: STORE_VAR a
+446: LOAD_VAR a
+447: PUSH_CONST 1
+448: ADD
+449: STORE_VAR a
+450: LOAD_VAR a
+451: PUSH_CONST 1
+452: ADD
+453: STORE_VAR a
+454: LOAD_VAR a
+455: PUSH_CONST 1
+456: ADD
+457: STORE_VAR a
+458: LOAD_VAR a
+459: PUSH_CONST 1
+460: ADD
+461: STORE_VAR a
+462: LOAD_VAR a
+463: PUSH_CONST 1
+464: ADD
+465: STORE_VAR a
+466: LOAD_VAR a
+467: PUSH_CONST 1
+468: ADD
+469: STORE_VAR a
+470: LOAD_VAR a
+471: PUSH_CONST 1
+472: ADD
+473: STORE_VAR a
+474: LOAD_VAR a
+475: PUSH_CONST 1
+476: ADD
+477: STORE_VAR a
+478: LOAD_VAR a
+479: PUSH_CONST 1
+480: ADD
+481: STORE_VAR a
+482: LOAD_VAR a
+483: PUSH_CONST 1
+484: ADD
+485: STORE_VAR a
+486: LOAD_VAR a
+487: PUSH_CONST 1
+488: ADD
+489: STORE_VAR a
+490: LOAD_VAR a
+491: PUSH_CONST 1
+492: ADD
+493: STORE_VAR a
+494: LOAD_VAR a
+495: PUSH_CONST 1
+496: ADD
+497: STORE_VAR a
+498: LOAD_VAR a
+499: PUSH_CONST 1
+500: ADD
+501: STORE_VAR a
+502: LOAD_VAR a
+503: PUSH_CONST 1
+504: ADD
+505: STORE_VAR a
+506: LOAD_VAR a
+507: PUSH_CONST 1
+508: ADD
+509: STORE_VAR a
+510: LOAD_VAR a
+511: PUSH_CONST 1
+512: ADD
+513: STORE_VAR a
+514: LOAD_VAR a
+515: PUSH_CONST 1
+516: ADD
+517: STORE_VAR a
+518: LOAD_VAR a
+519: PUSH_CONST 1
+520: ADD
+521: STORE_VAR a
+522: LOAD_VAR a
+523: PUSH_CONST 1
+524: ADD
+525: STORE_VAR a
+526: LOAD_VAR a
+527: PUSH_CONST 1
+528: ADD
+529: STORE_VAR a
+530: LOAD_VAR a
+531: PUSH_CONST 1
+532: ADD
+533: STORE_VAR a
+534: LOAD_VAR a
+535: PUSH_CONST 1
+536: ADD
+537: STORE_VAR a
+538: LOAD_VAR a
+539: PUSH_CONST 1
+540: ADD
+541: STORE_VAR a
+542: LOAD_VAR a
+543: PUSH_CONST 1
+544: ADD
+545: STORE_VAR a
+546: LOAD_VAR a
+547: PUSH_CONST 1
+548: ADD
+549: STORE_VAR a
+550: LOAD_VAR a
+551: PUSH_CONST 1
+552: ADD
+553: STORE_VAR a
+554: LOAD_VAR a
+555: PUSH_CONST 1
+556: ADD
+557: STORE_VAR a
+558: LOAD_VAR a
+559: PUSH_CONST 1
+560: ADD
+561: STORE_VAR a
+562: LOAD_VAR a
+563: PUSH_CONST 1
+564: ADD
+565: STORE_VAR a
+566: LOAD_VAR a
+567: PUSH_CONST 1
+568: ADD
+569: STORE_VAR a
+570: LOAD_VAR a
+571: PUSH_CONST 1
+572: ADD
+573: STORE_VAR a
+574: LOAD_VAR a
+575: PUSH_CONST 1
+576: ADD
+577: STORE_VAR a
+578: LOAD_VAR a
+579: PUSH_CONST 1
+580: ADD
+581: STORE_VAR a
+582: LOAD_VAR a
+583: PUSH_CONST 1
+584: ADD
+585: STORE_VAR a
+586: LOAD_VAR a
+587: PUSH_CONST 1
+588: ADD
+589: STORE_VAR a
+590: LOAD_VAR a
+591: PUSH_CONST 1
+592: ADD
+593: STORE_VAR a
+594: LOAD_VAR a
+595: PUSH_CONST 1
+596: ADD
+597: STORE_VAR a
+598: LOAD_VAR a
+599: PUSH_CONST 1
+600: ADD
+601: STORE_VAR a
+602: LOAD_VAR a
+603: PUSH_CONST 1
+604: ADD
+605: STORE_VAR a
+606: LOAD_VAR a
+607: PUSH_CONST 1
+608: ADD
+609: STORE_VAR a
+610: LOAD_VAR a
+611: PUSH_CONST 1
+612: ADD
+613: STORE_VAR a
+614: LOAD_VAR a
+615: PUSH_CONST 1
+616: ADD
+617: STORE_VAR a
+618: LOAD_VAR a
+619: PUSH_CONST 1
+620: ADD
+621: STORE_VAR a
+622: LOAD_VAR a
+623: PUSH_CONST 1
+624: ADD
+625: STORE_VAR a
+626: LOAD_VAR a
+627: PUSH_CONST 1
+628: ADD
+629: STORE_VAR a
+630: LOAD_VAR a
+631: PUSH_CONST 1
+632: ADD
+633: STORE_VAR a
+634: LOAD_VAR a
+635: PUSH_CONST 1
+636: ADD
+637: STORE_VAR a
+638: LOAD_VAR a
+639: PUSH_CONST 1
+640: ADD
+641: STORE_VAR a
+642: LOAD_VAR a
+643: PUSH_CONST 1
+644: ADD
+645: STORE_VAR a
+646: LOAD_VAR a
+647: PUSH_CONST 1
+648: ADD
+649: STORE_VAR a
+650: LOAD_VAR a
+651: PUSH_CONST 1
+652: ADD
+653: STORE_VAR a
+654: LOAD_VAR a
+655: PUSH_CONST 1
+656: ADD
+657: STORE_VAR a
+658: LOAD_VAR a
+659: PUSH_CONST 1
+660: ADD
+661: STORE_VAR a
+662: LOAD_VAR a
+663: PUSH_CONST 1
+664: ADD
+665: STORE_VAR a
+666: LOAD_VAR a
+667: PUSH_CONST 1
+668: ADD
+669: STORE_VAR a
+670: LOAD_VAR a
+671: PUSH_CONST 1
+672: ADD
+673: STORE_VAR a
+674: LOAD_VAR a
+675: PUSH_CONST 1
+676: ADD
+677: STORE_VAR a
+678: LOAD_VAR a
+679: PUSH_CONST 1
+680: ADD
+681: STORE_VAR a
+682: LOAD_VAR a
+683: PUSH_CONST 1
+684: ADD
+685: STORE_VAR a
+686: LOAD_VAR a
+687: PUSH_CONST 1
+688: ADD
+689: STORE_VAR a
+690: LOAD_VAR a
+691: PUSH_CONST 1
+692: ADD
+693: STORE_VAR a
+694: LOAD_VAR a
+695: PUSH_CONST 1
+696: ADD
+697: STORE_VAR a
+698: LOAD_VAR a
+699: PUSH_CONST 1
+700: ADD
+701: STORE_VAR a
+702: LOAD_VAR a
+703: PUSH_CONST 1
+704: ADD
+705: STORE_VAR a
+706: LOAD_VAR a
+707: PUSH_CONST 1
+708: ADD
+709: STORE_VAR a
+710: LOAD_VAR a
+711: PUSH_CONST 1
+712: ADD
+713: STORE_VAR a
+714: LOAD_VAR a
+715: PUSH_CONST 1
+716: ADD
+717: STORE_VAR a
+718: LOAD_VAR a
+719: PUSH_CONST 1
+720: ADD
+721: STORE_VAR a
+722: LOAD_VAR a
+723: PUSH_CONST 1
+724: ADD
+725: STORE_VAR a
+726: LOAD_VAR a
+727: PUSH_CONST 1
+728: ADD
+729: STORE_VAR a
+730: LOAD_VAR a
+731: PUSH_CONST 1
+732: ADD
+733: STORE_VAR a
+734: LOAD_VAR a
+735: PUSH_CONST 1
+736: ADD
+737: STORE_VAR a
+738: LOAD_VAR a
+739: PUSH_CONST 1
+740: ADD
+741: STORE_VAR a
+742: LOAD_VAR a
+743: PUSH_CONST 1
+744: ADD
+745: STORE_VAR a
+746: LOAD_VAR a
+747: PUSH_CONST 1
+748: ADD
+749: STORE_VAR a
+750: LOAD_VAR a
+751: PUSH_CONST 1
+752: ADD
+753: STORE_VAR a
+754: LOAD_VAR a
+755: PUSH_CONST 1
+756: ADD
+757: STORE_VAR a
+758: LOAD_VAR a
+759: PUSH_CONST 1
+760: ADD
+761: STORE_VAR a
+762: LOAD_VAR a
+763: PUSH_CONST 1
+764: ADD
+765: STORE_VAR a
+766: LOAD_VAR a
+767: PUSH_CONST 1
+768: ADD
+769: STORE_VAR a
+770: LOAD_VAR a
+771: PUSH_CONST 1
+772: ADD
+773: STORE_VAR a
+774: LOAD_VAR a
+775: PUSH_CONST 1
+776: ADD
+777: STORE_VAR a
+778: LOAD_VAR a
+779: PUSH_CONST 1
+780: ADD
+781: STORE_VAR a
+782: LOAD_VAR a
+783: PUSH_CONST 1
+784: ADD
+785: STORE_VAR a
+786: LOAD_VAR a
+787: PUSH_CONST 1
+788: ADD
+789: STORE_VAR a
+790: LOAD_VAR a
+791: PUSH_CONST 1
+792: ADD
+793: STORE_VAR a
+794: LOAD_VAR a
+795: PUSH_CONST 1
+796: ADD
+797: STORE_VAR a
+798: LOAD_VAR a
+799: PUSH_CONST 1
+800: ADD
+801: STORE_VAR a
+=== Running IR interpreter ===
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== IR (instr count = 802) ===
+0: PUSH_CONST 0
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 1
+4: ADD
+5: STORE_VAR a
+6: LOAD_VAR a
+7: PUSH_CONST 1
+8: ADD
+9: STORE_VAR a
+10: LOAD_VAR a
+11: PUSH_CONST 1
+12: ADD
+13: STORE_VAR a
+14: LOAD_VAR a
+15: PUSH_CONST 1
+16: ADD
+17: STORE_VAR a
+18: LOAD_VAR a
+19: PUSH_CONST 1
+20: ADD
+21: STORE_VAR a
+22: LOAD_VAR a
+23: PUSH_CONST 1
+24: ADD
+25: STORE_VAR a
+26: LOAD_VAR a
+27: PUSH_CONST 1
+28: ADD
+29: STORE_VAR a
+30: LOAD_VAR a
+31: PUSH_CONST 1
+32: ADD
+33: STORE_VAR a
+34: LOAD_VAR a
+35: PUSH_CONST 1
+36: ADD
+37: STORE_VAR a
+38: LOAD_VAR a
+39: PUSH_CONST 1
+40: ADD
+41: STORE_VAR a
+42: LOAD_VAR a
+43: PUSH_CONST 1
+44: ADD
+45: STORE_VAR a
+46: LOAD_VAR a
+47: PUSH_CONST 1
+48: ADD
+49: STORE_VAR a
+50: LOAD_VAR a
+51: PUSH_CONST 1
+52: ADD
+53: STORE_VAR a
+54: LOAD_VAR a
+55: PUSH_CONST 1
+56: ADD
+57: STORE_VAR a
+58: LOAD_VAR a
+59: PUSH_CONST 1
+60: ADD
+61: STORE_VAR a
+62: LOAD_VAR a
+63: PUSH_CONST 1
+64: ADD
+65: STORE_VAR a
+66: LOAD_VAR a
+67: PUSH_CONST 1
+68: ADD
+69: STORE_VAR a
+70: LOAD_VAR a
+71: PUSH_CONST 1
+72: ADD
+73: STORE_VAR a
+74: LOAD_VAR a
+75: PUSH_CONST 1
+76: ADD
+77: STORE_VAR a
+78: LOAD_VAR a
+79: PUSH_CONST 1
+80: ADD
+81: STORE_VAR a
+82: LOAD_VAR a
+83: PUSH_CONST 1
+84: ADD
+85: STORE_VAR a
+86: LOAD_VAR a
+87: PUSH_CONST 1
+88: ADD
+89: STORE_VAR a
+90: LOAD_VAR a
+91: PUSH_CONST 1
+92: ADD
+93: STORE_VAR a
+94: LOAD_VAR a
+95: PUSH_CONST 1
+96: ADD
+97: STORE_VAR a
+98: LOAD_VAR a
+99: PUSH_CONST 1
+100: ADD
+101: STORE_VAR a
+102: LOAD_VAR a
+103: PUSH_CONST 1
+104: ADD
+105: STORE_VAR a
+106: LOAD_VAR a
+107: PUSH_CONST 1
+108: ADD
+109: STORE_VAR a
+110: LOAD_VAR a
+111: PUSH_CONST 1
+112: ADD
+113: STORE_VAR a
+114: LOAD_VAR a
+115: PUSH_CONST 1
+116: ADD
+117: STORE_VAR a
+118: LOAD_VAR a
+119: PUSH_CONST 1
+120: ADD
+121: STORE_VAR a
+122: LOAD_VAR a
+123: PUSH_CONST 1
+124: ADD
+125: STORE_VAR a
+126: LOAD_VAR a
+127: PUSH_CONST 1
+128: ADD
+129: STORE_VAR a
+130: LOAD_VAR a
+131: PUSH_CONST 1
+132: ADD
+133: STORE_VAR a
+134: LOAD_VAR a
+135: PUSH_CONST 1
+136: ADD
+137: STORE_VAR a
+138: LOAD_VAR a
+139: PUSH_CONST 1
+140: ADD
+141: STORE_VAR a
+142: LOAD_VAR a
+143: PUSH_CONST 1
+144: ADD
+145: STORE_VAR a
+146: LOAD_VAR a
+147: PUSH_CONST 1
+148: ADD
+149: STORE_VAR a
+150: LOAD_VAR a
+151: PUSH_CONST 1
+152: ADD
+153: STORE_VAR a
+154: LOAD_VAR a
+155: PUSH_CONST 1
+156: ADD
+157: STORE_VAR a
+158: LOAD_VAR a
+159: PUSH_CONST 1
+160: ADD
+161: STORE_VAR a
+162: LOAD_VAR a
+163: PUSH_CONST 1
+164: ADD
+165: STORE_VAR a
+166: LOAD_VAR a
+167: PUSH_CONST 1
+168: ADD
+169: STORE_VAR a
+170: LOAD_VAR a
+171: PUSH_CONST 1
+172: ADD
+173: STORE_VAR a
+174: LOAD_VAR a
+175: PUSH_CONST 1
+176: ADD
+177: STORE_VAR a
+178: LOAD_VAR a
+179: PUSH_CONST 1
+180: ADD
+181: STORE_VAR a
+182: LOAD_VAR a
+183: PUSH_CONST 1
+184: ADD
+185: STORE_VAR a
+186: LOAD_VAR a
+187: PUSH_CONST 1
+188: ADD
+189: STORE_VAR a
+190: LOAD_VAR a
+191: PUSH_CONST 1
+192: ADD
+193: STORE_VAR a
+194: LOAD_VAR a
+195: PUSH_CONST 1
+196: ADD
+197: STORE_VAR a
+198: LOAD_VAR a
+199: PUSH_CONST 1
+200: ADD
+201: STORE_VAR a
+202: LOAD_VAR a
+203: PUSH_CONST 1
+204: ADD
+205: STORE_VAR a
+206: LOAD_VAR a
+207: PUSH_CONST 1
+208: ADD
+209: STORE_VAR a
+210: LOAD_VAR a
+211: PUSH_CONST 1
+212: ADD
+213: STORE_VAR a
+214: LOAD_VAR a
+215: PUSH_CONST 1
+216: ADD
+217: STORE_VAR a
+218: LOAD_VAR a
+219: PUSH_CONST 1
+220: ADD
+221: STORE_VAR a
+222: LOAD_VAR a
+223: PUSH_CONST 1
+224: ADD
+225: STORE_VAR a
+226: LOAD_VAR a
+227: PUSH_CONST 1
+228: ADD
+229: STORE_VAR a
+230: LOAD_VAR a
+231: PUSH_CONST 1
+232: ADD
+233: STORE_VAR a
+234: LOAD_VAR a
+235: PUSH_CONST 1
+236: ADD
+237: STORE_VAR a
+238: LOAD_VAR a
+239: PUSH_CONST 1
+240: ADD
+241: STORE_VAR a
+242: LOAD_VAR a
+243: PUSH_CONST 1
+244: ADD
+245: STORE_VAR a
+246: LOAD_VAR a
+247: PUSH_CONST 1
+248: ADD
+249: STORE_VAR a
+250: LOAD_VAR a
+251: PUSH_CONST 1
+252: ADD
+253: STORE_VAR a
+254: LOAD_VAR a
+255: PUSH_CONST 1
+256: ADD
+257: STORE_VAR a
+258: LOAD_VAR a
+259: PUSH_CONST 1
+260: ADD
+261: STORE_VAR a
+262: LOAD_VAR a
+263: PUSH_CONST 1
+264: ADD
+265: STORE_VAR a
+266: LOAD_VAR a
+267: PUSH_CONST 1
+268: ADD
+269: STORE_VAR a
+270: LOAD_VAR a
+271: PUSH_CONST 1
+272: ADD
+273: STORE_VAR a
+274: LOAD_VAR a
+275: PUSH_CONST 1
+276: ADD
+277: STORE_VAR a
+278: LOAD_VAR a
+279: PUSH_CONST 1
+280: ADD
+281: STORE_VAR a
+282: LOAD_VAR a
+283: PUSH_CONST 1
+284: ADD
+285: STORE_VAR a
+286: LOAD_VAR a
+287: PUSH_CONST 1
+288: ADD
+289: STORE_VAR a
+290: LOAD_VAR a
+291: PUSH_CONST 1
+292: ADD
+293: STORE_VAR a
+294: LOAD_VAR a
+295: PUSH_CONST 1
+296: ADD
+297: STORE_VAR a
+298: LOAD_VAR a
+299: PUSH_CONST 1
+300: ADD
+301: STORE_VAR a
+302: LOAD_VAR a
+303: PUSH_CONST 1
+304: ADD
+305: STORE_VAR a
+306: LOAD_VAR a
+307: PUSH_CONST 1
+308: ADD
+309: STORE_VAR a
+310: LOAD_VAR a
+311: PUSH_CONST 1
+312: ADD
+313: STORE_VAR a
+314: LOAD_VAR a
+315: PUSH_CONST 1
+316: ADD
+317: STORE_VAR a
+318: LOAD_VAR a
+319: PUSH_CONST 1
+320: ADD
+321: STORE_VAR a
+322: LOAD_VAR a
+323: PUSH_CONST 1
+324: ADD
+325: STORE_VAR a
+326: LOAD_VAR a
+327: PUSH_CONST 1
+328: ADD
+329: STORE_VAR a
+330: LOAD_VAR a
+331: PUSH_CONST 1
+332: ADD
+333: STORE_VAR a
+334: LOAD_VAR a
+335: PUSH_CONST 1
+336: ADD
+337: STORE_VAR a
+338: LOAD_VAR a
+339: PUSH_CONST 1
+340: ADD
+341: STORE_VAR a
+342: LOAD_VAR a
+343: PUSH_CONST 1
+344: ADD
+345: STORE_VAR a
+346: LOAD_VAR a
+347: PUSH_CONST 1
+348: ADD
+349: STORE_VAR a
+350: LOAD_VAR a
+351: PUSH_CONST 1
+352: ADD
+353: STORE_VAR a
+354: LOAD_VAR a
+355: PUSH_CONST 1
+356: ADD
+357: STORE_VAR a
+358: LOAD_VAR a
+359: PUSH_CONST 1
+360: ADD
+361: STORE_VAR a
+362: LOAD_VAR a
+363: PUSH_CONST 1
+364: ADD
+365: STORE_VAR a
+366: LOAD_VAR a
+367: PUSH_CONST 1
+368: ADD
+369: STORE_VAR a
+370: LOAD_VAR a
+371: PUSH_CONST 1
+372: ADD
+373: STORE_VAR a
+374: LOAD_VAR a
+375: PUSH_CONST 1
+376: ADD
+377: STORE_VAR a
+378: LOAD_VAR a
+379: PUSH_CONST 1
+380: ADD
+381: STORE_VAR a
+382: LOAD_VAR a
+383: PUSH_CONST 1
+384: ADD
+385: STORE_VAR a
+386: LOAD_VAR a
+387: PUSH_CONST 1
+388: ADD
+389: STORE_VAR a
+390: LOAD_VAR a
+391: PUSH_CONST 1
+392: ADD
+393: STORE_VAR a
+394: LOAD_VAR a
+395: PUSH_CONST 1
+396: ADD
+397: STORE_VAR a
+398: LOAD_VAR a
+399: PUSH_CONST 1
+400: ADD
+401: STORE_VAR a
+402: LOAD_VAR a
+403: PUSH_CONST 1
+404: ADD
+405: STORE_VAR a
+406: LOAD_VAR a
+407: PUSH_CONST 1
+408: ADD
+409: STORE_VAR a
+410: LOAD_VAR a
+411: PUSH_CONST 1
+412: ADD
+413: STORE_VAR a
+414: LOAD_VAR a
+415: PUSH_CONST 1
+416: ADD
+417: STORE_VAR a
+418: LOAD_VAR a
+419: PUSH_CONST 1
+420: ADD
+421: STORE_VAR a
+422: LOAD_VAR a
+423: PUSH_CONST 1
+424: ADD
+425: STORE_VAR a
+426: LOAD_VAR a
+427: PUSH_CONST 1
+428: ADD
+429: STORE_VAR a
+430: LOAD_VAR a
+431: PUSH_CONST 1
+432: ADD
+433: STORE_VAR a
+434: LOAD_VAR a
+435: PUSH_CONST 1
+436: ADD
+437: STORE_VAR a
+438: LOAD_VAR a
+439: PUSH_CONST 1
+440: ADD
+441: STORE_VAR a
+442: LOAD_VAR a
+443: PUSH_CONST 1
+444: ADD
+445: STORE_VAR a
+446: LOAD_VAR a
+447: PUSH_CONST 1
+448: ADD
+449: STORE_VAR a
+450: LOAD_VAR a
+451: PUSH_CONST 1
+452: ADD
+453: STORE_VAR a
+454: LOAD_VAR a
+455: PUSH_CONST 1
+456: ADD
+457: STORE_VAR a
+458: LOAD_VAR a
+459: PUSH_CONST 1
+460: ADD
+461: STORE_VAR a
+462: LOAD_VAR a
+463: PUSH_CONST 1
+464: ADD
+465: STORE_VAR a
+466: LOAD_VAR a
+467: PUSH_CONST 1
+468: ADD
+469: STORE_VAR a
+470: LOAD_VAR a
+471: PUSH_CONST 1
+472: ADD
+473: STORE_VAR a
+474: LOAD_VAR a
+475: PUSH_CONST 1
+476: ADD
+477: STORE_VAR a
+478: LOAD_VAR a
+479: PUSH_CONST 1
+480: ADD
+481: STORE_VAR a
+482: LOAD_VAR a
+483: PUSH_CONST 1
+484: ADD
+485: STORE_VAR a
+486: LOAD_VAR a
+487: PUSH_CONST 1
+488: ADD
+489: STORE_VAR a
+490: LOAD_VAR a
+491: PUSH_CONST 1
+492: ADD
+493: STORE_VAR a
+494: LOAD_VAR a
+495: PUSH_CONST 1
+496: ADD
+497: STORE_VAR a
+498: LOAD_VAR a
+499: PUSH_CONST 1
+500: ADD
+501: STORE_VAR a
+502: LOAD_VAR a
+503: PUSH_CONST 1
+504: ADD
+505: STORE_VAR a
+506: LOAD_VAR a
+507: PUSH_CONST 1
+508: ADD
+509: STORE_VAR a
+510: LOAD_VAR a
+511: PUSH_CONST 1
+512: ADD
+513: STORE_VAR a
+514: LOAD_VAR a
+515: PUSH_CONST 1
+516: ADD
+517: STORE_VAR a
+518: LOAD_VAR a
+519: PUSH_CONST 1
+520: ADD
+521: STORE_VAR a
+522: LOAD_VAR a
+523: PUSH_CONST 1
+524: ADD
+525: STORE_VAR a
+526: LOAD_VAR a
+527: PUSH_CONST 1
+528: ADD
+529: STORE_VAR a
+530: LOAD_VAR a
+531: PUSH_CONST 1
+532: ADD
+533: STORE_VAR a
+534: LOAD_VAR a
+535: PUSH_CONST 1
+536: ADD
+537: STORE_VAR a
+538: LOAD_VAR a
+539: PUSH_CONST 1
+540: ADD
+541: STORE_VAR a
+542: LOAD_VAR a
+543: PUSH_CONST 1
+544: ADD
+545: STORE_VAR a
+546: LOAD_VAR a
+547: PUSH_CONST 1
+548: ADD
+549: STORE_VAR a
+550: LOAD_VAR a
+551: PUSH_CONST 1
+552: ADD
+553: STORE_VAR a
+554: LOAD_VAR a
+555: PUSH_CONST 1
+556: ADD
+557: STORE_VAR a
+558: LOAD_VAR a
+559: PUSH_CONST 1
+560: ADD
+561: STORE_VAR a
+562: LOAD_VAR a
+563: PUSH_CONST 1
+564: ADD
+565: STORE_VAR a
+566: LOAD_VAR a
+567: PUSH_CONST 1
+568: ADD
+569: STORE_VAR a
+570: LOAD_VAR a
+571: PUSH_CONST 1
+572: ADD
+573: STORE_VAR a
+574: LOAD_VAR a
+575: PUSH_CONST 1
+576: ADD
+577: STORE_VAR a
+578: LOAD_VAR a
+579: PUSH_CONST 1
+580: ADD
+581: STORE_VAR a
+582: LOAD_VAR a
+583: PUSH_CONST 1
+584: ADD
+585: STORE_VAR a
+586: LOAD_VAR a
+587: PUSH_CONST 1
+588: ADD
+589: STORE_VAR a
+590: LOAD_VAR a
+591: PUSH_CONST 1
+592: ADD
+593: STORE_VAR a
+594: LOAD_VAR a
+595: PUSH_CONST 1
+596: ADD
+597: STORE_VAR a
+598: LOAD_VAR a
+599: PUSH_CONST 1
+600: ADD
+601: STORE_VAR a
+602: LOAD_VAR a
+603: PUSH_CONST 1
+604: ADD
+605: STORE_VAR a
+606: LOAD_VAR a
+607: PUSH_CONST 1
+608: ADD
+609: STORE_VAR a
+610: LOAD_VAR a
+611: PUSH_CONST 1
+612: ADD
+613: STORE_VAR a
+614: LOAD_VAR a
+615: PUSH_CONST 1
+616: ADD
+617: STORE_VAR a
+618: LOAD_VAR a
+619: PUSH_CONST 1
+620: ADD
+621: STORE_VAR a
+622: LOAD_VAR a
+623: PUSH_CONST 1
+624: ADD
+625: STORE_VAR a
+626: LOAD_VAR a
+627: PUSH_CONST 1
+628: ADD
+629: STORE_VAR a
+630: LOAD_VAR a
+631: PUSH_CONST 1
+632: ADD
+633: STORE_VAR a
+634: LOAD_VAR a
+635: PUSH_CONST 1
+636: ADD
+637: STORE_VAR a
+638: LOAD_VAR a
+639: PUSH_CONST 1
+640: ADD
+641: STORE_VAR a
+642: LOAD_VAR a
+643: PUSH_CONST 1
+644: ADD
+645: STORE_VAR a
+646: LOAD_VAR a
+647: PUSH_CONST 1
+648: ADD
+649: STORE_VAR a
+650: LOAD_VAR a
+651: PUSH_CONST 1
+652: ADD
+653: STORE_VAR a
+654: LOAD_VAR a
+655: PUSH_CONST 1
+656: ADD
+657: STORE_VAR a
+658: LOAD_VAR a
+659: PUSH_CONST 1
+660: ADD
+661: STORE_VAR a
+662: LOAD_VAR a
+663: PUSH_CONST 1
+664: ADD
+665: STORE_VAR a
+666: LOAD_VAR a
+667: PUSH_CONST 1
+668: ADD
+669: STORE_VAR a
+670: LOAD_VAR a
+671: PUSH_CONST 1
+672: ADD
+673: STORE_VAR a
+674: LOAD_VAR a
+675: PUSH_CONST 1
+676: ADD
+677: STORE_VAR a
+678: LOAD_VAR a
+679: PUSH_CONST 1
+680: ADD
+681: STORE_VAR a
+682: LOAD_VAR a
+683: PUSH_CONST 1
+684: ADD
+685: STORE_VAR a
+686: LOAD_VAR a
+687: PUSH_CONST 1
+688: ADD
+689: STORE_VAR a
+690: LOAD_VAR a
+691: PUSH_CONST 1
+692: ADD
+693: STORE_VAR a
+694: LOAD_VAR a
+695: PUSH_CONST 1
+696: ADD
+697: STORE_VAR a
+698: LOAD_VAR a
+699: PUSH_CONST 1
+700: ADD
+701: STORE_VAR a
+702: LOAD_VAR a
+703: PUSH_CONST 1
+704: ADD
+705: STORE_VAR a
+706: LOAD_VAR a
+707: PUSH_CONST 1
+708: ADD
+709: STORE_VAR a
+710: LOAD_VAR a
+711: PUSH_CONST 1
+712: ADD
+713: STORE_VAR a
+714: LOAD_VAR a
+715: PUSH_CONST 1
+716: ADD
+717: STORE_VAR a
+718: LOAD_VAR a
+719: PUSH_CONST 1
+720: ADD
+721: STORE_VAR a
+722: LOAD_VAR a
+723: PUSH_CONST 1
+724: ADD
+725: STORE_VAR a
+726: LOAD_VAR a
+727: PUSH_CONST 1
+728: ADD
+729: STORE_VAR a
+730: LOAD_VAR a
+731: PUSH_CONST 1
+732: ADD
+733: STORE_VAR a
+734: LOAD_VAR a
+735: PUSH_CONST 1
+736: ADD
+737: STORE_VAR a
+738: LOAD_VAR a
+739: PUSH_CONST 1
+740: ADD
+741: STORE_VAR a
+742: LOAD_VAR a
+743: PUSH_CONST 1
+744: ADD
+745: STORE_VAR a
+746: LOAD_VAR a
+747: PUSH_CONST 1
+748: ADD
+749: STORE_VAR a
+750: LOAD_VAR a
+751: PUSH_CONST 1
+752: ADD
+753: STORE_VAR a
+754: LOAD_VAR a
+755: PUSH_CONST 1
+756: ADD
+757: STORE_VAR a
+758: LOAD_VAR a
+759: PUSH_CONST 1
+760: ADD
+761: STORE_VAR a
+762: LOAD_VAR a
+763: PUSH_CONST 1
+764: ADD
+765: STORE_VAR a
+766: LOAD_VAR a
+767: PUSH_CONST 1
+768: ADD
+769: STORE_VAR a
+770: LOAD_VAR a
+771: PUSH_CONST 1
+772: ADD
+773: STORE_VAR a
+774: LOAD_VAR a
+775: PUSH_CONST 1
+776: ADD
+777: STORE_VAR a
+778: LOAD_VAR a
+779: PUSH_CONST 1
+780: ADD
+781: STORE_VAR a
+782: LOAD_VAR a
+783: PUSH_CONST 1
+784: ADD
+785: STORE_VAR a
+786: LOAD_VAR a
+787: PUSH_CONST 1
+788: ADD
+789: STORE_VAR a
+790: LOAD_VAR a
+791: PUSH_CONST 1
+792: ADD
+793: STORE_VAR a
+794: LOAD_VAR a
+795: PUSH_CONST 1
+796: ADD
+797: STORE_VAR a
+798: LOAD_VAR a
+799: PUSH_CONST 1
+800: ADD
+801: STORE_VAR a
+=== Running IR interpreter ===
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== IR (instr count = 802) ===
+0: PUSH_CONST 0
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 1
+4: ADD
+5: STORE_VAR a
+6: LOAD_VAR a
+7: PUSH_CONST 1
+8: ADD
+9: STORE_VAR a
+10: LOAD_VAR a
+11: PUSH_CONST 1
+12: ADD
+13: STORE_VAR a
+14: LOAD_VAR a
+15: PUSH_CONST 1
+16: ADD
+17: STORE_VAR a
+18: LOAD_VAR a
+19: PUSH_CONST 1
+20: ADD
+21: STORE_VAR a
+22: LOAD_VAR a
+23: PUSH_CONST 1
+24: ADD
+25: STORE_VAR a
+26: LOAD_VAR a
+27: PUSH_CONST 1
+28: ADD
+29: STORE_VAR a
+30: LOAD_VAR a
+31: PUSH_CONST 1
+32: ADD
+33: STORE_VAR a
+34: LOAD_VAR a
+35: PUSH_CONST 1
+36: ADD
+37: STORE_VAR a
+38: LOAD_VAR a
+39: PUSH_CONST 1
+40: ADD
+41: STORE_VAR a
+42: LOAD_VAR a
+43: PUSH_CONST 1
+44: ADD
+45: STORE_VAR a
+46: LOAD_VAR a
+47: PUSH_CONST 1
+48: ADD
+49: STORE_VAR a
+50: LOAD_VAR a
+51: PUSH_CONST 1
+52: ADD
+53: STORE_VAR a
+54: LOAD_VAR a
+55: PUSH_CONST 1
+56: ADD
+57: STORE_VAR a
+58: LOAD_VAR a
+59: PUSH_CONST 1
+60: ADD
+61: STORE_VAR a
+62: LOAD_VAR a
+63: PUSH_CONST 1
+64: ADD
+65: STORE_VAR a
+66: LOAD_VAR a
+67: PUSH_CONST 1
+68: ADD
+69: STORE_VAR a
+70: LOAD_VAR a
+71: PUSH_CONST 1
+72: ADD
+73: STORE_VAR a
+74: LOAD_VAR a
+75: PUSH_CONST 1
+76: ADD
+77: STORE_VAR a
+78: LOAD_VAR a
+79: PUSH_CONST 1
+80: ADD
+81: STORE_VAR a
+82: LOAD_VAR a
+83: PUSH_CONST 1
+84: ADD
+85: STORE_VAR a
+86: LOAD_VAR a
+87: PUSH_CONST 1
+88: ADD
+89: STORE_VAR a
+90: LOAD_VAR a
+91: PUSH_CONST 1
+92: ADD
+93: STORE_VAR a
+94: LOAD_VAR a
+95: PUSH_CONST 1
+96: ADD
+97: STORE_VAR a
+98: LOAD_VAR a
+99: PUSH_CONST 1
+100: ADD
+101: STORE_VAR a
+102: LOAD_VAR a
+103: PUSH_CONST 1
+104: ADD
+105: STORE_VAR a
+106: LOAD_VAR a
+107: PUSH_CONST 1
+108: ADD
+109: STORE_VAR a
+110: LOAD_VAR a
+111: PUSH_CONST 1
+112: ADD
+113: STORE_VAR a
+114: LOAD_VAR a
+115: PUSH_CONST 1
+116: ADD
+117: STORE_VAR a
+118: LOAD_VAR a
+119: PUSH_CONST 1
+120: ADD
+121: STORE_VAR a
+122: LOAD_VAR a
+123: PUSH_CONST 1
+124: ADD
+125: STORE_VAR a
+126: LOAD_VAR a
+127: PUSH_CONST 1
+128: ADD
+129: STORE_VAR a
+130: LOAD_VAR a
+131: PUSH_CONST 1
+132: ADD
+133: STORE_VAR a
+134: LOAD_VAR a
+135: PUSH_CONST 1
+136: ADD
+137: STORE_VAR a
+138: LOAD_VAR a
+139: PUSH_CONST 1
+140: ADD
+141: STORE_VAR a
+142: LOAD_VAR a
+143: PUSH_CONST 1
+144: ADD
+145: STORE_VAR a
+146: LOAD_VAR a
+147: PUSH_CONST 1
+148: ADD
+149: STORE_VAR a
+150: LOAD_VAR a
+151: PUSH_CONST 1
+152: ADD
+153: STORE_VAR a
+154: LOAD_VAR a
+155: PUSH_CONST 1
+156: ADD
+157: STORE_VAR a
+158: LOAD_VAR a
+159: PUSH_CONST 1
+160: ADD
+161: STORE_VAR a
+162: LOAD_VAR a
+163: PUSH_CONST 1
+164: ADD
+165: STORE_VAR a
+166: LOAD_VAR a
+167: PUSH_CONST 1
+168: ADD
+169: STORE_VAR a
+170: LOAD_VAR a
+171: PUSH_CONST 1
+172: ADD
+173: STORE_VAR a
+174: LOAD_VAR a
+175: PUSH_CONST 1
+176: ADD
+177: STORE_VAR a
+178: LOAD_VAR a
+179: PUSH_CONST 1
+180: ADD
+181: STORE_VAR a
+182: LOAD_VAR a
+183: PUSH_CONST 1
+184: ADD
+185: STORE_VAR a
+186: LOAD_VAR a
+187: PUSH_CONST 1
+188: ADD
+189: STORE_VAR a
+190: LOAD_VAR a
+191: PUSH_CONST 1
+192: ADD
+193: STORE_VAR a
+194: LOAD_VAR a
+195: PUSH_CONST 1
+196: ADD
+197: STORE_VAR a
+198: LOAD_VAR a
+199: PUSH_CONST 1
+200: ADD
+201: STORE_VAR a
+202: LOAD_VAR a
+203: PUSH_CONST 1
+204: ADD
+205: STORE_VAR a
+206: LOAD_VAR a
+207: PUSH_CONST 1
+208: ADD
+209: STORE_VAR a
+210: LOAD_VAR a
+211: PUSH_CONST 1
+212: ADD
+213: STORE_VAR a
+214: LOAD_VAR a
+215: PUSH_CONST 1
+216: ADD
+217: STORE_VAR a
+218: LOAD_VAR a
+219: PUSH_CONST 1
+220: ADD
+221: STORE_VAR a
+222: LOAD_VAR a
+223: PUSH_CONST 1
+224: ADD
+225: STORE_VAR a
+226: LOAD_VAR a
+227: PUSH_CONST 1
+228: ADD
+229: STORE_VAR a
+230: LOAD_VAR a
+231: PUSH_CONST 1
+232: ADD
+233: STORE_VAR a
+234: LOAD_VAR a
+235: PUSH_CONST 1
+236: ADD
+237: STORE_VAR a
+238: LOAD_VAR a
+239: PUSH_CONST 1
+240: ADD
+241: STORE_VAR a
+242: LOAD_VAR a
+243: PUSH_CONST 1
+244: ADD
+245: STORE_VAR a
+246: LOAD_VAR a
+247: PUSH_CONST 1
+248: ADD
+249: STORE_VAR a
+250: LOAD_VAR a
+251: PUSH_CONST 1
+252: ADD
+253: STORE_VAR a
+254: LOAD_VAR a
+255: PUSH_CONST 1
+256: ADD
+257: STORE_VAR a
+258: LOAD_VAR a
+259: PUSH_CONST 1
+260: ADD
+261: STORE_VAR a
+262: LOAD_VAR a
+263: PUSH_CONST 1
+264: ADD
+265: STORE_VAR a
+266: LOAD_VAR a
+267: PUSH_CONST 1
+268: ADD
+269: STORE_VAR a
+270: LOAD_VAR a
+271: PUSH_CONST 1
+272: ADD
+273: STORE_VAR a
+274: LOAD_VAR a
+275: PUSH_CONST 1
+276: ADD
+277: STORE_VAR a
+278: LOAD_VAR a
+279: PUSH_CONST 1
+280: ADD
+281: STORE_VAR a
+282: LOAD_VAR a
+283: PUSH_CONST 1
+284: ADD
+285: STORE_VAR a
+286: LOAD_VAR a
+287: PUSH_CONST 1
+288: ADD
+289: STORE_VAR a
+290: LOAD_VAR a
+291: PUSH_CONST 1
+292: ADD
+293: STORE_VAR a
+294: LOAD_VAR a
+295: PUSH_CONST 1
+296: ADD
+297: STORE_VAR a
+298: LOAD_VAR a
+299: PUSH_CONST 1
+300: ADD
+301: STORE_VAR a
+302: LOAD_VAR a
+303: PUSH_CONST 1
+304: ADD
+305: STORE_VAR a
+306: LOAD_VAR a
+307: PUSH_CONST 1
+308: ADD
+309: STORE_VAR a
+310: LOAD_VAR a
+311: PUSH_CONST 1
+312: ADD
+313: STORE_VAR a
+314: LOAD_VAR a
+315: PUSH_CONST 1
+316: ADD
+317: STORE_VAR a
+318: LOAD_VAR a
+319: PUSH_CONST 1
+320: ADD
+321: STORE_VAR a
+322: LOAD_VAR a
+323: PUSH_CONST 1
+324: ADD
+325: STORE_VAR a
+326: LOAD_VAR a
+327: PUSH_CONST 1
+328: ADD
+329: STORE_VAR a
+330: LOAD_VAR a
+331: PUSH_CONST 1
+332: ADD
+333: STORE_VAR a
+334: LOAD_VAR a
+335: PUSH_CONST 1
+336: ADD
+337: STORE_VAR a
+338: LOAD_VAR a
+339: PUSH_CONST 1
+340: ADD
+341: STORE_VAR a
+342: LOAD_VAR a
+343: PUSH_CONST 1
+344: ADD
+345: STORE_VAR a
+346: LOAD_VAR a
+347: PUSH_CONST 1
+348: ADD
+349: STORE_VAR a
+350: LOAD_VAR a
+351: PUSH_CONST 1
+352: ADD
+353: STORE_VAR a
+354: LOAD_VAR a
+355: PUSH_CONST 1
+356: ADD
+357: STORE_VAR a
+358: LOAD_VAR a
+359: PUSH_CONST 1
+360: ADD
+361: STORE_VAR a
+362: LOAD_VAR a
+363: PUSH_CONST 1
+364: ADD
+365: STORE_VAR a
+366: LOAD_VAR a
+367: PUSH_CONST 1
+368: ADD
+369: STORE_VAR a
+370: LOAD_VAR a
+371: PUSH_CONST 1
+372: ADD
+373: STORE_VAR a
+374: LOAD_VAR a
+375: PUSH_CONST 1
+376: ADD
+377: STORE_VAR a
+378: LOAD_VAR a
+379: PUSH_CONST 1
+380: ADD
+381: STORE_VAR a
+382: LOAD_VAR a
+383: PUSH_CONST 1
+384: ADD
+385: STORE_VAR a
+386: LOAD_VAR a
+387: PUSH_CONST 1
+388: ADD
+389: STORE_VAR a
+390: LOAD_VAR a
+391: PUSH_CONST 1
+392: ADD
+393: STORE_VAR a
+394: LOAD_VAR a
+395: PUSH_CONST 1
+396: ADD
+397: STORE_VAR a
+398: LOAD_VAR a
+399: PUSH_CONST 1
+400: ADD
+401: STORE_VAR a
+402: LOAD_VAR a
+403: PUSH_CONST 1
+404: ADD
+405: STORE_VAR a
+406: LOAD_VAR a
+407: PUSH_CONST 1
+408: ADD
+409: STORE_VAR a
+410: LOAD_VAR a
+411: PUSH_CONST 1
+412: ADD
+413: STORE_VAR a
+414: LOAD_VAR a
+415: PUSH_CONST 1
+416: ADD
+417: STORE_VAR a
+418: LOAD_VAR a
+419: PUSH_CONST 1
+420: ADD
+421: STORE_VAR a
+422: LOAD_VAR a
+423: PUSH_CONST 1
+424: ADD
+425: STORE_VAR a
+426: LOAD_VAR a
+427: PUSH_CONST 1
+428: ADD
+429: STORE_VAR a
+430: LOAD_VAR a
+431: PUSH_CONST 1
+432: ADD
+433: STORE_VAR a
+434: LOAD_VAR a
+435: PUSH_CONST 1
+436: ADD
+437: STORE_VAR a
+438: LOAD_VAR a
+439: PUSH_CONST 1
+440: ADD
+441: STORE_VAR a
+442: LOAD_VAR a
+443: PUSH_CONST 1
+444: ADD
+445: STORE_VAR a
+446: LOAD_VAR a
+447: PUSH_CONST 1
+448: ADD
+449: STORE_VAR a
+450: LOAD_VAR a
+451: PUSH_CONST 1
+452: ADD
+453: STORE_VAR a
+454: LOAD_VAR a
+455: PUSH_CONST 1
+456: ADD
+457: STORE_VAR a
+458: LOAD_VAR a
+459: PUSH_CONST 1
+460: ADD
+461: STORE_VAR a
+462: LOAD_VAR a
+463: PUSH_CONST 1
+464: ADD
+465: STORE_VAR a
+466: LOAD_VAR a
+467: PUSH_CONST 1
+468: ADD
+469: STORE_VAR a
+470: LOAD_VAR a
+471: PUSH_CONST 1
+472: ADD
+473: STORE_VAR a
+474: LOAD_VAR a
+475: PUSH_CONST 1
+476: ADD
+477: STORE_VAR a
+478: LOAD_VAR a
+479: PUSH_CONST 1
+480: ADD
+481: STORE_VAR a
+482: LOAD_VAR a
+483: PUSH_CONST 1
+484: ADD
+485: STORE_VAR a
+486: LOAD_VAR a
+487: PUSH_CONST 1
+488: ADD
+489: STORE_VAR a
+490: LOAD_VAR a
+491: PUSH_CONST 1
+492: ADD
+493: STORE_VAR a
+494: LOAD_VAR a
+495: PUSH_CONST 1
+496: ADD
+497: STORE_VAR a
+498: LOAD_VAR a
+499: PUSH_CONST 1
+500: ADD
+501: STORE_VAR a
+502: LOAD_VAR a
+503: PUSH_CONST 1
+504: ADD
+505: STORE_VAR a
+506: LOAD_VAR a
+507: PUSH_CONST 1
+508: ADD
+509: STORE_VAR a
+510: LOAD_VAR a
+511: PUSH_CONST 1
+512: ADD
+513: STORE_VAR a
+514: LOAD_VAR a
+515: PUSH_CONST 1
+516: ADD
+517: STORE_VAR a
+518: LOAD_VAR a
+519: PUSH_CONST 1
+520: ADD
+521: STORE_VAR a
+522: LOAD_VAR a
+523: PUSH_CONST 1
+524: ADD
+525: STORE_VAR a
+526: LOAD_VAR a
+527: PUSH_CONST 1
+528: ADD
+529: STORE_VAR a
+530: LOAD_VAR a
+531: PUSH_CONST 1
+532: ADD
+533: STORE_VAR a
+534: LOAD_VAR a
+535: PUSH_CONST 1
+536: ADD
+537: STORE_VAR a
+538: LOAD_VAR a
+539: PUSH_CONST 1
+540: ADD
+541: STORE_VAR a
+542: LOAD_VAR a
+543: PUSH_CONST 1
+544: ADD
+545: STORE_VAR a
+546: LOAD_VAR a
+547: PUSH_CONST 1
+548: ADD
+549: STORE_VAR a
+550: LOAD_VAR a
+551: PUSH_CONST 1
+552: ADD
+553: STORE_VAR a
+554: LOAD_VAR a
+555: PUSH_CONST 1
+556: ADD
+557: STORE_VAR a
+558: LOAD_VAR a
+559: PUSH_CONST 1
+560: ADD
+561: STORE_VAR a
+562: LOAD_VAR a
+563: PUSH_CONST 1
+564: ADD
+565: STORE_VAR a
+566: LOAD_VAR a
+567: PUSH_CONST 1
+568: ADD
+569: STORE_VAR a
+570: LOAD_VAR a
+571: PUSH_CONST 1
+572: ADD
+573: STORE_VAR a
+574: LOAD_VAR a
+575: PUSH_CONST 1
+576: ADD
+577: STORE_VAR a
+578: LOAD_VAR a
+579: PUSH_CONST 1
+580: ADD
+581: STORE_VAR a
+582: LOAD_VAR a
+583: PUSH_CONST 1
+584: ADD
+585: STORE_VAR a
+586: LOAD_VAR a
+587: PUSH_CONST 1
+588: ADD
+589: STORE_VAR a
+590: LOAD_VAR a
+591: PUSH_CONST 1
+592: ADD
+593: STORE_VAR a
+594: LOAD_VAR a
+595: PUSH_CONST 1
+596: ADD
+597: STORE_VAR a
+598: LOAD_VAR a
+599: PUSH_CONST 1
+600: ADD
+601: STORE_VAR a
+602: LOAD_VAR a
+603: PUSH_CONST 1
+604: ADD
+605: STORE_VAR a
+606: LOAD_VAR a
+607: PUSH_CONST 1
+608: ADD
+609: STORE_VAR a
+610: LOAD_VAR a
+611: PUSH_CONST 1
+612: ADD
+613: STORE_VAR a
+614: LOAD_VAR a
+615: PUSH_CONST 1
+616: ADD
+617: STORE_VAR a
+618: LOAD_VAR a
+619: PUSH_CONST 1
+620: ADD
+621: STORE_VAR a
+622: LOAD_VAR a
+623: PUSH_CONST 1
+624: ADD
+625: STORE_VAR a
+626: LOAD_VAR a
+627: PUSH_CONST 1
+628: ADD
+629: STORE_VAR a
+630: LOAD_VAR a
+631: PUSH_CONST 1
+632: ADD
+633: STORE_VAR a
+634: LOAD_VAR a
+635: PUSH_CONST 1
+636: ADD
+637: STORE_VAR a
+638: LOAD_VAR a
+639: PUSH_CONST 1
+640: ADD
+641: STORE_VAR a
+642: LOAD_VAR a
+643: PUSH_CONST 1
+644: ADD
+645: STORE_VAR a
+646: LOAD_VAR a
+647: PUSH_CONST 1
+648: ADD
+649: STORE_VAR a
+650: LOAD_VAR a
+651: PUSH_CONST 1
+652: ADD
+653: STORE_VAR a
+654: LOAD_VAR a
+655: PUSH_CONST 1
+656: ADD
+657: STORE_VAR a
+658: LOAD_VAR a
+659: PUSH_CONST 1
+660: ADD
+661: STORE_VAR a
+662: LOAD_VAR a
+663: PUSH_CONST 1
+664: ADD
+665: STORE_VAR a
+666: LOAD_VAR a
+667: PUSH_CONST 1
+668: ADD
+669: STORE_VAR a
+670: LOAD_VAR a
+671: PUSH_CONST 1
+672: ADD
+673: STORE_VAR a
+674: LOAD_VAR a
+675: PUSH_CONST 1
+676: ADD
+677: STORE_VAR a
+678: LOAD_VAR a
+679: PUSH_CONST 1
+680: ADD
+681: STORE_VAR a
+682: LOAD_VAR a
+683: PUSH_CONST 1
+684: ADD
+685: STORE_VAR a
+686: LOAD_VAR a
+687: PUSH_CONST 1
+688: ADD
+689: STORE_VAR a
+690: LOAD_VAR a
+691: PUSH_CONST 1
+692: ADD
+693: STORE_VAR a
+694: LOAD_VAR a
+695: PUSH_CONST 1
+696: ADD
+697: STORE_VAR a
+698: LOAD_VAR a
+699: PUSH_CONST 1
+700: ADD
+701: STORE_VAR a
+702: LOAD_VAR a
+703: PUSH_CONST 1
+704: ADD
+705: STORE_VAR a
+706: LOAD_VAR a
+707: PUSH_CONST 1
+708: ADD
+709: STORE_VAR a
+710: LOAD_VAR a
+711: PUSH_CONST 1
+712: ADD
+713: STORE_VAR a
+714: LOAD_VAR a
+715: PUSH_CONST 1
+716: ADD
+717: STORE_VAR a
+718: LOAD_VAR a
+719: PUSH_CONST 1
+720: ADD
+721: STORE_VAR a
+722: LOAD_VAR a
+723: PUSH_CONST 1
+724: ADD
+725: STORE_VAR a
+726: LOAD_VAR a
+727: PUSH_CONST 1
+728: ADD
+729: STORE_VAR a
+730: LOAD_VAR a
+731: PUSH_CONST 1
+732: ADD
+733: STORE_VAR a
+734: LOAD_VAR a
+735: PUSH_CONST 1
+736: ADD
+737: STORE_VAR a
+738: LOAD_VAR a
+739: PUSH_CONST 1
+740: ADD
+741: STORE_VAR a
+742: LOAD_VAR a
+743: PUSH_CONST 1
+744: ADD
+745: STORE_VAR a
+746: LOAD_VAR a
+747: PUSH_CONST 1
+748: ADD
+749: STORE_VAR a
+750: LOAD_VAR a
+751: PUSH_CONST 1
+752: ADD
+753: STORE_VAR a
+754: LOAD_VAR a
+755: PUSH_CONST 1
+756: ADD
+757: STORE_VAR a
+758: LOAD_VAR a
+759: PUSH_CONST 1
+760: ADD
+761: STORE_VAR a
+762: LOAD_VAR a
+763: PUSH_CONST 1
+764: ADD
+765: STORE_VAR a
+766: LOAD_VAR a
+767: PUSH_CONST 1
+768: ADD
+769: STORE_VAR a
+770: LOAD_VAR a
+771: PUSH_CONST 1
+772: ADD
+773: STORE_VAR a
+774: LOAD_VAR a
+775: PUSH_CONST 1
+776: ADD
+777: STORE_VAR a
+778: LOAD_VAR a
+779: PUSH_CONST 1
+780: ADD
+781: STORE_VAR a
+782: LOAD_VAR a
+783: PUSH_CONST 1
+784: ADD
+785: STORE_VAR a
+786: LOAD_VAR a
+787: PUSH_CONST 1
+788: ADD
+789: STORE_VAR a
+790: LOAD_VAR a
+791: PUSH_CONST 1
+792: ADD
+793: STORE_VAR a
+794: LOAD_VAR a
+795: PUSH_CONST 1
+796: ADD
+797: STORE_VAR a
+798: LOAD_VAR a
+799: PUSH_CONST 1
+800: ADD
+801: STORE_VAR a
+=== Running IR interpreter ===
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== IR (instr count = 802) ===
+0: PUSH_CONST 0
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 1
+4: ADD
+5: STORE_VAR a
+6: LOAD_VAR a
+7: PUSH_CONST 1
+8: ADD
+9: STORE_VAR a
+10: LOAD_VAR a
+11: PUSH_CONST 1
+12: ADD
+13: STORE_VAR a
+14: LOAD_VAR a
+15: PUSH_CONST 1
+16: ADD
+17: STORE_VAR a
+18: LOAD_VAR a
+19: PUSH_CONST 1
+20: ADD
+21: STORE_VAR a
+22: LOAD_VAR a
+23: PUSH_CONST 1
+24: ADD
+25: STORE_VAR a
+26: LOAD_VAR a
+27: PUSH_CONST 1
+28: ADD
+29: STORE_VAR a
+30: LOAD_VAR a
+31: PUSH_CONST 1
+32: ADD
+33: STORE_VAR a
+34: LOAD_VAR a
+35: PUSH_CONST 1
+36: ADD
+37: STORE_VAR a
+38: LOAD_VAR a
+39: PUSH_CONST 1
+40: ADD
+41: STORE_VAR a
+42: LOAD_VAR a
+43: PUSH_CONST 1
+44: ADD
+45: STORE_VAR a
+46: LOAD_VAR a
+47: PUSH_CONST 1
+48: ADD
+49: STORE_VAR a
+50: LOAD_VAR a
+51: PUSH_CONST 1
+52: ADD
+53: STORE_VAR a
+54: LOAD_VAR a
+55: PUSH_CONST 1
+56: ADD
+57: STORE_VAR a
+58: LOAD_VAR a
+59: PUSH_CONST 1
+60: ADD
+61: STORE_VAR a
+62: LOAD_VAR a
+63: PUSH_CONST 1
+64: ADD
+65: STORE_VAR a
+66: LOAD_VAR a
+67: PUSH_CONST 1
+68: ADD
+69: STORE_VAR a
+70: LOAD_VAR a
+71: PUSH_CONST 1
+72: ADD
+73: STORE_VAR a
+74: LOAD_VAR a
+75: PUSH_CONST 1
+76: ADD
+77: STORE_VAR a
+78: LOAD_VAR a
+79: PUSH_CONST 1
+80: ADD
+81: STORE_VAR a
+82: LOAD_VAR a
+83: PUSH_CONST 1
+84: ADD
+85: STORE_VAR a
+86: LOAD_VAR a
+87: PUSH_CONST 1
+88: ADD
+89: STORE_VAR a
+90: LOAD_VAR a
+91: PUSH_CONST 1
+92: ADD
+93: STORE_VAR a
+94: LOAD_VAR a
+95: PUSH_CONST 1
+96: ADD
+97: STORE_VAR a
+98: LOAD_VAR a
+99: PUSH_CONST 1
+100: ADD
+101: STORE_VAR a
+102: LOAD_VAR a
+103: PUSH_CONST 1
+104: ADD
+105: STORE_VAR a
+106: LOAD_VAR a
+107: PUSH_CONST 1
+108: ADD
+109: STORE_VAR a
+110: LOAD_VAR a
+111: PUSH_CONST 1
+112: ADD
+113: STORE_VAR a
+114: LOAD_VAR a
+115: PUSH_CONST 1
+116: ADD
+117: STORE_VAR a
+118: LOAD_VAR a
+119: PUSH_CONST 1
+120: ADD
+121: STORE_VAR a
+122: LOAD_VAR a
+123: PUSH_CONST 1
+124: ADD
+125: STORE_VAR a
+126: LOAD_VAR a
+127: PUSH_CONST 1
+128: ADD
+129: STORE_VAR a
+130: LOAD_VAR a
+131: PUSH_CONST 1
+132: ADD
+133: STORE_VAR a
+134: LOAD_VAR a
+135: PUSH_CONST 1
+136: ADD
+137: STORE_VAR a
+138: LOAD_VAR a
+139: PUSH_CONST 1
+140: ADD
+141: STORE_VAR a
+142: LOAD_VAR a
+143: PUSH_CONST 1
+144: ADD
+145: STORE_VAR a
+146: LOAD_VAR a
+147: PUSH_CONST 1
+148: ADD
+149: STORE_VAR a
+150: LOAD_VAR a
+151: PUSH_CONST 1
+152: ADD
+153: STORE_VAR a
+154: LOAD_VAR a
+155: PUSH_CONST 1
+156: ADD
+157: STORE_VAR a
+158: LOAD_VAR a
+159: PUSH_CONST 1
+160: ADD
+161: STORE_VAR a
+162: LOAD_VAR a
+163: PUSH_CONST 1
+164: ADD
+165: STORE_VAR a
+166: LOAD_VAR a
+167: PUSH_CONST 1
+168: ADD
+169: STORE_VAR a
+170: LOAD_VAR a
+171: PUSH_CONST 1
+172: ADD
+173: STORE_VAR a
+174: LOAD_VAR a
+175: PUSH_CONST 1
+176: ADD
+177: STORE_VAR a
+178: LOAD_VAR a
+179: PUSH_CONST 1
+180: ADD
+181: STORE_VAR a
+182: LOAD_VAR a
+183: PUSH_CONST 1
+184: ADD
+185: STORE_VAR a
+186: LOAD_VAR a
+187: PUSH_CONST 1
+188: ADD
+189: STORE_VAR a
+190: LOAD_VAR a
+191: PUSH_CONST 1
+192: ADD
+193: STORE_VAR a
+194: LOAD_VAR a
+195: PUSH_CONST 1
+196: ADD
+197: STORE_VAR a
+198: LOAD_VAR a
+199: PUSH_CONST 1
+200: ADD
+201: STORE_VAR a
+202: LOAD_VAR a
+203: PUSH_CONST 1
+204: ADD
+205: STORE_VAR a
+206: LOAD_VAR a
+207: PUSH_CONST 1
+208: ADD
+209: STORE_VAR a
+210: LOAD_VAR a
+211: PUSH_CONST 1
+212: ADD
+213: STORE_VAR a
+214: LOAD_VAR a
+215: PUSH_CONST 1
+216: ADD
+217: STORE_VAR a
+218: LOAD_VAR a
+219: PUSH_CONST 1
+220: ADD
+221: STORE_VAR a
+222: LOAD_VAR a
+223: PUSH_CONST 1
+224: ADD
+225: STORE_VAR a
+226: LOAD_VAR a
+227: PUSH_CONST 1
+228: ADD
+229: STORE_VAR a
+230: LOAD_VAR a
+231: PUSH_CONST 1
+232: ADD
+233: STORE_VAR a
+234: LOAD_VAR a
+235: PUSH_CONST 1
+236: ADD
+237: STORE_VAR a
+238: LOAD_VAR a
+239: PUSH_CONST 1
+240: ADD
+241: STORE_VAR a
+242: LOAD_VAR a
+243: PUSH_CONST 1
+244: ADD
+245: STORE_VAR a
+246: LOAD_VAR a
+247: PUSH_CONST 1
+248: ADD
+249: STORE_VAR a
+250: LOAD_VAR a
+251: PUSH_CONST 1
+252: ADD
+253: STORE_VAR a
+254: LOAD_VAR a
+255: PUSH_CONST 1
+256: ADD
+257: STORE_VAR a
+258: LOAD_VAR a
+259: PUSH_CONST 1
+260: ADD
+261: STORE_VAR a
+262: LOAD_VAR a
+263: PUSH_CONST 1
+264: ADD
+265: STORE_VAR a
+266: LOAD_VAR a
+267: PUSH_CONST 1
+268: ADD
+269: STORE_VAR a
+270: LOAD_VAR a
+271: PUSH_CONST 1
+272: ADD
+273: STORE_VAR a
+274: LOAD_VAR a
+275: PUSH_CONST 1
+276: ADD
+277: STORE_VAR a
+278: LOAD_VAR a
+279: PUSH_CONST 1
+280: ADD
+281: STORE_VAR a
+282: LOAD_VAR a
+283: PUSH_CONST 1
+284: ADD
+285: STORE_VAR a
+286: LOAD_VAR a
+287: PUSH_CONST 1
+288: ADD
+289: STORE_VAR a
+290: LOAD_VAR a
+291: PUSH_CONST 1
+292: ADD
+293: STORE_VAR a
+294: LOAD_VAR a
+295: PUSH_CONST 1
+296: ADD
+297: STORE_VAR a
+298: LOAD_VAR a
+299: PUSH_CONST 1
+300: ADD
+301: STORE_VAR a
+302: LOAD_VAR a
+303: PUSH_CONST 1
+304: ADD
+305: STORE_VAR a
+306: LOAD_VAR a
+307: PUSH_CONST 1
+308: ADD
+309: STORE_VAR a
+310: LOAD_VAR a
+311: PUSH_CONST 1
+312: ADD
+313: STORE_VAR a
+314: LOAD_VAR a
+315: PUSH_CONST 1
+316: ADD
+317: STORE_VAR a
+318: LOAD_VAR a
+319: PUSH_CONST 1
+320: ADD
+321: STORE_VAR a
+322: LOAD_VAR a
+323: PUSH_CONST 1
+324: ADD
+325: STORE_VAR a
+326: LOAD_VAR a
+327: PUSH_CONST 1
+328: ADD
+329: STORE_VAR a
+330: LOAD_VAR a
+331: PUSH_CONST 1
+332: ADD
+333: STORE_VAR a
+334: LOAD_VAR a
+335: PUSH_CONST 1
+336: ADD
+337: STORE_VAR a
+338: LOAD_VAR a
+339: PUSH_CONST 1
+340: ADD
+341: STORE_VAR a
+342: LOAD_VAR a
+343: PUSH_CONST 1
+344: ADD
+345: STORE_VAR a
+346: LOAD_VAR a
+347: PUSH_CONST 1
+348: ADD
+349: STORE_VAR a
+350: LOAD_VAR a
+351: PUSH_CONST 1
+352: ADD
+353: STORE_VAR a
+354: LOAD_VAR a
+355: PUSH_CONST 1
+356: ADD
+357: STORE_VAR a
+358: LOAD_VAR a
+359: PUSH_CONST 1
+360: ADD
+361: STORE_VAR a
+362: LOAD_VAR a
+363: PUSH_CONST 1
+364: ADD
+365: STORE_VAR a
+366: LOAD_VAR a
+367: PUSH_CONST 1
+368: ADD
+369: STORE_VAR a
+370: LOAD_VAR a
+371: PUSH_CONST 1
+372: ADD
+373: STORE_VAR a
+374: LOAD_VAR a
+375: PUSH_CONST 1
+376: ADD
+377: STORE_VAR a
+378: LOAD_VAR a
+379: PUSH_CONST 1
+380: ADD
+381: STORE_VAR a
+382: LOAD_VAR a
+383: PUSH_CONST 1
+384: ADD
+385: STORE_VAR a
+386: LOAD_VAR a
+387: PUSH_CONST 1
+388: ADD
+389: STORE_VAR a
+390: LOAD_VAR a
+391: PUSH_CONST 1
+392: ADD
+393: STORE_VAR a
+394: LOAD_VAR a
+395: PUSH_CONST 1
+396: ADD
+397: STORE_VAR a
+398: LOAD_VAR a
+399: PUSH_CONST 1
+400: ADD
+401: STORE_VAR a
+402: LOAD_VAR a
+403: PUSH_CONST 1
+404: ADD
+405: STORE_VAR a
+406: LOAD_VAR a
+407: PUSH_CONST 1
+408: ADD
+409: STORE_VAR a
+410: LOAD_VAR a
+411: PUSH_CONST 1
+412: ADD
+413: STORE_VAR a
+414: LOAD_VAR a
+415: PUSH_CONST 1
+416: ADD
+417: STORE_VAR a
+418: LOAD_VAR a
+419: PUSH_CONST 1
+420: ADD
+421: STORE_VAR a
+422: LOAD_VAR a
+423: PUSH_CONST 1
+424: ADD
+425: STORE_VAR a
+426: LOAD_VAR a
+427: PUSH_CONST 1
+428: ADD
+429: STORE_VAR a
+430: LOAD_VAR a
+431: PUSH_CONST 1
+432: ADD
+433: STORE_VAR a
+434: LOAD_VAR a
+435: PUSH_CONST 1
+436: ADD
+437: STORE_VAR a
+438: LOAD_VAR a
+439: PUSH_CONST 1
+440: ADD
+441: STORE_VAR a
+442: LOAD_VAR a
+443: PUSH_CONST 1
+444: ADD
+445: STORE_VAR a
+446: LOAD_VAR a
+447: PUSH_CONST 1
+448: ADD
+449: STORE_VAR a
+450: LOAD_VAR a
+451: PUSH_CONST 1
+452: ADD
+453: STORE_VAR a
+454: LOAD_VAR a
+455: PUSH_CONST 1
+456: ADD
+457: STORE_VAR a
+458: LOAD_VAR a
+459: PUSH_CONST 1
+460: ADD
+461: STORE_VAR a
+462: LOAD_VAR a
+463: PUSH_CONST 1
+464: ADD
+465: STORE_VAR a
+466: LOAD_VAR a
+467: PUSH_CONST 1
+468: ADD
+469: STORE_VAR a
+470: LOAD_VAR a
+471: PUSH_CONST 1
+472: ADD
+473: STORE_VAR a
+474: LOAD_VAR a
+475: PUSH_CONST 1
+476: ADD
+477: STORE_VAR a
+478: LOAD_VAR a
+479: PUSH_CONST 1
+480: ADD
+481: STORE_VAR a
+482: LOAD_VAR a
+483: PUSH_CONST 1
+484: ADD
+485: STORE_VAR a
+486: LOAD_VAR a
+487: PUSH_CONST 1
+488: ADD
+489: STORE_VAR a
+490: LOAD_VAR a
+491: PUSH_CONST 1
+492: ADD
+493: STORE_VAR a
+494: LOAD_VAR a
+495: PUSH_CONST 1
+496: ADD
+497: STORE_VAR a
+498: LOAD_VAR a
+499: PUSH_CONST 1
+500: ADD
+501: STORE_VAR a
+502: LOAD_VAR a
+503: PUSH_CONST 1
+504: ADD
+505: STORE_VAR a
+506: LOAD_VAR a
+507: PUSH_CONST 1
+508: ADD
+509: STORE_VAR a
+510: LOAD_VAR a
+511: PUSH_CONST 1
+512: ADD
+513: STORE_VAR a
+514: LOAD_VAR a
+515: PUSH_CONST 1
+516: ADD
+517: STORE_VAR a
+518: LOAD_VAR a
+519: PUSH_CONST 1
+520: ADD
+521: STORE_VAR a
+522: LOAD_VAR a
+523: PUSH_CONST 1
+524: ADD
+525: STORE_VAR a
+526: LOAD_VAR a
+527: PUSH_CONST 1
+528: ADD
+529: STORE_VAR a
+530: LOAD_VAR a
+531: PUSH_CONST 1
+532: ADD
+533: STORE_VAR a
+534: LOAD_VAR a
+535: PUSH_CONST 1
+536: ADD
+537: STORE_VAR a
+538: LOAD_VAR a
+539: PUSH_CONST 1
+540: ADD
+541: STORE_VAR a
+542: LOAD_VAR a
+543: PUSH_CONST 1
+544: ADD
+545: STORE_VAR a
+546: LOAD_VAR a
+547: PUSH_CONST 1
+548: ADD
+549: STORE_VAR a
+550: LOAD_VAR a
+551: PUSH_CONST 1
+552: ADD
+553: STORE_VAR a
+554: LOAD_VAR a
+555: PUSH_CONST 1
+556: ADD
+557: STORE_VAR a
+558: LOAD_VAR a
+559: PUSH_CONST 1
+560: ADD
+561: STORE_VAR a
+562: LOAD_VAR a
+563: PUSH_CONST 1
+564: ADD
+565: STORE_VAR a
+566: LOAD_VAR a
+567: PUSH_CONST 1
+568: ADD
+569: STORE_VAR a
+570: LOAD_VAR a
+571: PUSH_CONST 1
+572: ADD
+573: STORE_VAR a
+574: LOAD_VAR a
+575: PUSH_CONST 1
+576: ADD
+577: STORE_VAR a
+578: LOAD_VAR a
+579: PUSH_CONST 1
+580: ADD
+581: STORE_VAR a
+582: LOAD_VAR a
+583: PUSH_CONST 1
+584: ADD
+585: STORE_VAR a
+586: LOAD_VAR a
+587: PUSH_CONST 1
+588: ADD
+589: STORE_VAR a
+590: LOAD_VAR a
+591: PUSH_CONST 1
+592: ADD
+593: STORE_VAR a
+594: LOAD_VAR a
+595: PUSH_CONST 1
+596: ADD
+597: STORE_VAR a
+598: LOAD_VAR a
+599: PUSH_CONST 1
+600: ADD
+601: STORE_VAR a
+602: LOAD_VAR a
+603: PUSH_CONST 1
+604: ADD
+605: STORE_VAR a
+606: LOAD_VAR a
+607: PUSH_CONST 1
+608: ADD
+609: STORE_VAR a
+610: LOAD_VAR a
+611: PUSH_CONST 1
+612: ADD
+613: STORE_VAR a
+614: LOAD_VAR a
+615: PUSH_CONST 1
+616: ADD
+617: STORE_VAR a
+618: LOAD_VAR a
+619: PUSH_CONST 1
+620: ADD
+621: STORE_VAR a
+622: LOAD_VAR a
+623: PUSH_CONST 1
+624: ADD
+625: STORE_VAR a
+626: LOAD_VAR a
+627: PUSH_CONST 1
+628: ADD
+629: STORE_VAR a
+630: LOAD_VAR a
+631: PUSH_CONST 1
+632: ADD
+633: STORE_VAR a
+634: LOAD_VAR a
+635: PUSH_CONST 1
+636: ADD
+637: STORE_VAR a
+638: LOAD_VAR a
+639: PUSH_CONST 1
+640: ADD
+641: STORE_VAR a
+642: LOAD_VAR a
+643: PUSH_CONST 1
+644: ADD
+645: STORE_VAR a
+646: LOAD_VAR a
+647: PUSH_CONST 1
+648: ADD
+649: STORE_VAR a
+650: LOAD_VAR a
+651: PUSH_CONST 1
+652: ADD
+653: STORE_VAR a
+654: LOAD_VAR a
+655: PUSH_CONST 1
+656: ADD
+657: STORE_VAR a
+658: LOAD_VAR a
+659: PUSH_CONST 1
+660: ADD
+661: STORE_VAR a
+662: LOAD_VAR a
+663: PUSH_CONST 1
+664: ADD
+665: STORE_VAR a
+666: LOAD_VAR a
+667: PUSH_CONST 1
+668: ADD
+669: STORE_VAR a
+670: LOAD_VAR a
+671: PUSH_CONST 1
+672: ADD
+673: STORE_VAR a
+674: LOAD_VAR a
+675: PUSH_CONST 1
+676: ADD
+677: STORE_VAR a
+678: LOAD_VAR a
+679: PUSH_CONST 1
+680: ADD
+681: STORE_VAR a
+682: LOAD_VAR a
+683: PUSH_CONST 1
+684: ADD
+685: STORE_VAR a
+686: LOAD_VAR a
+687: PUSH_CONST 1
+688: ADD
+689: STORE_VAR a
+690: LOAD_VAR a
+691: PUSH_CONST 1
+692: ADD
+693: STORE_VAR a
+694: LOAD_VAR a
+695: PUSH_CONST 1
+696: ADD
+697: STORE_VAR a
+698: LOAD_VAR a
+699: PUSH_CONST 1
+700: ADD
+701: STORE_VAR a
+702: LOAD_VAR a
+703: PUSH_CONST 1
+704: ADD
+705: STORE_VAR a
+706: LOAD_VAR a
+707: PUSH_CONST 1
+708: ADD
+709: STORE_VAR a
+710: LOAD_VAR a
+711: PUSH_CONST 1
+712: ADD
+713: STORE_VAR a
+714: LOAD_VAR a
+715: PUSH_CONST 1
+716: ADD
+717: STORE_VAR a
+718: LOAD_VAR a
+719: PUSH_CONST 1
+720: ADD
+721: STORE_VAR a
+722: LOAD_VAR a
+723: PUSH_CONST 1
+724: ADD
+725: STORE_VAR a
+726: LOAD_VAR a
+727: PUSH_CONST 1
+728: ADD
+729: STORE_VAR a
+730: LOAD_VAR a
+731: PUSH_CONST 1
+732: ADD
+733: STORE_VAR a
+734: LOAD_VAR a
+735: PUSH_CONST 1
+736: ADD
+737: STORE_VAR a
+738: LOAD_VAR a
+739: PUSH_CONST 1
+740: ADD
+741: STORE_VAR a
+742: LOAD_VAR a
+743: PUSH_CONST 1
+744: ADD
+745: STORE_VAR a
+746: LOAD_VAR a
+747: PUSH_CONST 1
+748: ADD
+749: STORE_VAR a
+750: LOAD_VAR a
+751: PUSH_CONST 1
+752: ADD
+753: STORE_VAR a
+754: LOAD_VAR a
+755: PUSH_CONST 1
+756: ADD
+757: STORE_VAR a
+758: LOAD_VAR a
+759: PUSH_CONST 1
+760: ADD
+761: STORE_VAR a
+762: LOAD_VAR a
+763: PUSH_CONST 1
+764: ADD
+765: STORE_VAR a
+766: LOAD_VAR a
+767: PUSH_CONST 1
+768: ADD
+769: STORE_VAR a
+770: LOAD_VAR a
+771: PUSH_CONST 1
+772: ADD
+773: STORE_VAR a
+774: LOAD_VAR a
+775: PUSH_CONST 1
+776: ADD
+777: STORE_VAR a
+778: LOAD_VAR a
+779: PUSH_CONST 1
+780: ADD
+781: STORE_VAR a
+782: LOAD_VAR a
+783: PUSH_CONST 1
+784: ADD
+785: STORE_VAR a
+786: LOAD_VAR a
+787: PUSH_CONST 1
+788: ADD
+789: STORE_VAR a
+790: LOAD_VAR a
+791: PUSH_CONST 1
+792: ADD
+793: STORE_VAR a
+794: LOAD_VAR a
+795: PUSH_CONST 1
+796: ADD
+797: STORE_VAR a
+798: LOAD_VAR a
+799: PUSH_CONST 1
+800: ADD
+801: STORE_VAR a
+=== Running IR interpreter ===
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== IR (instr count = 802) ===
+0: PUSH_CONST 0
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 1
+4: ADD
+5: STORE_VAR a
+6: LOAD_VAR a
+7: PUSH_CONST 1
+8: ADD
+9: STORE_VAR a
+10: LOAD_VAR a
+11: PUSH_CONST 1
+12: ADD
+13: STORE_VAR a
+14: LOAD_VAR a
+15: PUSH_CONST 1
+16: ADD
+17: STORE_VAR a
+18: LOAD_VAR a
+19: PUSH_CONST 1
+20: ADD
+21: STORE_VAR a
+22: LOAD_VAR a
+23: PUSH_CONST 1
+24: ADD
+25: STORE_VAR a
+26: LOAD_VAR a
+27: PUSH_CONST 1
+28: ADD
+29: STORE_VAR a
+30: LOAD_VAR a
+31: PUSH_CONST 1
+32: ADD
+33: STORE_VAR a
+34: LOAD_VAR a
+35: PUSH_CONST 1
+36: ADD
+37: STORE_VAR a
+38: LOAD_VAR a
+39: PUSH_CONST 1
+40: ADD
+41: STORE_VAR a
+42: LOAD_VAR a
+43: PUSH_CONST 1
+44: ADD
+45: STORE_VAR a
+46: LOAD_VAR a
+47: PUSH_CONST 1
+48: ADD
+49: STORE_VAR a
+50: LOAD_VAR a
+51: PUSH_CONST 1
+52: ADD
+53: STORE_VAR a
+54: LOAD_VAR a
+55: PUSH_CONST 1
+56: ADD
+57: STORE_VAR a
+58: LOAD_VAR a
+59: PUSH_CONST 1
+60: ADD
+61: STORE_VAR a
+62: LOAD_VAR a
+63: PUSH_CONST 1
+64: ADD
+65: STORE_VAR a
+66: LOAD_VAR a
+67: PUSH_CONST 1
+68: ADD
+69: STORE_VAR a
+70: LOAD_VAR a
+71: PUSH_CONST 1
+72: ADD
+73: STORE_VAR a
+74: LOAD_VAR a
+75: PUSH_CONST 1
+76: ADD
+77: STORE_VAR a
+78: LOAD_VAR a
+79: PUSH_CONST 1
+80: ADD
+81: STORE_VAR a
+82: LOAD_VAR a
+83: PUSH_CONST 1
+84: ADD
+85: STORE_VAR a
+86: LOAD_VAR a
+87: PUSH_CONST 1
+88: ADD
+89: STORE_VAR a
+90: LOAD_VAR a
+91: PUSH_CONST 1
+92: ADD
+93: STORE_VAR a
+94: LOAD_VAR a
+95: PUSH_CONST 1
+96: ADD
+97: STORE_VAR a
+98: LOAD_VAR a
+99: PUSH_CONST 1
+100: ADD
+101: STORE_VAR a
+102: LOAD_VAR a
+103: PUSH_CONST 1
+104: ADD
+105: STORE_VAR a
+106: LOAD_VAR a
+107: PUSH_CONST 1
+108: ADD
+109: STORE_VAR a
+110: LOAD_VAR a
+111: PUSH_CONST 1
+112: ADD
+113: STORE_VAR a
+114: LOAD_VAR a
+115: PUSH_CONST 1
+116: ADD
+117: STORE_VAR a
+118: LOAD_VAR a
+119: PUSH_CONST 1
+120: ADD
+121: STORE_VAR a
+122: LOAD_VAR a
+123: PUSH_CONST 1
+124: ADD
+125: STORE_VAR a
+126: LOAD_VAR a
+127: PUSH_CONST 1
+128: ADD
+129: STORE_VAR a
+130: LOAD_VAR a
+131: PUSH_CONST 1
+132: ADD
+133: STORE_VAR a
+134: LOAD_VAR a
+135: PUSH_CONST 1
+136: ADD
+137: STORE_VAR a
+138: LOAD_VAR a
+139: PUSH_CONST 1
+140: ADD
+141: STORE_VAR a
+142: LOAD_VAR a
+143: PUSH_CONST 1
+144: ADD
+145: STORE_VAR a
+146: LOAD_VAR a
+147: PUSH_CONST 1
+148: ADD
+149: STORE_VAR a
+150: LOAD_VAR a
+151: PUSH_CONST 1
+152: ADD
+153: STORE_VAR a
+154: LOAD_VAR a
+155: PUSH_CONST 1
+156: ADD
+157: STORE_VAR a
+158: LOAD_VAR a
+159: PUSH_CONST 1
+160: ADD
+161: STORE_VAR a
+162: LOAD_VAR a
+163: PUSH_CONST 1
+164: ADD
+165: STORE_VAR a
+166: LOAD_VAR a
+167: PUSH_CONST 1
+168: ADD
+169: STORE_VAR a
+170: LOAD_VAR a
+171: PUSH_CONST 1
+172: ADD
+173: STORE_VAR a
+174: LOAD_VAR a
+175: PUSH_CONST 1
+176: ADD
+177: STORE_VAR a
+178: LOAD_VAR a
+179: PUSH_CONST 1
+180: ADD
+181: STORE_VAR a
+182: LOAD_VAR a
+183: PUSH_CONST 1
+184: ADD
+185: STORE_VAR a
+186: LOAD_VAR a
+187: PUSH_CONST 1
+188: ADD
+189: STORE_VAR a
+190: LOAD_VAR a
+191: PUSH_CONST 1
+192: ADD
+193: STORE_VAR a
+194: LOAD_VAR a
+195: PUSH_CONST 1
+196: ADD
+197: STORE_VAR a
+198: LOAD_VAR a
+199: PUSH_CONST 1
+200: ADD
+201: STORE_VAR a
+202: LOAD_VAR a
+203: PUSH_CONST 1
+204: ADD
+205: STORE_VAR a
+206: LOAD_VAR a
+207: PUSH_CONST 1
+208: ADD
+209: STORE_VAR a
+210: LOAD_VAR a
+211: PUSH_CONST 1
+212: ADD
+213: STORE_VAR a
+214: LOAD_VAR a
+215: PUSH_CONST 1
+216: ADD
+217: STORE_VAR a
+218: LOAD_VAR a
+219: PUSH_CONST 1
+220: ADD
+221: STORE_VAR a
+222: LOAD_VAR a
+223: PUSH_CONST 1
+224: ADD
+225: STORE_VAR a
+226: LOAD_VAR a
+227: PUSH_CONST 1
+228: ADD
+229: STORE_VAR a
+230: LOAD_VAR a
+231: PUSH_CONST 1
+232: ADD
+233: STORE_VAR a
+234: LOAD_VAR a
+235: PUSH_CONST 1
+236: ADD
+237: STORE_VAR a
+238: LOAD_VAR a
+239: PUSH_CONST 1
+240: ADD
+241: STORE_VAR a
+242: LOAD_VAR a
+243: PUSH_CONST 1
+244: ADD
+245: STORE_VAR a
+246: LOAD_VAR a
+247: PUSH_CONST 1
+248: ADD
+249: STORE_VAR a
+250: LOAD_VAR a
+251: PUSH_CONST 1
+252: ADD
+253: STORE_VAR a
+254: LOAD_VAR a
+255: PUSH_CONST 1
+256: ADD
+257: STORE_VAR a
+258: LOAD_VAR a
+259: PUSH_CONST 1
+260: ADD
+261: STORE_VAR a
+262: LOAD_VAR a
+263: PUSH_CONST 1
+264: ADD
+265: STORE_VAR a
+266: LOAD_VAR a
+267: PUSH_CONST 1
+268: ADD
+269: STORE_VAR a
+270: LOAD_VAR a
+271: PUSH_CONST 1
+272: ADD
+273: STORE_VAR a
+274: LOAD_VAR a
+275: PUSH_CONST 1
+276: ADD
+277: STORE_VAR a
+278: LOAD_VAR a
+279: PUSH_CONST 1
+280: ADD
+281: STORE_VAR a
+282: LOAD_VAR a
+283: PUSH_CONST 1
+284: ADD
+285: STORE_VAR a
+286: LOAD_VAR a
+287: PUSH_CONST 1
+288: ADD
+289: STORE_VAR a
+290: LOAD_VAR a
+291: PUSH_CONST 1
+292: ADD
+293: STORE_VAR a
+294: LOAD_VAR a
+295: PUSH_CONST 1
+296: ADD
+297: STORE_VAR a
+298: LOAD_VAR a
+299: PUSH_CONST 1
+300: ADD
+301: STORE_VAR a
+302: LOAD_VAR a
+303: PUSH_CONST 1
+304: ADD
+305: STORE_VAR a
+306: LOAD_VAR a
+307: PUSH_CONST 1
+308: ADD
+309: STORE_VAR a
+310: LOAD_VAR a
+311: PUSH_CONST 1
+312: ADD
+313: STORE_VAR a
+314: LOAD_VAR a
+315: PUSH_CONST 1
+316: ADD
+317: STORE_VAR a
+318: LOAD_VAR a
+319: PUSH_CONST 1
+320: ADD
+321: STORE_VAR a
+322: LOAD_VAR a
+323: PUSH_CONST 1
+324: ADD
+325: STORE_VAR a
+326: LOAD_VAR a
+327: PUSH_CONST 1
+328: ADD
+329: STORE_VAR a
+330: LOAD_VAR a
+331: PUSH_CONST 1
+332: ADD
+333: STORE_VAR a
+334: LOAD_VAR a
+335: PUSH_CONST 1
+336: ADD
+337: STORE_VAR a
+338: LOAD_VAR a
+339: PUSH_CONST 1
+340: ADD
+341: STORE_VAR a
+342: LOAD_VAR a
+343: PUSH_CONST 1
+344: ADD
+345: STORE_VAR a
+346: LOAD_VAR a
+347: PUSH_CONST 1
+348: ADD
+349: STORE_VAR a
+350: LOAD_VAR a
+351: PUSH_CONST 1
+352: ADD
+353: STORE_VAR a
+354: LOAD_VAR a
+355: PUSH_CONST 1
+356: ADD
+357: STORE_VAR a
+358: LOAD_VAR a
+359: PUSH_CONST 1
+360: ADD
+361: STORE_VAR a
+362: LOAD_VAR a
+363: PUSH_CONST 1
+364: ADD
+365: STORE_VAR a
+366: LOAD_VAR a
+367: PUSH_CONST 1
+368: ADD
+369: STORE_VAR a
+370: LOAD_VAR a
+371: PUSH_CONST 1
+372: ADD
+373: STORE_VAR a
+374: LOAD_VAR a
+375: PUSH_CONST 1
+376: ADD
+377: STORE_VAR a
+378: LOAD_VAR a
+379: PUSH_CONST 1
+380: ADD
+381: STORE_VAR a
+382: LOAD_VAR a
+383: PUSH_CONST 1
+384: ADD
+385: STORE_VAR a
+386: LOAD_VAR a
+387: PUSH_CONST 1
+388: ADD
+389: STORE_VAR a
+390: LOAD_VAR a
+391: PUSH_CONST 1
+392: ADD
+393: STORE_VAR a
+394: LOAD_VAR a
+395: PUSH_CONST 1
+396: ADD
+397: STORE_VAR a
+398: LOAD_VAR a
+399: PUSH_CONST 1
+400: ADD
+401: STORE_VAR a
+402: LOAD_VAR a
+403: PUSH_CONST 1
+404: ADD
+405: STORE_VAR a
+406: LOAD_VAR a
+407: PUSH_CONST 1
+408: ADD
+409: STORE_VAR a
+410: LOAD_VAR a
+411: PUSH_CONST 1
+412: ADD
+413: STORE_VAR a
+414: LOAD_VAR a
+415: PUSH_CONST 1
+416: ADD
+417: STORE_VAR a
+418: LOAD_VAR a
+419: PUSH_CONST 1
+420: ADD
+421: STORE_VAR a
+422: LOAD_VAR a
+423: PUSH_CONST 1
+424: ADD
+425: STORE_VAR a
+426: LOAD_VAR a
+427: PUSH_CONST 1
+428: ADD
+429: STORE_VAR a
+430: LOAD_VAR a
+431: PUSH_CONST 1
+432: ADD
+433: STORE_VAR a
+434: LOAD_VAR a
+435: PUSH_CONST 1
+436: ADD
+437: STORE_VAR a
+438: LOAD_VAR a
+439: PUSH_CONST 1
+440: ADD
+441: STORE_VAR a
+442: LOAD_VAR a
+443: PUSH_CONST 1
+444: ADD
+445: STORE_VAR a
+446: LOAD_VAR a
+447: PUSH_CONST 1
+448: ADD
+449: STORE_VAR a
+450: LOAD_VAR a
+451: PUSH_CONST 1
+452: ADD
+453: STORE_VAR a
+454: LOAD_VAR a
+455: PUSH_CONST 1
+456: ADD
+457: STORE_VAR a
+458: LOAD_VAR a
+459: PUSH_CONST 1
+460: ADD
+461: STORE_VAR a
+462: LOAD_VAR a
+463: PUSH_CONST 1
+464: ADD
+465: STORE_VAR a
+466: LOAD_VAR a
+467: PUSH_CONST 1
+468: ADD
+469: STORE_VAR a
+470: LOAD_VAR a
+471: PUSH_CONST 1
+472: ADD
+473: STORE_VAR a
+474: LOAD_VAR a
+475: PUSH_CONST 1
+476: ADD
+477: STORE_VAR a
+478: LOAD_VAR a
+479: PUSH_CONST 1
+480: ADD
+481: STORE_VAR a
+482: LOAD_VAR a
+483: PUSH_CONST 1
+484: ADD
+485: STORE_VAR a
+486: LOAD_VAR a
+487: PUSH_CONST 1
+488: ADD
+489: STORE_VAR a
+490: LOAD_VAR a
+491: PUSH_CONST 1
+492: ADD
+493: STORE_VAR a
+494: LOAD_VAR a
+495: PUSH_CONST 1
+496: ADD
+497: STORE_VAR a
+498: LOAD_VAR a
+499: PUSH_CONST 1
+500: ADD
+501: STORE_VAR a
+502: LOAD_VAR a
+503: PUSH_CONST 1
+504: ADD
+505: STORE_VAR a
+506: LOAD_VAR a
+507: PUSH_CONST 1
+508: ADD
+509: STORE_VAR a
+510: LOAD_VAR a
+511: PUSH_CONST 1
+512: ADD
+513: STORE_VAR a
+514: LOAD_VAR a
+515: PUSH_CONST 1
+516: ADD
+517: STORE_VAR a
+518: LOAD_VAR a
+519: PUSH_CONST 1
+520: ADD
+521: STORE_VAR a
+522: LOAD_VAR a
+523: PUSH_CONST 1
+524: ADD
+525: STORE_VAR a
+526: LOAD_VAR a
+527: PUSH_CONST 1
+528: ADD
+529: STORE_VAR a
+530: LOAD_VAR a
+531: PUSH_CONST 1
+532: ADD
+533: STORE_VAR a
+534: LOAD_VAR a
+535: PUSH_CONST 1
+536: ADD
+537: STORE_VAR a
+538: LOAD_VAR a
+539: PUSH_CONST 1
+540: ADD
+541: STORE_VAR a
+542: LOAD_VAR a
+543: PUSH_CONST 1
+544: ADD
+545: STORE_VAR a
+546: LOAD_VAR a
+547: PUSH_CONST 1
+548: ADD
+549: STORE_VAR a
+550: LOAD_VAR a
+551: PUSH_CONST 1
+552: ADD
+553: STORE_VAR a
+554: LOAD_VAR a
+555: PUSH_CONST 1
+556: ADD
+557: STORE_VAR a
+558: LOAD_VAR a
+559: PUSH_CONST 1
+560: ADD
+561: STORE_VAR a
+562: LOAD_VAR a
+563: PUSH_CONST 1
+564: ADD
+565: STORE_VAR a
+566: LOAD_VAR a
+567: PUSH_CONST 1
+568: ADD
+569: STORE_VAR a
+570: LOAD_VAR a
+571: PUSH_CONST 1
+572: ADD
+573: STORE_VAR a
+574: LOAD_VAR a
+575: PUSH_CONST 1
+576: ADD
+577: STORE_VAR a
+578: LOAD_VAR a
+579: PUSH_CONST 1
+580: ADD
+581: STORE_VAR a
+582: LOAD_VAR a
+583: PUSH_CONST 1
+584: ADD
+585: STORE_VAR a
+586: LOAD_VAR a
+587: PUSH_CONST 1
+588: ADD
+589: STORE_VAR a
+590: LOAD_VAR a
+591: PUSH_CONST 1
+592: ADD
+593: STORE_VAR a
+594: LOAD_VAR a
+595: PUSH_CONST 1
+596: ADD
+597: STORE_VAR a
+598: LOAD_VAR a
+599: PUSH_CONST 1
+600: ADD
+601: STORE_VAR a
+602: LOAD_VAR a
+603: PUSH_CONST 1
+604: ADD
+605: STORE_VAR a
+606: LOAD_VAR a
+607: PUSH_CONST 1
+608: ADD
+609: STORE_VAR a
+610: LOAD_VAR a
+611: PUSH_CONST 1
+612: ADD
+613: STORE_VAR a
+614: LOAD_VAR a
+615: PUSH_CONST 1
+616: ADD
+617: STORE_VAR a
+618: LOAD_VAR a
+619: PUSH_CONST 1
+620: ADD
+621: STORE_VAR a
+622: LOAD_VAR a
+623: PUSH_CONST 1
+624: ADD
+625: STORE_VAR a
+626: LOAD_VAR a
+627: PUSH_CONST 1
+628: ADD
+629: STORE_VAR a
+630: LOAD_VAR a
+631: PUSH_CONST 1
+632: ADD
+633: STORE_VAR a
+634: LOAD_VAR a
+635: PUSH_CONST 1
+636: ADD
+637: STORE_VAR a
+638: LOAD_VAR a
+639: PUSH_CONST 1
+640: ADD
+641: STORE_VAR a
+642: LOAD_VAR a
+643: PUSH_CONST 1
+644: ADD
+645: STORE_VAR a
+646: LOAD_VAR a
+647: PUSH_CONST 1
+648: ADD
+649: STORE_VAR a
+650: LOAD_VAR a
+651: PUSH_CONST 1
+652: ADD
+653: STORE_VAR a
+654: LOAD_VAR a
+655: PUSH_CONST 1
+656: ADD
+657: STORE_VAR a
+658: LOAD_VAR a
+659: PUSH_CONST 1
+660: ADD
+661: STORE_VAR a
+662: LOAD_VAR a
+663: PUSH_CONST 1
+664: ADD
+665: STORE_VAR a
+666: LOAD_VAR a
+667: PUSH_CONST 1
+668: ADD
+669: STORE_VAR a
+670: LOAD_VAR a
+671: PUSH_CONST 1
+672: ADD
+673: STORE_VAR a
+674: LOAD_VAR a
+675: PUSH_CONST 1
+676: ADD
+677: STORE_VAR a
+678: LOAD_VAR a
+679: PUSH_CONST 1
+680: ADD
+681: STORE_VAR a
+682: LOAD_VAR a
+683: PUSH_CONST 1
+684: ADD
+685: STORE_VAR a
+686: LOAD_VAR a
+687: PUSH_CONST 1
+688: ADD
+689: STORE_VAR a
+690: LOAD_VAR a
+691: PUSH_CONST 1
+692: ADD
+693: STORE_VAR a
+694: LOAD_VAR a
+695: PUSH_CONST 1
+696: ADD
+697: STORE_VAR a
+698: LOAD_VAR a
+699: PUSH_CONST 1
+700: ADD
+701: STORE_VAR a
+702: LOAD_VAR a
+703: PUSH_CONST 1
+704: ADD
+705: STORE_VAR a
+706: LOAD_VAR a
+707: PUSH_CONST 1
+708: ADD
+709: STORE_VAR a
+710: LOAD_VAR a
+711: PUSH_CONST 1
+712: ADD
+713: STORE_VAR a
+714: LOAD_VAR a
+715: PUSH_CONST 1
+716: ADD
+717: STORE_VAR a
+718: LOAD_VAR a
+719: PUSH_CONST 1
+720: ADD
+721: STORE_VAR a
+722: LOAD_VAR a
+723: PUSH_CONST 1
+724: ADD
+725: STORE_VAR a
+726: LOAD_VAR a
+727: PUSH_CONST 1
+728: ADD
+729: STORE_VAR a
+730: LOAD_VAR a
+731: PUSH_CONST 1
+732: ADD
+733: STORE_VAR a
+734: LOAD_VAR a
+735: PUSH_CONST 1
+736: ADD
+737: STORE_VAR a
+738: LOAD_VAR a
+739: PUSH_CONST 1
+740: ADD
+741: STORE_VAR a
+742: LOAD_VAR a
+743: PUSH_CONST 1
+744: ADD
+745: STORE_VAR a
+746: LOAD_VAR a
+747: PUSH_CONST 1
+748: ADD
+749: STORE_VAR a
+750: LOAD_VAR a
+751: PUSH_CONST 1
+752: ADD
+753: STORE_VAR a
+754: LOAD_VAR a
+755: PUSH_CONST 1
+756: ADD
+757: STORE_VAR a
+758: LOAD_VAR a
+759: PUSH_CONST 1
+760: ADD
+761: STORE_VAR a
+762: LOAD_VAR a
+763: PUSH_CONST 1
+764: ADD
+765: STORE_VAR a
+766: LOAD_VAR a
+767: PUSH_CONST 1
+768: ADD
+769: STORE_VAR a
+770: LOAD_VAR a
+771: PUSH_CONST 1
+772: ADD
+773: STORE_VAR a
+774: LOAD_VAR a
+775: PUSH_CONST 1
+776: ADD
+777: STORE_VAR a
+778: LOAD_VAR a
+779: PUSH_CONST 1
+780: ADD
+781: STORE_VAR a
+782: LOAD_VAR a
+783: PUSH_CONST 1
+784: ADD
+785: STORE_VAR a
+786: LOAD_VAR a
+787: PUSH_CONST 1
+788: ADD
+789: STORE_VAR a
+790: LOAD_VAR a
+791: PUSH_CONST 1
+792: ADD
+793: STORE_VAR a
+794: LOAD_VAR a
+795: PUSH_CONST 1
+796: ADD
+797: STORE_VAR a
+798: LOAD_VAR a
+799: PUSH_CONST 1
+800: ADD
+801: STORE_VAR a
+=== Running IR interpreter ===
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== IR (instr count = 802) ===
+0: PUSH_CONST 0
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 1
+4: ADD
+5: STORE_VAR a
+6: LOAD_VAR a
+7: PUSH_CONST 1
+8: ADD
+9: STORE_VAR a
+10: LOAD_VAR a
+11: PUSH_CONST 1
+12: ADD
+13: STORE_VAR a
+14: LOAD_VAR a
+15: PUSH_CONST 1
+16: ADD
+17: STORE_VAR a
+18: LOAD_VAR a
+19: PUSH_CONST 1
+20: ADD
+21: STORE_VAR a
+22: LOAD_VAR a
+23: PUSH_CONST 1
+24: ADD
+25: STORE_VAR a
+26: LOAD_VAR a
+27: PUSH_CONST 1
+28: ADD
+29: STORE_VAR a
+30: LOAD_VAR a
+31: PUSH_CONST 1
+32: ADD
+33: STORE_VAR a
+34: LOAD_VAR a
+35: PUSH_CONST 1
+36: ADD
+37: STORE_VAR a
+38: LOAD_VAR a
+39: PUSH_CONST 1
+40: ADD
+41: STORE_VAR a
+42: LOAD_VAR a
+43: PUSH_CONST 1
+44: ADD
+45: STORE_VAR a
+46: LOAD_VAR a
+47: PUSH_CONST 1
+48: ADD
+49: STORE_VAR a
+50: LOAD_VAR a
+51: PUSH_CONST 1
+52: ADD
+53: STORE_VAR a
+54: LOAD_VAR a
+55: PUSH_CONST 1
+56: ADD
+57: STORE_VAR a
+58: LOAD_VAR a
+59: PUSH_CONST 1
+60: ADD
+61: STORE_VAR a
+62: LOAD_VAR a
+63: PUSH_CONST 1
+64: ADD
+65: STORE_VAR a
+66: LOAD_VAR a
+67: PUSH_CONST 1
+68: ADD
+69: STORE_VAR a
+70: LOAD_VAR a
+71: PUSH_CONST 1
+72: ADD
+73: STORE_VAR a
+74: LOAD_VAR a
+75: PUSH_CONST 1
+76: ADD
+77: STORE_VAR a
+78: LOAD_VAR a
+79: PUSH_CONST 1
+80: ADD
+81: STORE_VAR a
+82: LOAD_VAR a
+83: PUSH_CONST 1
+84: ADD
+85: STORE_VAR a
+86: LOAD_VAR a
+87: PUSH_CONST 1
+88: ADD
+89: STORE_VAR a
+90: LOAD_VAR a
+91: PUSH_CONST 1
+92: ADD
+93: STORE_VAR a
+94: LOAD_VAR a
+95: PUSH_CONST 1
+96: ADD
+97: STORE_VAR a
+98: LOAD_VAR a
+99: PUSH_CONST 1
+100: ADD
+101: STORE_VAR a
+102: LOAD_VAR a
+103: PUSH_CONST 1
+104: ADD
+105: STORE_VAR a
+106: LOAD_VAR a
+107: PUSH_CONST 1
+108: ADD
+109: STORE_VAR a
+110: LOAD_VAR a
+111: PUSH_CONST 1
+112: ADD
+113: STORE_VAR a
+114: LOAD_VAR a
+115: PUSH_CONST 1
+116: ADD
+117: STORE_VAR a
+118: LOAD_VAR a
+119: PUSH_CONST 1
+120: ADD
+121: STORE_VAR a
+122: LOAD_VAR a
+123: PUSH_CONST 1
+124: ADD
+125: STORE_VAR a
+126: LOAD_VAR a
+127: PUSH_CONST 1
+128: ADD
+129: STORE_VAR a
+130: LOAD_VAR a
+131: PUSH_CONST 1
+132: ADD
+133: STORE_VAR a
+134: LOAD_VAR a
+135: PUSH_CONST 1
+136: ADD
+137: STORE_VAR a
+138: LOAD_VAR a
+139: PUSH_CONST 1
+140: ADD
+141: STORE_VAR a
+142: LOAD_VAR a
+143: PUSH_CONST 1
+144: ADD
+145: STORE_VAR a
+146: LOAD_VAR a
+147: PUSH_CONST 1
+148: ADD
+149: STORE_VAR a
+150: LOAD_VAR a
+151: PUSH_CONST 1
+152: ADD
+153: STORE_VAR a
+154: LOAD_VAR a
+155: PUSH_CONST 1
+156: ADD
+157: STORE_VAR a
+158: LOAD_VAR a
+159: PUSH_CONST 1
+160: ADD
+161: STORE_VAR a
+162: LOAD_VAR a
+163: PUSH_CONST 1
+164: ADD
+165: STORE_VAR a
+166: LOAD_VAR a
+167: PUSH_CONST 1
+168: ADD
+169: STORE_VAR a
+170: LOAD_VAR a
+171: PUSH_CONST 1
+172: ADD
+173: STORE_VAR a
+174: LOAD_VAR a
+175: PUSH_CONST 1
+176: ADD
+177: STORE_VAR a
+178: LOAD_VAR a
+179: PUSH_CONST 1
+180: ADD
+181: STORE_VAR a
+182: LOAD_VAR a
+183: PUSH_CONST 1
+184: ADD
+185: STORE_VAR a
+186: LOAD_VAR a
+187: PUSH_CONST 1
+188: ADD
+189: STORE_VAR a
+190: LOAD_VAR a
+191: PUSH_CONST 1
+192: ADD
+193: STORE_VAR a
+194: LOAD_VAR a
+195: PUSH_CONST 1
+196: ADD
+197: STORE_VAR a
+198: LOAD_VAR a
+199: PUSH_CONST 1
+200: ADD
+201: STORE_VAR a
+202: LOAD_VAR a
+203: PUSH_CONST 1
+204: ADD
+205: STORE_VAR a
+206: LOAD_VAR a
+207: PUSH_CONST 1
+208: ADD
+209: STORE_VAR a
+210: LOAD_VAR a
+211: PUSH_CONST 1
+212: ADD
+213: STORE_VAR a
+214: LOAD_VAR a
+215: PUSH_CONST 1
+216: ADD
+217: STORE_VAR a
+218: LOAD_VAR a
+219: PUSH_CONST 1
+220: ADD
+221: STORE_VAR a
+222: LOAD_VAR a
+223: PUSH_CONST 1
+224: ADD
+225: STORE_VAR a
+226: LOAD_VAR a
+227: PUSH_CONST 1
+228: ADD
+229: STORE_VAR a
+230: LOAD_VAR a
+231: PUSH_CONST 1
+232: ADD
+233: STORE_VAR a
+234: LOAD_VAR a
+235: PUSH_CONST 1
+236: ADD
+237: STORE_VAR a
+238: LOAD_VAR a
+239: PUSH_CONST 1
+240: ADD
+241: STORE_VAR a
+242: LOAD_VAR a
+243: PUSH_CONST 1
+244: ADD
+245: STORE_VAR a
+246: LOAD_VAR a
+247: PUSH_CONST 1
+248: ADD
+249: STORE_VAR a
+250: LOAD_VAR a
+251: PUSH_CONST 1
+252: ADD
+253: STORE_VAR a
+254: LOAD_VAR a
+255: PUSH_CONST 1
+256: ADD
+257: STORE_VAR a
+258: LOAD_VAR a
+259: PUSH_CONST 1
+260: ADD
+261: STORE_VAR a
+262: LOAD_VAR a
+263: PUSH_CONST 1
+264: ADD
+265: STORE_VAR a
+266: LOAD_VAR a
+267: PUSH_CONST 1
+268: ADD
+269: STORE_VAR a
+270: LOAD_VAR a
+271: PUSH_CONST 1
+272: ADD
+273: STORE_VAR a
+274: LOAD_VAR a
+275: PUSH_CONST 1
+276: ADD
+277: STORE_VAR a
+278: LOAD_VAR a
+279: PUSH_CONST 1
+280: ADD
+281: STORE_VAR a
+282: LOAD_VAR a
+283: PUSH_CONST 1
+284: ADD
+285: STORE_VAR a
+286: LOAD_VAR a
+287: PUSH_CONST 1
+288: ADD
+289: STORE_VAR a
+290: LOAD_VAR a
+291: PUSH_CONST 1
+292: ADD
+293: STORE_VAR a
+294: LOAD_VAR a
+295: PUSH_CONST 1
+296: ADD
+297: STORE_VAR a
+298: LOAD_VAR a
+299: PUSH_CONST 1
+300: ADD
+301: STORE_VAR a
+302: LOAD_VAR a
+303: PUSH_CONST 1
+304: ADD
+305: STORE_VAR a
+306: LOAD_VAR a
+307: PUSH_CONST 1
+308: ADD
+309: STORE_VAR a
+310: LOAD_VAR a
+311: PUSH_CONST 1
+312: ADD
+313: STORE_VAR a
+314: LOAD_VAR a
+315: PUSH_CONST 1
+316: ADD
+317: STORE_VAR a
+318: LOAD_VAR a
+319: PUSH_CONST 1
+320: ADD
+321: STORE_VAR a
+322: LOAD_VAR a
+323: PUSH_CONST 1
+324: ADD
+325: STORE_VAR a
+326: LOAD_VAR a
+327: PUSH_CONST 1
+328: ADD
+329: STORE_VAR a
+330: LOAD_VAR a
+331: PUSH_CONST 1
+332: ADD
+333: STORE_VAR a
+334: LOAD_VAR a
+335: PUSH_CONST 1
+336: ADD
+337: STORE_VAR a
+338: LOAD_VAR a
+339: PUSH_CONST 1
+340: ADD
+341: STORE_VAR a
+342: LOAD_VAR a
+343: PUSH_CONST 1
+344: ADD
+345: STORE_VAR a
+346: LOAD_VAR a
+347: PUSH_CONST 1
+348: ADD
+349: STORE_VAR a
+350: LOAD_VAR a
+351: PUSH_CONST 1
+352: ADD
+353: STORE_VAR a
+354: LOAD_VAR a
+355: PUSH_CONST 1
+356: ADD
+357: STORE_VAR a
+358: LOAD_VAR a
+359: PUSH_CONST 1
+360: ADD
+361: STORE_VAR a
+362: LOAD_VAR a
+363: PUSH_CONST 1
+364: ADD
+365: STORE_VAR a
+366: LOAD_VAR a
+367: PUSH_CONST 1
+368: ADD
+369: STORE_VAR a
+370: LOAD_VAR a
+371: PUSH_CONST 1
+372: ADD
+373: STORE_VAR a
+374: LOAD_VAR a
+375: PUSH_CONST 1
+376: ADD
+377: STORE_VAR a
+378: LOAD_VAR a
+379: PUSH_CONST 1
+380: ADD
+381: STORE_VAR a
+382: LOAD_VAR a
+383: PUSH_CONST 1
+384: ADD
+385: STORE_VAR a
+386: LOAD_VAR a
+387: PUSH_CONST 1
+388: ADD
+389: STORE_VAR a
+390: LOAD_VAR a
+391: PUSH_CONST 1
+392: ADD
+393: STORE_VAR a
+394: LOAD_VAR a
+395: PUSH_CONST 1
+396: ADD
+397: STORE_VAR a
+398: LOAD_VAR a
+399: PUSH_CONST 1
+400: ADD
+401: STORE_VAR a
+402: LOAD_VAR a
+403: PUSH_CONST 1
+404: ADD
+405: STORE_VAR a
+406: LOAD_VAR a
+407: PUSH_CONST 1
+408: ADD
+409: STORE_VAR a
+410: LOAD_VAR a
+411: PUSH_CONST 1
+412: ADD
+413: STORE_VAR a
+414: LOAD_VAR a
+415: PUSH_CONST 1
+416: ADD
+417: STORE_VAR a
+418: LOAD_VAR a
+419: PUSH_CONST 1
+420: ADD
+421: STORE_VAR a
+422: LOAD_VAR a
+423: PUSH_CONST 1
+424: ADD
+425: STORE_VAR a
+426: LOAD_VAR a
+427: PUSH_CONST 1
+428: ADD
+429: STORE_VAR a
+430: LOAD_VAR a
+431: PUSH_CONST 1
+432: ADD
+433: STORE_VAR a
+434: LOAD_VAR a
+435: PUSH_CONST 1
+436: ADD
+437: STORE_VAR a
+438: LOAD_VAR a
+439: PUSH_CONST 1
+440: ADD
+441: STORE_VAR a
+442: LOAD_VAR a
+443: PUSH_CONST 1
+444: ADD
+445: STORE_VAR a
+446: LOAD_VAR a
+447: PUSH_CONST 1
+448: ADD
+449: STORE_VAR a
+450: LOAD_VAR a
+451: PUSH_CONST 1
+452: ADD
+453: STORE_VAR a
+454: LOAD_VAR a
+455: PUSH_CONST 1
+456: ADD
+457: STORE_VAR a
+458: LOAD_VAR a
+459: PUSH_CONST 1
+460: ADD
+461: STORE_VAR a
+462: LOAD_VAR a
+463: PUSH_CONST 1
+464: ADD
+465: STORE_VAR a
+466: LOAD_VAR a
+467: PUSH_CONST 1
+468: ADD
+469: STORE_VAR a
+470: LOAD_VAR a
+471: PUSH_CONST 1
+472: ADD
+473: STORE_VAR a
+474: LOAD_VAR a
+475: PUSH_CONST 1
+476: ADD
+477: STORE_VAR a
+478: LOAD_VAR a
+479: PUSH_CONST 1
+480: ADD
+481: STORE_VAR a
+482: LOAD_VAR a
+483: PUSH_CONST 1
+484: ADD
+485: STORE_VAR a
+486: LOAD_VAR a
+487: PUSH_CONST 1
+488: ADD
+489: STORE_VAR a
+490: LOAD_VAR a
+491: PUSH_CONST 1
+492: ADD
+493: STORE_VAR a
+494: LOAD_VAR a
+495: PUSH_CONST 1
+496: ADD
+497: STORE_VAR a
+498: LOAD_VAR a
+499: PUSH_CONST 1
+500: ADD
+501: STORE_VAR a
+502: LOAD_VAR a
+503: PUSH_CONST 1
+504: ADD
+505: STORE_VAR a
+506: LOAD_VAR a
+507: PUSH_CONST 1
+508: ADD
+509: STORE_VAR a
+510: LOAD_VAR a
+511: PUSH_CONST 1
+512: ADD
+513: STORE_VAR a
+514: LOAD_VAR a
+515: PUSH_CONST 1
+516: ADD
+517: STORE_VAR a
+518: LOAD_VAR a
+519: PUSH_CONST 1
+520: ADD
+521: STORE_VAR a
+522: LOAD_VAR a
+523: PUSH_CONST 1
+524: ADD
+525: STORE_VAR a
+526: LOAD_VAR a
+527: PUSH_CONST 1
+528: ADD
+529: STORE_VAR a
+530: LOAD_VAR a
+531: PUSH_CONST 1
+532: ADD
+533: STORE_VAR a
+534: LOAD_VAR a
+535: PUSH_CONST 1
+536: ADD
+537: STORE_VAR a
+538: LOAD_VAR a
+539: PUSH_CONST 1
+540: ADD
+541: STORE_VAR a
+542: LOAD_VAR a
+543: PUSH_CONST 1
+544: ADD
+545: STORE_VAR a
+546: LOAD_VAR a
+547: PUSH_CONST 1
+548: ADD
+549: STORE_VAR a
+550: LOAD_VAR a
+551: PUSH_CONST 1
+552: ADD
+553: STORE_VAR a
+554: LOAD_VAR a
+555: PUSH_CONST 1
+556: ADD
+557: STORE_VAR a
+558: LOAD_VAR a
+559: PUSH_CONST 1
+560: ADD
+561: STORE_VAR a
+562: LOAD_VAR a
+563: PUSH_CONST 1
+564: ADD
+565: STORE_VAR a
+566: LOAD_VAR a
+567: PUSH_CONST 1
+568: ADD
+569: STORE_VAR a
+570: LOAD_VAR a
+571: PUSH_CONST 1
+572: ADD
+573: STORE_VAR a
+574: LOAD_VAR a
+575: PUSH_CONST 1
+576: ADD
+577: STORE_VAR a
+578: LOAD_VAR a
+579: PUSH_CONST 1
+580: ADD
+581: STORE_VAR a
+582: LOAD_VAR a
+583: PUSH_CONST 1
+584: ADD
+585: STORE_VAR a
+586: LOAD_VAR a
+587: PUSH_CONST 1
+588: ADD
+589: STORE_VAR a
+590: LOAD_VAR a
+591: PUSH_CONST 1
+592: ADD
+593: STORE_VAR a
+594: LOAD_VAR a
+595: PUSH_CONST 1
+596: ADD
+597: STORE_VAR a
+598: LOAD_VAR a
+599: PUSH_CONST 1
+600: ADD
+601: STORE_VAR a
+602: LOAD_VAR a
+603: PUSH_CONST 1
+604: ADD
+605: STORE_VAR a
+606: LOAD_VAR a
+607: PUSH_CONST 1
+608: ADD
+609: STORE_VAR a
+610: LOAD_VAR a
+611: PUSH_CONST 1
+612: ADD
+613: STORE_VAR a
+614: LOAD_VAR a
+615: PUSH_CONST 1
+616: ADD
+617: STORE_VAR a
+618: LOAD_VAR a
+619: PUSH_CONST 1
+620: ADD
+621: STORE_VAR a
+622: LOAD_VAR a
+623: PUSH_CONST 1
+624: ADD
+625: STORE_VAR a
+626: LOAD_VAR a
+627: PUSH_CONST 1
+628: ADD
+629: STORE_VAR a
+630: LOAD_VAR a
+631: PUSH_CONST 1
+632: ADD
+633: STORE_VAR a
+634: LOAD_VAR a
+635: PUSH_CONST 1
+636: ADD
+637: STORE_VAR a
+638: LOAD_VAR a
+639: PUSH_CONST 1
+640: ADD
+641: STORE_VAR a
+642: LOAD_VAR a
+643: PUSH_CONST 1
+644: ADD
+645: STORE_VAR a
+646: LOAD_VAR a
+647: PUSH_CONST 1
+648: ADD
+649: STORE_VAR a
+650: LOAD_VAR a
+651: PUSH_CONST 1
+652: ADD
+653: STORE_VAR a
+654: LOAD_VAR a
+655: PUSH_CONST 1
+656: ADD
+657: STORE_VAR a
+658: LOAD_VAR a
+659: PUSH_CONST 1
+660: ADD
+661: STORE_VAR a
+662: LOAD_VAR a
+663: PUSH_CONST 1
+664: ADD
+665: STORE_VAR a
+666: LOAD_VAR a
+667: PUSH_CONST 1
+668: ADD
+669: STORE_VAR a
+670: LOAD_VAR a
+671: PUSH_CONST 1
+672: ADD
+673: STORE_VAR a
+674: LOAD_VAR a
+675: PUSH_CONST 1
+676: ADD
+677: STORE_VAR a
+678: LOAD_VAR a
+679: PUSH_CONST 1
+680: ADD
+681: STORE_VAR a
+682: LOAD_VAR a
+683: PUSH_CONST 1
+684: ADD
+685: STORE_VAR a
+686: LOAD_VAR a
+687: PUSH_CONST 1
+688: ADD
+689: STORE_VAR a
+690: LOAD_VAR a
+691: PUSH_CONST 1
+692: ADD
+693: STORE_VAR a
+694: LOAD_VAR a
+695: PUSH_CONST 1
+696: ADD
+697: STORE_VAR a
+698: LOAD_VAR a
+699: PUSH_CONST 1
+700: ADD
+701: STORE_VAR a
+702: LOAD_VAR a
+703: PUSH_CONST 1
+704: ADD
+705: STORE_VAR a
+706: LOAD_VAR a
+707: PUSH_CONST 1
+708: ADD
+709: STORE_VAR a
+710: LOAD_VAR a
+711: PUSH_CONST 1
+712: ADD
+713: STORE_VAR a
+714: LOAD_VAR a
+715: PUSH_CONST 1
+716: ADD
+717: STORE_VAR a
+718: LOAD_VAR a
+719: PUSH_CONST 1
+720: ADD
+721: STORE_VAR a
+722: LOAD_VAR a
+723: PUSH_CONST 1
+724: ADD
+725: STORE_VAR a
+726: LOAD_VAR a
+727: PUSH_CONST 1
+728: ADD
+729: STORE_VAR a
+730: LOAD_VAR a
+731: PUSH_CONST 1
+732: ADD
+733: STORE_VAR a
+734: LOAD_VAR a
+735: PUSH_CONST 1
+736: ADD
+737: STORE_VAR a
+738: LOAD_VAR a
+739: PUSH_CONST 1
+740: ADD
+741: STORE_VAR a
+742: LOAD_VAR a
+743: PUSH_CONST 1
+744: ADD
+745: STORE_VAR a
+746: LOAD_VAR a
+747: PUSH_CONST 1
+748: ADD
+749: STORE_VAR a
+750: LOAD_VAR a
+751: PUSH_CONST 1
+752: ADD
+753: STORE_VAR a
+754: LOAD_VAR a
+755: PUSH_CONST 1
+756: ADD
+757: STORE_VAR a
+758: LOAD_VAR a
+759: PUSH_CONST 1
+760: ADD
+761: STORE_VAR a
+762: LOAD_VAR a
+763: PUSH_CONST 1
+764: ADD
+765: STORE_VAR a
+766: LOAD_VAR a
+767: PUSH_CONST 1
+768: ADD
+769: STORE_VAR a
+770: LOAD_VAR a
+771: PUSH_CONST 1
+772: ADD
+773: STORE_VAR a
+774: LOAD_VAR a
+775: PUSH_CONST 1
+776: ADD
+777: STORE_VAR a
+778: LOAD_VAR a
+779: PUSH_CONST 1
+780: ADD
+781: STORE_VAR a
+782: LOAD_VAR a
+783: PUSH_CONST 1
+784: ADD
+785: STORE_VAR a
+786: LOAD_VAR a
+787: PUSH_CONST 1
+788: ADD
+789: STORE_VAR a
+790: LOAD_VAR a
+791: PUSH_CONST 1
+792: ADD
+793: STORE_VAR a
+794: LOAD_VAR a
+795: PUSH_CONST 1
+796: ADD
+797: STORE_VAR a
+798: LOAD_VAR a
+799: PUSH_CONST 1
+800: ADD
+801: STORE_VAR a
+=== Running IR interpreter ===
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== IR (instr count = 802) ===
+0: PUSH_CONST 0
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 1
+4: ADD
+5: STORE_VAR a
+6: LOAD_VAR a
+7: PUSH_CONST 1
+8: ADD
+9: STORE_VAR a
+10: LOAD_VAR a
+11: PUSH_CONST 1
+12: ADD
+13: STORE_VAR a
+14: LOAD_VAR a
+15: PUSH_CONST 1
+16: ADD
+17: STORE_VAR a
+18: LOAD_VAR a
+19: PUSH_CONST 1
+20: ADD
+21: STORE_VAR a
+22: LOAD_VAR a
+23: PUSH_CONST 1
+24: ADD
+25: STORE_VAR a
+26: LOAD_VAR a
+27: PUSH_CONST 1
+28: ADD
+29: STORE_VAR a
+30: LOAD_VAR a
+31: PUSH_CONST 1
+32: ADD
+33: STORE_VAR a
+34: LOAD_VAR a
+35: PUSH_CONST 1
+36: ADD
+37: STORE_VAR a
+38: LOAD_VAR a
+39: PUSH_CONST 1
+40: ADD
+41: STORE_VAR a
+42: LOAD_VAR a
+43: PUSH_CONST 1
+44: ADD
+45: STORE_VAR a
+46: LOAD_VAR a
+47: PUSH_CONST 1
+48: ADD
+49: STORE_VAR a
+50: LOAD_VAR a
+51: PUSH_CONST 1
+52: ADD
+53: STORE_VAR a
+54: LOAD_VAR a
+55: PUSH_CONST 1
+56: ADD
+57: STORE_VAR a
+58: LOAD_VAR a
+59: PUSH_CONST 1
+60: ADD
+61: STORE_VAR a
+62: LOAD_VAR a
+63: PUSH_CONST 1
+64: ADD
+65: STORE_VAR a
+66: LOAD_VAR a
+67: PUSH_CONST 1
+68: ADD
+69: STORE_VAR a
+70: LOAD_VAR a
+71: PUSH_CONST 1
+72: ADD
+73: STORE_VAR a
+74: LOAD_VAR a
+75: PUSH_CONST 1
+76: ADD
+77: STORE_VAR a
+78: LOAD_VAR a
+79: PUSH_CONST 1
+80: ADD
+81: STORE_VAR a
+82: LOAD_VAR a
+83: PUSH_CONST 1
+84: ADD
+85: STORE_VAR a
+86: LOAD_VAR a
+87: PUSH_CONST 1
+88: ADD
+89: STORE_VAR a
+90: LOAD_VAR a
+91: PUSH_CONST 1
+92: ADD
+93: STORE_VAR a
+94: LOAD_VAR a
+95: PUSH_CONST 1
+96: ADD
+97: STORE_VAR a
+98: LOAD_VAR a
+99: PUSH_CONST 1
+100: ADD
+101: STORE_VAR a
+102: LOAD_VAR a
+103: PUSH_CONST 1
+104: ADD
+105: STORE_VAR a
+106: LOAD_VAR a
+107: PUSH_CONST 1
+108: ADD
+109: STORE_VAR a
+110: LOAD_VAR a
+111: PUSH_CONST 1
+112: ADD
+113: STORE_VAR a
+114: LOAD_VAR a
+115: PUSH_CONST 1
+116: ADD
+117: STORE_VAR a
+118: LOAD_VAR a
+119: PUSH_CONST 1
+120: ADD
+121: STORE_VAR a
+122: LOAD_VAR a
+123: PUSH_CONST 1
+124: ADD
+125: STORE_VAR a
+126: LOAD_VAR a
+127: PUSH_CONST 1
+128: ADD
+129: STORE_VAR a
+130: LOAD_VAR a
+131: PUSH_CONST 1
+132: ADD
+133: STORE_VAR a
+134: LOAD_VAR a
+135: PUSH_CONST 1
+136: ADD
+137: STORE_VAR a
+138: LOAD_VAR a
+139: PUSH_CONST 1
+140: ADD
+141: STORE_VAR a
+142: LOAD_VAR a
+143: PUSH_CONST 1
+144: ADD
+145: STORE_VAR a
+146: LOAD_VAR a
+147: PUSH_CONST 1
+148: ADD
+149: STORE_VAR a
+150: LOAD_VAR a
+151: PUSH_CONST 1
+152: ADD
+153: STORE_VAR a
+154: LOAD_VAR a
+155: PUSH_CONST 1
+156: ADD
+157: STORE_VAR a
+158: LOAD_VAR a
+159: PUSH_CONST 1
+160: ADD
+161: STORE_VAR a
+162: LOAD_VAR a
+163: PUSH_CONST 1
+164: ADD
+165: STORE_VAR a
+166: LOAD_VAR a
+167: PUSH_CONST 1
+168: ADD
+169: STORE_VAR a
+170: LOAD_VAR a
+171: PUSH_CONST 1
+172: ADD
+173: STORE_VAR a
+174: LOAD_VAR a
+175: PUSH_CONST 1
+176: ADD
+177: STORE_VAR a
+178: LOAD_VAR a
+179: PUSH_CONST 1
+180: ADD
+181: STORE_VAR a
+182: LOAD_VAR a
+183: PUSH_CONST 1
+184: ADD
+185: STORE_VAR a
+186: LOAD_VAR a
+187: PUSH_CONST 1
+188: ADD
+189: STORE_VAR a
+190: LOAD_VAR a
+191: PUSH_CONST 1
+192: ADD
+193: STORE_VAR a
+194: LOAD_VAR a
+195: PUSH_CONST 1
+196: ADD
+197: STORE_VAR a
+198: LOAD_VAR a
+199: PUSH_CONST 1
+200: ADD
+201: STORE_VAR a
+202: LOAD_VAR a
+203: PUSH_CONST 1
+204: ADD
+205: STORE_VAR a
+206: LOAD_VAR a
+207: PUSH_CONST 1
+208: ADD
+209: STORE_VAR a
+210: LOAD_VAR a
+211: PUSH_CONST 1
+212: ADD
+213: STORE_VAR a
+214: LOAD_VAR a
+215: PUSH_CONST 1
+216: ADD
+217: STORE_VAR a
+218: LOAD_VAR a
+219: PUSH_CONST 1
+220: ADD
+221: STORE_VAR a
+222: LOAD_VAR a
+223: PUSH_CONST 1
+224: ADD
+225: STORE_VAR a
+226: LOAD_VAR a
+227: PUSH_CONST 1
+228: ADD
+229: STORE_VAR a
+230: LOAD_VAR a
+231: PUSH_CONST 1
+232: ADD
+233: STORE_VAR a
+234: LOAD_VAR a
+235: PUSH_CONST 1
+236: ADD
+237: STORE_VAR a
+238: LOAD_VAR a
+239: PUSH_CONST 1
+240: ADD
+241: STORE_VAR a
+242: LOAD_VAR a
+243: PUSH_CONST 1
+244: ADD
+245: STORE_VAR a
+246: LOAD_VAR a
+247: PUSH_CONST 1
+248: ADD
+249: STORE_VAR a
+250: LOAD_VAR a
+251: PUSH_CONST 1
+252: ADD
+253: STORE_VAR a
+254: LOAD_VAR a
+255: PUSH_CONST 1
+256: ADD
+257: STORE_VAR a
+258: LOAD_VAR a
+259: PUSH_CONST 1
+260: ADD
+261: STORE_VAR a
+262: LOAD_VAR a
+263: PUSH_CONST 1
+264: ADD
+265: STORE_VAR a
+266: LOAD_VAR a
+267: PUSH_CONST 1
+268: ADD
+269: STORE_VAR a
+270: LOAD_VAR a
+271: PUSH_CONST 1
+272: ADD
+273: STORE_VAR a
+274: LOAD_VAR a
+275: PUSH_CONST 1
+276: ADD
+277: STORE_VAR a
+278: LOAD_VAR a
+279: PUSH_CONST 1
+280: ADD
+281: STORE_VAR a
+282: LOAD_VAR a
+283: PUSH_CONST 1
+284: ADD
+285: STORE_VAR a
+286: LOAD_VAR a
+287: PUSH_CONST 1
+288: ADD
+289: STORE_VAR a
+290: LOAD_VAR a
+291: PUSH_CONST 1
+292: ADD
+293: STORE_VAR a
+294: LOAD_VAR a
+295: PUSH_CONST 1
+296: ADD
+297: STORE_VAR a
+298: LOAD_VAR a
+299: PUSH_CONST 1
+300: ADD
+301: STORE_VAR a
+302: LOAD_VAR a
+303: PUSH_CONST 1
+304: ADD
+305: STORE_VAR a
+306: LOAD_VAR a
+307: PUSH_CONST 1
+308: ADD
+309: STORE_VAR a
+310: LOAD_VAR a
+311: PUSH_CONST 1
+312: ADD
+313: STORE_VAR a
+314: LOAD_VAR a
+315: PUSH_CONST 1
+316: ADD
+317: STORE_VAR a
+318: LOAD_VAR a
+319: PUSH_CONST 1
+320: ADD
+321: STORE_VAR a
+322: LOAD_VAR a
+323: PUSH_CONST 1
+324: ADD
+325: STORE_VAR a
+326: LOAD_VAR a
+327: PUSH_CONST 1
+328: ADD
+329: STORE_VAR a
+330: LOAD_VAR a
+331: PUSH_CONST 1
+332: ADD
+333: STORE_VAR a
+334: LOAD_VAR a
+335: PUSH_CONST 1
+336: ADD
+337: STORE_VAR a
+338: LOAD_VAR a
+339: PUSH_CONST 1
+340: ADD
+341: STORE_VAR a
+342: LOAD_VAR a
+343: PUSH_CONST 1
+344: ADD
+345: STORE_VAR a
+346: LOAD_VAR a
+347: PUSH_CONST 1
+348: ADD
+349: STORE_VAR a
+350: LOAD_VAR a
+351: PUSH_CONST 1
+352: ADD
+353: STORE_VAR a
+354: LOAD_VAR a
+355: PUSH_CONST 1
+356: ADD
+357: STORE_VAR a
+358: LOAD_VAR a
+359: PUSH_CONST 1
+360: ADD
+361: STORE_VAR a
+362: LOAD_VAR a
+363: PUSH_CONST 1
+364: ADD
+365: STORE_VAR a
+366: LOAD_VAR a
+367: PUSH_CONST 1
+368: ADD
+369: STORE_VAR a
+370: LOAD_VAR a
+371: PUSH_CONST 1
+372: ADD
+373: STORE_VAR a
+374: LOAD_VAR a
+375: PUSH_CONST 1
+376: ADD
+377: STORE_VAR a
+378: LOAD_VAR a
+379: PUSH_CONST 1
+380: ADD
+381: STORE_VAR a
+382: LOAD_VAR a
+383: PUSH_CONST 1
+384: ADD
+385: STORE_VAR a
+386: LOAD_VAR a
+387: PUSH_CONST 1
+388: ADD
+389: STORE_VAR a
+390: LOAD_VAR a
+391: PUSH_CONST 1
+392: ADD
+393: STORE_VAR a
+394: LOAD_VAR a
+395: PUSH_CONST 1
+396: ADD
+397: STORE_VAR a
+398: LOAD_VAR a
+399: PUSH_CONST 1
+400: ADD
+401: STORE_VAR a
+402: LOAD_VAR a
+403: PUSH_CONST 1
+404: ADD
+405: STORE_VAR a
+406: LOAD_VAR a
+407: PUSH_CONST 1
+408: ADD
+409: STORE_VAR a
+410: LOAD_VAR a
+411: PUSH_CONST 1
+412: ADD
+413: STORE_VAR a
+414: LOAD_VAR a
+415: PUSH_CONST 1
+416: ADD
+417: STORE_VAR a
+418: LOAD_VAR a
+419: PUSH_CONST 1
+420: ADD
+421: STORE_VAR a
+422: LOAD_VAR a
+423: PUSH_CONST 1
+424: ADD
+425: STORE_VAR a
+426: LOAD_VAR a
+427: PUSH_CONST 1
+428: ADD
+429: STORE_VAR a
+430: LOAD_VAR a
+431: PUSH_CONST 1
+432: ADD
+433: STORE_VAR a
+434: LOAD_VAR a
+435: PUSH_CONST 1
+436: ADD
+437: STORE_VAR a
+438: LOAD_VAR a
+439: PUSH_CONST 1
+440: ADD
+441: STORE_VAR a
+442: LOAD_VAR a
+443: PUSH_CONST 1
+444: ADD
+445: STORE_VAR a
+446: LOAD_VAR a
+447: PUSH_CONST 1
+448: ADD
+449: STORE_VAR a
+450: LOAD_VAR a
+451: PUSH_CONST 1
+452: ADD
+453: STORE_VAR a
+454: LOAD_VAR a
+455: PUSH_CONST 1
+456: ADD
+457: STORE_VAR a
+458: LOAD_VAR a
+459: PUSH_CONST 1
+460: ADD
+461: STORE_VAR a
+462: LOAD_VAR a
+463: PUSH_CONST 1
+464: ADD
+465: STORE_VAR a
+466: LOAD_VAR a
+467: PUSH_CONST 1
+468: ADD
+469: STORE_VAR a
+470: LOAD_VAR a
+471: PUSH_CONST 1
+472: ADD
+473: STORE_VAR a
+474: LOAD_VAR a
+475: PUSH_CONST 1
+476: ADD
+477: STORE_VAR a
+478: LOAD_VAR a
+479: PUSH_CONST 1
+480: ADD
+481: STORE_VAR a
+482: LOAD_VAR a
+483: PUSH_CONST 1
+484: ADD
+485: STORE_VAR a
+486: LOAD_VAR a
+487: PUSH_CONST 1
+488: ADD
+489: STORE_VAR a
+490: LOAD_VAR a
+491: PUSH_CONST 1
+492: ADD
+493: STORE_VAR a
+494: LOAD_VAR a
+495: PUSH_CONST 1
+496: ADD
+497: STORE_VAR a
+498: LOAD_VAR a
+499: PUSH_CONST 1
+500: ADD
+501: STORE_VAR a
+502: LOAD_VAR a
+503: PUSH_CONST 1
+504: ADD
+505: STORE_VAR a
+506: LOAD_VAR a
+507: PUSH_CONST 1
+508: ADD
+509: STORE_VAR a
+510: LOAD_VAR a
+511: PUSH_CONST 1
+512: ADD
+513: STORE_VAR a
+514: LOAD_VAR a
+515: PUSH_CONST 1
+516: ADD
+517: STORE_VAR a
+518: LOAD_VAR a
+519: PUSH_CONST 1
+520: ADD
+521: STORE_VAR a
+522: LOAD_VAR a
+523: PUSH_CONST 1
+524: ADD
+525: STORE_VAR a
+526: LOAD_VAR a
+527: PUSH_CONST 1
+528: ADD
+529: STORE_VAR a
+530: LOAD_VAR a
+531: PUSH_CONST 1
+532: ADD
+533: STORE_VAR a
+534: LOAD_VAR a
+535: PUSH_CONST 1
+536: ADD
+537: STORE_VAR a
+538: LOAD_VAR a
+539: PUSH_CONST 1
+540: ADD
+541: STORE_VAR a
+542: LOAD_VAR a
+543: PUSH_CONST 1
+544: ADD
+545: STORE_VAR a
+546: LOAD_VAR a
+547: PUSH_CONST 1
+548: ADD
+549: STORE_VAR a
+550: LOAD_VAR a
+551: PUSH_CONST 1
+552: ADD
+553: STORE_VAR a
+554: LOAD_VAR a
+555: PUSH_CONST 1
+556: ADD
+557: STORE_VAR a
+558: LOAD_VAR a
+559: PUSH_CONST 1
+560: ADD
+561: STORE_VAR a
+562: LOAD_VAR a
+563: PUSH_CONST 1
+564: ADD
+565: STORE_VAR a
+566: LOAD_VAR a
+567: PUSH_CONST 1
+568: ADD
+569: STORE_VAR a
+570: LOAD_VAR a
+571: PUSH_CONST 1
+572: ADD
+573: STORE_VAR a
+574: LOAD_VAR a
+575: PUSH_CONST 1
+576: ADD
+577: STORE_VAR a
+578: LOAD_VAR a
+579: PUSH_CONST 1
+580: ADD
+581: STORE_VAR a
+582: LOAD_VAR a
+583: PUSH_CONST 1
+584: ADD
+585: STORE_VAR a
+586: LOAD_VAR a
+587: PUSH_CONST 1
+588: ADD
+589: STORE_VAR a
+590: LOAD_VAR a
+591: PUSH_CONST 1
+592: ADD
+593: STORE_VAR a
+594: LOAD_VAR a
+595: PUSH_CONST 1
+596: ADD
+597: STORE_VAR a
+598: LOAD_VAR a
+599: PUSH_CONST 1
+600: ADD
+601: STORE_VAR a
+602: LOAD_VAR a
+603: PUSH_CONST 1
+604: ADD
+605: STORE_VAR a
+606: LOAD_VAR a
+607: PUSH_CONST 1
+608: ADD
+609: STORE_VAR a
+610: LOAD_VAR a
+611: PUSH_CONST 1
+612: ADD
+613: STORE_VAR a
+614: LOAD_VAR a
+615: PUSH_CONST 1
+616: ADD
+617: STORE_VAR a
+618: LOAD_VAR a
+619: PUSH_CONST 1
+620: ADD
+621: STORE_VAR a
+622: LOAD_VAR a
+623: PUSH_CONST 1
+624: ADD
+625: STORE_VAR a
+626: LOAD_VAR a
+627: PUSH_CONST 1
+628: ADD
+629: STORE_VAR a
+630: LOAD_VAR a
+631: PUSH_CONST 1
+632: ADD
+633: STORE_VAR a
+634: LOAD_VAR a
+635: PUSH_CONST 1
+636: ADD
+637: STORE_VAR a
+638: LOAD_VAR a
+639: PUSH_CONST 1
+640: ADD
+641: STORE_VAR a
+642: LOAD_VAR a
+643: PUSH_CONST 1
+644: ADD
+645: STORE_VAR a
+646: LOAD_VAR a
+647: PUSH_CONST 1
+648: ADD
+649: STORE_VAR a
+650: LOAD_VAR a
+651: PUSH_CONST 1
+652: ADD
+653: STORE_VAR a
+654: LOAD_VAR a
+655: PUSH_CONST 1
+656: ADD
+657: STORE_VAR a
+658: LOAD_VAR a
+659: PUSH_CONST 1
+660: ADD
+661: STORE_VAR a
+662: LOAD_VAR a
+663: PUSH_CONST 1
+664: ADD
+665: STORE_VAR a
+666: LOAD_VAR a
+667: PUSH_CONST 1
+668: ADD
+669: STORE_VAR a
+670: LOAD_VAR a
+671: PUSH_CONST 1
+672: ADD
+673: STORE_VAR a
+674: LOAD_VAR a
+675: PUSH_CONST 1
+676: ADD
+677: STORE_VAR a
+678: LOAD_VAR a
+679: PUSH_CONST 1
+680: ADD
+681: STORE_VAR a
+682: LOAD_VAR a
+683: PUSH_CONST 1
+684: ADD
+685: STORE_VAR a
+686: LOAD_VAR a
+687: PUSH_CONST 1
+688: ADD
+689: STORE_VAR a
+690: LOAD_VAR a
+691: PUSH_CONST 1
+692: ADD
+693: STORE_VAR a
+694: LOAD_VAR a
+695: PUSH_CONST 1
+696: ADD
+697: STORE_VAR a
+698: LOAD_VAR a
+699: PUSH_CONST 1
+700: ADD
+701: STORE_VAR a
+702: LOAD_VAR a
+703: PUSH_CONST 1
+704: ADD
+705: STORE_VAR a
+706: LOAD_VAR a
+707: PUSH_CONST 1
+708: ADD
+709: STORE_VAR a
+710: LOAD_VAR a
+711: PUSH_CONST 1
+712: ADD
+713: STORE_VAR a
+714: LOAD_VAR a
+715: PUSH_CONST 1
+716: ADD
+717: STORE_VAR a
+718: LOAD_VAR a
+719: PUSH_CONST 1
+720: ADD
+721: STORE_VAR a
+722: LOAD_VAR a
+723: PUSH_CONST 1
+724: ADD
+725: STORE_VAR a
+726: LOAD_VAR a
+727: PUSH_CONST 1
+728: ADD
+729: STORE_VAR a
+730: LOAD_VAR a
+731: PUSH_CONST 1
+732: ADD
+733: STORE_VAR a
+734: LOAD_VAR a
+735: PUSH_CONST 1
+736: ADD
+737: STORE_VAR a
+738: LOAD_VAR a
+739: PUSH_CONST 1
+740: ADD
+741: STORE_VAR a
+742: LOAD_VAR a
+743: PUSH_CONST 1
+744: ADD
+745: STORE_VAR a
+746: LOAD_VAR a
+747: PUSH_CONST 1
+748: ADD
+749: STORE_VAR a
+750: LOAD_VAR a
+751: PUSH_CONST 1
+752: ADD
+753: STORE_VAR a
+754: LOAD_VAR a
+755: PUSH_CONST 1
+756: ADD
+757: STORE_VAR a
+758: LOAD_VAR a
+759: PUSH_CONST 1
+760: ADD
+761: STORE_VAR a
+762: LOAD_VAR a
+763: PUSH_CONST 1
+764: ADD
+765: STORE_VAR a
+766: LOAD_VAR a
+767: PUSH_CONST 1
+768: ADD
+769: STORE_VAR a
+770: LOAD_VAR a
+771: PUSH_CONST 1
+772: ADD
+773: STORE_VAR a
+774: LOAD_VAR a
+775: PUSH_CONST 1
+776: ADD
+777: STORE_VAR a
+778: LOAD_VAR a
+779: PUSH_CONST 1
+780: ADD
+781: STORE_VAR a
+782: LOAD_VAR a
+783: PUSH_CONST 1
+784: ADD
+785: STORE_VAR a
+786: LOAD_VAR a
+787: PUSH_CONST 1
+788: ADD
+789: STORE_VAR a
+790: LOAD_VAR a
+791: PUSH_CONST 1
+792: ADD
+793: STORE_VAR a
+794: LOAD_VAR a
+795: PUSH_CONST 1
+796: ADD
+797: STORE_VAR a
+798: LOAD_VAR a
+799: PUSH_CONST 1
+800: ADD
+801: STORE_VAR a
+=== Running IR interpreter ===
+Copied add stencil, buffer size = 7 bytes
+Parsed AST:
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+  LetStmt: a = <expr>
+Loaded stencil: load_var (5 bytes)
+Loaded stencil: load_const (8 bytes)
+Loaded stencil: store_var (5 bytes)
+Loaded stencil: add (7 bytes)
+Loaded stencil: print_int (146 bytes)
+=== IR (instr count = 802) ===
+0: PUSH_CONST 0
+1: STORE_VAR a
+2: LOAD_VAR a
+3: PUSH_CONST 1
+4: ADD
+5: STORE_VAR a
+6: LOAD_VAR a
+7: PUSH_CONST 1
+8: ADD
+9: STORE_VAR a
+10: LOAD_VAR a
+11: PUSH_CONST 1
+12: ADD
+13: STORE_VAR a
+14: LOAD_VAR a
+15: PUSH_CONST 1
+16: ADD
+17: STORE_VAR a
+18: LOAD_VAR a
+19: PUSH_CONST 1
+20: ADD
+21: STORE_VAR a
+22: LOAD_VAR a
+23: PUSH_CONST 1
+24: ADD
+25: STORE_VAR a
+26: LOAD_VAR a
+27: PUSH_CONST 1
+28: ADD
+29: STORE_VAR a
+30: LOAD_VAR a
+31: PUSH_CONST 1
+32: ADD
+33: STORE_VAR a
+34: LOAD_VAR a
+35: PUSH_CONST 1
+36: ADD
+37: STORE_VAR a
+38: LOAD_VAR a
+39: PUSH_CONST 1
+40: ADD
+41: STORE_VAR a
+42: LOAD_VAR a
+43: PUSH_CONST 1
+44: ADD
+45: STORE_VAR a
+46: LOAD_VAR a
+47: PUSH_CONST 1
+48: ADD
+49: STORE_VAR a
+50: LOAD_VAR a
+51: PUSH_CONST 1
+52: ADD
+53: STORE_VAR a
+54: LOAD_VAR a
+55: PUSH_CONST 1
+56: ADD
+57: STORE_VAR a
+58: LOAD_VAR a
+59: PUSH_CONST 1
+60: ADD
+61: STORE_VAR a
+62: LOAD_VAR a
+63: PUSH_CONST 1
+64: ADD
+65: STORE_VAR a
+66: LOAD_VAR a
+67: PUSH_CONST 1
+68: ADD
+69: STORE_VAR a
+70: LOAD_VAR a
+71: PUSH_CONST 1
+72: ADD
+73: STORE_VAR a
+74: LOAD_VAR a
+75: PUSH_CONST 1
+76: ADD
+77: STORE_VAR a
+78: LOAD_VAR a
+79: PUSH_CONST 1
+80: ADD
+81: STORE_VAR a
+82: LOAD_VAR a
+83: PUSH_CONST 1
+84: ADD
+85: STORE_VAR a
+86: LOAD_VAR a
+87: PUSH_CONST 1
+88: ADD
+89: STORE_VAR a
+90: LOAD_VAR a
+91: PUSH_CONST 1
+92: ADD
+93: STORE_VAR a
+94: LOAD_VAR a
+95: PUSH_CONST 1
+96: ADD
+97: STORE_VAR a
+98: LOAD_VAR a
+99: PUSH_CONST 1
+100: ADD
+101: STORE_VAR a
+102: LOAD_VAR a
+103: PUSH_CONST 1
+104: ADD
+105: STORE_VAR a
+106: LOAD_VAR a
+107: PUSH_CONST 1
+108: ADD
+109: STORE_VAR a
+110: LOAD_VAR a
+111: PUSH_CONST 1
+112: ADD
+113: STORE_VAR a
+114: LOAD_VAR a
+115: PUSH_CONST 1
+116: ADD
+117: STORE_VAR a
+118: LOAD_VAR a
+119: PUSH_CONST 1
+120: ADD
+121: STORE_VAR a
+122: LOAD_VAR a
+123: PUSH_CONST 1
+124: ADD
+125: STORE_VAR a
+126: LOAD_VAR a
+127: PUSH_CONST 1
+128: ADD
+129: STORE_VAR a
+130: LOAD_VAR a
+131: PUSH_CONST 1
+132: ADD
+133: STORE_VAR a
+134: LOAD_VAR a
+135: PUSH_CONST 1
+136: ADD
+137: STORE_VAR a
+138: LOAD_VAR a
+139: PUSH_CONST 1
+140: ADD
+141: STORE_VAR a
+142: LOAD_VAR a
+143: PUSH_CONST 1
+144: ADD
+145: STORE_VAR a
+146: LOAD_VAR a
+147: PUSH_CONST 1
+148: ADD
+149: STORE_VAR a
+150: LOAD_VAR a
+151: PUSH_CONST 1
+152: ADD
+153: STORE_VAR a
+154: LOAD_VAR a
+155: PUSH_CONST 1
+156: ADD
+157: STORE_VAR a
+158: LOAD_VAR a
+159: PUSH_CONST 1
+160: ADD
+161: STORE_VAR a
+162: LOAD_VAR a
+163: PUSH_CONST 1
+164: ADD
+165: STORE_VAR a
+166: LOAD_VAR a
+167: PUSH_CONST 1
+168: ADD
+169: STORE_VAR a
+170: LOAD_VAR a
+171: PUSH_CONST 1
+172: ADD
+173: STORE_VAR a
+174: LOAD_VAR a
+175: PUSH_CONST 1
+176: ADD
+177: STORE_VAR a
+178: LOAD_VAR a
+179: PUSH_CONST 1
+180: ADD
+181: STORE_VAR a
+182: LOAD_VAR a
+183: PUSH_CONST 1
+184: ADD
+185: STORE_VAR a
+186: LOAD_VAR a
+187: PUSH_CONST 1
+188: ADD
+189: STORE_VAR a
+190: LOAD_VAR a
+191: PUSH_CONST 1
+192: ADD
+193: STORE_VAR a
+194: LOAD_VAR a
+195: PUSH_CONST 1
+196: ADD
+197: STORE_VAR a
+198: LOAD_VAR a
+199: PUSH_CONST 1
+200: ADD
+201: STORE_VAR a
+202: LOAD_VAR a
+203: PUSH_CONST 1
+204: ADD
+205: STORE_VAR a
+206: LOAD_VAR a
+207: PUSH_CONST 1
+208: ADD
+209: STORE_VAR a
+210: LOAD_VAR a
+211: PUSH_CONST 1
+212: ADD
+213: STORE_VAR a
+214: LOAD_VAR a
+215: PUSH_CONST 1
+216: ADD
+217: STORE_VAR a
+218: LOAD_VAR a
+219: PUSH_CONST 1
+220: ADD
+221: STORE_VAR a
+222: LOAD_VAR a
+223: PUSH_CONST 1
+224: ADD
+225: STORE_VAR a
+226: LOAD_VAR a
+227: PUSH_CONST 1
+228: ADD
+229: STORE_VAR a
+230: LOAD_VAR a
+231: PUSH_CONST 1
+232: ADD
+233: STORE_VAR a
+234: LOAD_VAR a
+235: PUSH_CONST 1
+236: ADD
+237: STORE_VAR a
+238: LOAD_VAR a
+239: PUSH_CONST 1
+240: ADD
+241: STORE_VAR a
+242: LOAD_VAR a
+243: PUSH_CONST 1
+244: ADD
+245: STORE_VAR a
+246: LOAD_VAR a
+247: PUSH_CONST 1
+248: ADD
+249: STORE_VAR a
+250: LOAD_VAR a
+251: PUSH_CONST 1
+252: ADD
+253: STORE_VAR a
+254: LOAD_VAR a
+255: PUSH_CONST 1
+256: ADD
+257: STORE_VAR a
+258: LOAD_VAR a
+259: PUSH_CONST 1
+260: ADD
+261: STORE_VAR a
+262: LOAD_VAR a
+263: PUSH_CONST 1
+264: ADD
+265: STORE_VAR a
+266: LOAD_VAR a
+267: PUSH_CONST 1
+268: ADD
+269: STORE_VAR a
+270: LOAD_VAR a
+271: PUSH_CONST 1
+272: ADD
+273: STORE_VAR a
+274: LOAD_VAR a
+275: PUSH_CONST 1
+276: ADD
+277: STORE_VAR a
+278: LOAD_VAR a
+279: PUSH_CONST 1
+280: ADD
+281: STORE_VAR a
+282: LOAD_VAR a
+283: PUSH_CONST 1
+284: ADD
+285: STORE_VAR a
+286: LOAD_VAR a
+287: PUSH_CONST 1
+288: ADD
+289: STORE_VAR a
+290: LOAD_VAR a
+291: PUSH_CONST 1
+292: ADD
+293: STORE_VAR a
+294: LOAD_VAR a
+295: PUSH_CONST 1
+296: ADD
+297: STORE_VAR a
+298: LOAD_VAR a
+299: PUSH_CONST 1
+300: ADD
+301: STORE_VAR a
+302: LOAD_VAR a
+303: PUSH_CONST 1
+304: ADD
+305: STORE_VAR a
+306: LOAD_VAR a
+307: PUSH_CONST 1
+308: ADD
+309: STORE_VAR a
+310: LOAD_VAR a
+311: PUSH_CONST 1
+312: ADD
+313: STORE_VAR a
+314: LOAD_VAR a
+315: PUSH_CONST 1
+316: ADD
+317: STORE_VAR a
+318: LOAD_VAR a
+319: PUSH_CONST 1
+320: ADD
+321: STORE_VAR a
+322: LOAD_VAR a
+323: PUSH_CONST 1
+324: ADD
+325: STORE_VAR a
+326: LOAD_VAR a
+327: PUSH_CONST 1
+328: ADD
+329: STORE_VAR a
+330: LOAD_VAR a
+331: PUSH_CONST 1
+332: ADD
+333: STORE_VAR a
+334: LOAD_VAR a
+335: PUSH_CONST 1
+336: ADD
+337: STORE_VAR a
+338: LOAD_VAR a
+339: PUSH_CONST 1
+340: ADD
+341: STORE_VAR a
+342: LOAD_VAR a
+343: PUSH_CONST 1
+344: ADD
+345: STORE_VAR a
+346: LOAD_VAR a
+347: PUSH_CONST 1
+348: ADD
+349: STORE_VAR a
+350: LOAD_VAR a
+351: PUSH_CONST 1
+352: ADD
+353: STORE_VAR a
+354: LOAD_VAR a
+355: PUSH_CONST 1
+356: ADD
+357: STORE_VAR a
+358: LOAD_VAR a
+359: PUSH_CONST 1
+360: ADD
+361: STORE_VAR a
+362: LOAD_VAR a
+363: PUSH_CONST 1
+364: ADD
+365: STORE_VAR a
+366: LOAD_VAR a
+367: PUSH_CONST 1
+368: ADD
+369: STORE_VAR a
+370: LOAD_VAR a
+371: PUSH_CONST 1
+372: ADD
+373: STORE_VAR a
+374: LOAD_VAR a
+375: PUSH_CONST 1
+376: ADD
+377: STORE_VAR a
+378: LOAD_VAR a
+379: PUSH_CONST 1
+380: ADD
+381: STORE_VAR a
+382: LOAD_VAR a
+383: PUSH_CONST 1
+384: ADD
+385: STORE_VAR a
+386: LOAD_VAR a
+387: PUSH_CONST 1
+388: ADD
+389: STORE_VAR a
+390: LOAD_VAR a
+391: PUSH_CONST 1
+392: ADD
+393: STORE_VAR a
+394: LOAD_VAR a
+395: PUSH_CONST 1
+396: ADD
+397: STORE_VAR a
+398: LOAD_VAR a
+399: PUSH_CONST 1
+400: ADD
+401: STORE_VAR a
+402: LOAD_VAR a
+403: PUSH_CONST 1
+404: ADD
+405: STORE_VAR a
+406: LOAD_VAR a
+407: PUSH_CONST 1
+408: ADD
+409: STORE_VAR a
+410: LOAD_VAR a
+411: PUSH_CONST 1
+412: ADD
+413: STORE_VAR a
+414: LOAD_VAR a
+415: PUSH_CONST 1
+416: ADD
+417: STORE_VAR a
+418: LOAD_VAR a
+419: PUSH_CONST 1
+420: ADD
+421: STORE_VAR a
+422: LOAD_VAR a
+423: PUSH_CONST 1
+424: ADD
+425: STORE_VAR a
+426: LOAD_VAR a
+427: PUSH_CONST 1
+428: ADD
+429: STORE_VAR a
+430: LOAD_VAR a
+431: PUSH_CONST 1
+432: ADD
+433: STORE_VAR a
+434: LOAD_VAR a
+435: PUSH_CONST 1
+436: ADD
+437: STORE_VAR a
+438: LOAD_VAR a
+439: PUSH_CONST 1
+440: ADD
+441: STORE_VAR a
+442: LOAD_VAR a
+443: PUSH_CONST 1
+444: ADD
+445: STORE_VAR a
+446: LOAD_VAR a
+447: PUSH_CONST 1
+448: ADD
+449: STORE_VAR a
+450: LOAD_VAR a
+451: PUSH_CONST 1
+452: ADD
+453: STORE_VAR a
+454: LOAD_VAR a
+455: PUSH_CONST 1
+456: ADD
+457: STORE_VAR a
+458: LOAD_VAR a
+459: PUSH_CONST 1
+460: ADD
+461: STORE_VAR a
+462: LOAD_VAR a
+463: PUSH_CONST 1
+464: ADD
+465: STORE_VAR a
+466: LOAD_VAR a
+467: PUSH_CONST 1
+468: ADD
+469: STORE_VAR a
+470: LOAD_VAR a
+471: PUSH_CONST 1
+472: ADD
+473: STORE_VAR a
+474: LOAD_VAR a
+475: PUSH_CONST 1
+476: ADD
+477: STORE_VAR a
+478: LOAD_VAR a
+479: PUSH_CONST 1
+480: ADD
+481: STORE_VAR a
+482: LOAD_VAR a
+483: PUSH_CONST 1
+484: ADD
+485: STORE_VAR a
+486: LOAD_VAR a
+487: PUSH_CONST 1
+488: ADD
+489: STORE_VAR a
+490: LOAD_VAR a
+491: PUSH_CONST 1
+492: ADD
+493: STORE_VAR a
+494: LOAD_VAR a
+495: PUSH_CONST 1
+496: ADD
+497: STORE_VAR a
+498: LOAD_VAR a
+499: PUSH_CONST 1
+500: ADD
+501: STORE_VAR a
+502: LOAD_VAR a
+503: PUSH_CONST 1
+504: ADD
+505: STORE_VAR a
+506: LOAD_VAR a
+507: PUSH_CONST 1
+508: ADD
+509: STORE_VAR a
+510: LOAD_VAR a
+511: PUSH_CONST 1
+512: ADD
+513: STORE_VAR a
+514: LOAD_VAR a
+515: PUSH_CONST 1
+516: ADD
+517: STORE_VAR a
+518: LOAD_VAR a
+519: PUSH_CONST 1
+520: ADD
+521: STORE_VAR a
+522: LOAD_VAR a
+523: PUSH_CONST 1
+524: ADD
+525: STORE_VAR a
+526: LOAD_VAR a
+527: PUSH_CONST 1
+528: ADD
+529: STORE_VAR a
+530: LOAD_VAR a
+531: PUSH_CONST 1
+532: ADD
+533: STORE_VAR a
+534: LOAD_VAR a
+535: PUSH_CONST 1
+536: ADD
+537: STORE_VAR a
+538: LOAD_VAR a
+539: PUSH_CONST 1
+540: ADD
+541: STORE_VAR a
+542: LOAD_VAR a
+543: PUSH_CONST 1
+544: ADD
+545: STORE_VAR a
+546: LOAD_VAR a
+547: PUSH_CONST 1
+548: ADD
+549: STORE_VAR a
+550: LOAD_VAR a
+551: PUSH_CONST 1
+552: ADD
+553: STORE_VAR a
+554: LOAD_VAR a
+555: PUSH_CONST 1
+556: ADD
+557: STORE_VAR a
+558: LOAD_VAR a
+559: PUSH_CONST 1
+560: ADD
+561: STORE_VAR a
+562: LOAD_VAR a
+563: PUSH_CONST 1
+564: ADD
+565: STORE_VAR a
+566: LOAD_VAR a
+567: PUSH_CONST 1
+568: ADD
+569: STORE_VAR a
+570: LOAD_VAR a
+571: PUSH_CONST 1
+572: ADD
+573: STORE_VAR a
+574: LOAD_VAR a
+575: PUSH_CONST 1
+576: ADD
+577: STORE_VAR a
+578: LOAD_VAR a
+579: PUSH_CONST 1
+580: ADD
+581: STORE_VAR a
+582: LOAD_VAR a
+583: PUSH_CONST 1
+584: ADD
+585: STORE_VAR a
+586: LOAD_VAR a
+587: PUSH_CONST 1
+588: ADD
+589: STORE_VAR a
+590: LOAD_VAR a
+591: PUSH_CONST 1
+592: ADD
+593: STORE_VAR a
+594: LOAD_VAR a
+595: PUSH_CONST 1
+596: ADD
+597: STORE_VAR a
+598: LOAD_VAR a
+599: PUSH_CONST 1
+600: ADD
+601: STORE_VAR a
+602: LOAD_VAR a
+603: PUSH_CONST 1
+604: ADD
+605: STORE_VAR a
+606: LOAD_VAR a
+607: PUSH_CONST 1
+608: ADD
+609: STORE_VAR a
+610: LOAD_VAR a
+611: PUSH_CONST 1
+612: ADD
+613: STORE_VAR a
+614: LOAD_VAR a
+615: PUSH_CONST 1
+616: ADD
+617: STORE_VAR a
+618: LOAD_VAR a
+619: PUSH_CONST 1
+620: ADD
+621: STORE_VAR a
+622: LOAD_VAR a
+623: PUSH_CONST 1
+624: ADD
+625: STORE_VAR a
+626: LOAD_VAR a
+627: PUSH_CONST 1
+628: ADD
+629: STORE_VAR a
+630: LOAD_VAR a
+631: PUSH_CONST 1
+632: ADD
+633: STORE_VAR a
+634: LOAD_VAR a
+635: PUSH_CONST 1
+636: ADD
+637: STORE_VAR a
+638: LOAD_VAR a
+639: PUSH_CONST 1
+640: ADD
+641: STORE_VAR a
+642: LOAD_VAR a
+643: PUSH_CONST 1
+644: ADD
+645: STORE_VAR a
+646: LOAD_VAR a
+647: PUSH_CONST 1
+648: ADD
+649: STORE_VAR a
+650: LOAD_VAR a
+651: PUSH_CONST 1
+652: ADD
+653: STORE_VAR a
+654: LOAD_VAR a
+655: PUSH_CONST 1
+656: ADD
+657: STORE_VAR a
+658: LOAD_VAR a
+659: PUSH_CONST 1
+660: ADD
+661: STORE_VAR a
+662: LOAD_VAR a
+663: PUSH_CONST 1
+664: ADD
+665: STORE_VAR a
+666: LOAD_VAR a
+667: PUSH_CONST 1
+668: ADD
+669: STORE_VAR a
+670: LOAD_VAR a
+671: PUSH_CONST 1
+672: ADD
+673: STORE_VAR a
+674: LOAD_VAR a
+675: PUSH_CONST 1
+676: ADD
+677: STORE_VAR a
+678: LOAD_VAR a
+679: PUSH_CONST 1
+680: ADD
+681: STORE_VAR a
+682: LOAD_VAR a
+683: PUSH_CONST 1
+684: ADD
+685: STORE_VAR a
+686: LOAD_VAR a
+687: PUSH_CONST 1
+688: ADD
+689: STORE_VAR a
+690: LOAD_VAR a
+691: PUSH_CONST 1
+692: ADD
+693: STORE_VAR a
+694: LOAD_VAR a
+695: PUSH_CONST 1
+696: ADD
+697: STORE_VAR a
+698: LOAD_VAR a
+699: PUSH_CONST 1
+700: ADD
+701: STORE_VAR a
+702: LOAD_VAR a
+703: PUSH_CONST 1
+704: ADD
+705: STORE_VAR a
+706: LOAD_VAR a
+707: PUSH_CONST 1
+708: ADD
+709: STORE_VAR a
+710: LOAD_VAR a
+711: PUSH_CONST 1
+712: ADD
+713: STORE_VAR a
+714: LOAD_VAR a
+715: PUSH_CONST 1
+716: ADD
+717: STORE_VAR a
+718: LOAD_VAR a
+719: PUSH_CONST 1
+720: ADD
+721: STORE_VAR a
+722: LOAD_VAR a
+723: PUSH_CONST 1
+724: ADD
+725: STORE_VAR a
+726: LOAD_VAR a
+727: PUSH_CONST 1
+728: ADD
+729: STORE_VAR a
+730: LOAD_VAR a
+731: PUSH_CONST 1
+732: ADD
+733: STORE_VAR a
+734: LOAD_VAR a
+735: PUSH_CONST 1
+736: ADD
+737: STORE_VAR a
+738: LOAD_VAR a
+739: PUSH_CONST 1
+740: ADD
+741: STORE_VAR a
+742: LOAD_VAR a
+743: PUSH_CONST 1
+744: ADD
+745: STORE_VAR a
+746: LOAD_VAR a
+747: PUSH_CONST 1
+748: ADD
+749: STORE_VAR a
+750: LOAD_VAR a
+751: PUSH_CONST 1
+752: ADD
+753: STORE_VAR a
+754: LOAD_VAR a
+755: PUSH_CONST 1
+756: ADD
+757: STORE_VAR a
+758: LOAD_VAR a
+759: PUSH_CONST 1
+760: ADD
+761: STORE_VAR a
+762: LOAD_VAR a
+763: PUSH_CONST 1
+764: ADD
+765: STORE_VAR a
+766: LOAD_VAR a
+767: PUSH_CONST 1
+768: ADD
+769: STORE_VAR a
+770: LOAD_VAR a
+771: PUSH_CONST 1
+772: ADD
+773: STORE_VAR a
+774: LOAD_VAR a
+775: PUSH_CONST 1
+776: ADD
+777: STORE_VAR a
+778: LOAD_VAR a
+779: PUSH_CONST 1
+780: ADD
+781: STORE_VAR a
+782: LOAD_VAR a
+783: PUSH_CONST 1
+784: ADD
+785: STORE_VAR a
+786: LOAD_VAR a
+787: PUSH_CONST 1
+788: ADD
+789: STORE_VAR a
+790: LOAD_VAR a
+791: PUSH_CONST 1
+792: ADD
+793: STORE_VAR a
+794: LOAD_VAR a
+795: PUSH_CONST 1
+796: ADD
+797: STORE_VAR a
+798: LOAD_VAR a
+799: PUSH_CONST 1
+800: ADD
+801: STORE_VAR a
+=== Running IR interpreter ===
+Copied add stencil, buffer size = 7 bytes
